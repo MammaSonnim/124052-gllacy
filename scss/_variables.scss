@@ -32,3 +32,12 @@ $bg_nav-ch: #d07058;
 
 $bg_sub-nav-hov: #fbded7;
 $bg_sub-nav-act: #f6b5a5;
+
+//TYPE
+
+$ff_base: "Roboto", sans-serif;
+$fz_base: 16px;
+$lh_base: 22px;
+$fw_base: 400;
+
+$font_base: $fw_base #{$fz_base}/#{$lh_base} $ff_base;

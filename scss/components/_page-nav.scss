@@ -1,0 +1,30 @@
+.page-nav {
+  
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    @include clear-list;
+    }
+  &__item {
+    position: relative;
+  }
+  &__link {
+    font-size: 16px;
+    color: $white;
+  }
+  
+  &__sub-list {
+    position: absolute;
+    display: none;
+    @include clear-list;
+  }
+  &__item:hover &__sub-list {
+    display: block;
+  }
+  &__sub-item {
+    
+  }
+  &__sub-link {
+    
+  }
+}

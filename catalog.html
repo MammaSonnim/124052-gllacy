@@ -5,34 +5,37 @@
   <title>Gllacy Shop</title>
   <link rel="stylesheet" href="css/normalize.min.css">
   <link rel="stylesheet" href="css/style.css">
+  <link href='https://fonts.googleapis.com/css?family=Roboto:700,400,500,900&subset=cyrillic-ext' rel='stylesheet' type='text/css'>
 </head>
 <body>
   <header class="page-header">
-    <div class="page-header__col">
-      <a href="index.html" class="logo"><img src="./img/logo.svg" alt="Gllacy Shop" class="logo__img" width="154" height="64"></a>
-      <nav class="page-nav">
-        <ul class="page-nav__list">
-          <li class="page-nav__item page-nav__item--active">
-            <a href="catalog.html" class="page-nav__link">Каталог</a>
-            <ul class="page-nav__sub-list">
-              <li class="page-nav__sub-item">Новинки</li>
-              <li class="page-nav__sub-item"><a href="#" class="page-nav__sub-link">Сливочное</a></li>
-              <li class="page-nav__sub-item"><a href="#" class="page-nav__sub-link">Щербеты</a></li>
-              <li class="page-nav__sub-item"><a href="#" class="page-nav__sub-link">Фруктовый лёд</a></li>
-              <li class="page-nav__sub-item"><a href="#" class="page-nav__sub-link">Мелорин</a></li>
-            </ul>
-          </li>
-          <li class="page-nav__item">
-            <a href="#" class="page-nav__link">Доставка и оплата</a>
-          </li>
-          <li class="page-nav__item">
-            <a href="#" class="page-nav__link">О Компании</a>
-          </li>
-        </ul>
-      </nav>
-    </div>
-    <div class="page-header__col">
-      <div class="page-header__actions">
+    <div class="page-header__inner">
+      <div class="page-header__col">
+        <a href="index.html" class="page-header__logo-wrap">
+          <img src="./img/logo.svg" alt="Gllacy Shop" class="page-header__logo-img" width="154" height="64">
+        </a>
+        <nav class="page-header__nav-wrap page-nav">
+          <ul class="page-nav__list">
+            <li class="page-nav__item page-nav__item--active">
+              <a href="catalog.html" class="page-nav__link">Каталог</a>
+              <ul class="page-nav__sub-list">
+                <li class="page-nav__sub-item">Новинки</li>
+                <li class="page-nav__sub-item"><a href="#" class="page-nav__sub-link">Сливочное</a></li>
+                <li class="page-nav__sub-item"><a href="#" class="page-nav__sub-link">Щербеты</a></li>
+                <li class="page-nav__sub-item"><a href="#" class="page-nav__sub-link">Фруктовый лёд</a></li>
+                <li class="page-nav__sub-item"><a href="#" class="page-nav__sub-link">Мелорин</a></li>
+              </ul>
+            </li>
+            <li class="page-nav__item">
+              <a href="#" class="page-nav__link">Доставка и оплата</a>
+            </li>
+            <li class="page-nav__item">
+              <a href="#" class="page-nav__link">О Компании</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="page-header__col">
         <div class="search">
           <form action="/echo" class="search__form">
             <input class="search__input" type="search" placeholder="Что ищем?">
@@ -81,11 +84,13 @@
           </div>
         </div>
       </div>
-      <p class="page-header__schedule">С 10 до 20, ежедневно</p>
-      <p class="page-header__phone">8 812 450-25-25</p>
     </div>
   </header>
   <main class="catalog-content">
+    <section class="schedule">
+      <p class="schedule__time">С 10 до 20, ежедневно</p>
+      <p class="schedule__phone">8 812 450-25-25</p>
+    </section>
     <div class="catalog-content__breadcrumbs breadcrumbs">
       <a class="breadcrumbs__item" href="index.html">Главная</a>
       <a class="breadcrumbs__item" href="catalog.html">Каталог</a>

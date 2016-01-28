@@ -1,0 +1,10 @@
+.search {
+  position: relative;
+  &__input {
+    display: none;
+    position: absolute;
+  }
+  &:hover &__input {
+    display: block;
+  }
+}

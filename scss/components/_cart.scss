@@ -1,0 +1,10 @@
+.cart {
+  position: relative;
+  &__form {
+    display: none;
+    position: absolute;
+  }
+  &:hover &__form {
+    display: block;
+  }
+}
