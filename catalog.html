@@ -8,8 +8,8 @@
   <link href='https://fonts.googleapis.com/css?family=Roboto:700,400,500,900&subset=cyrillic-ext' rel='stylesheet' type='text/css'>
 </head>
 <body>
+<div class="page-wrap">
   <header class="page-header">
-    <div class="page-header__inner">
       <div class="page-header__col">
         <a href="index.html" class="page-header__logo-wrap">
           <img src="./img/logo.svg" alt="Gllacy Shop" class="page-header__logo-img" width="154" height="64">
@@ -36,65 +36,68 @@
         </nav>
       </div>
       <div class="page-header__col">
-        <div class="search">
-          <form action="/echo" class="search__form">
-            <input class="search__input" type="search" placeholder="Что ищем?">
-            <button class="user-actions-btn user-actions-btn--search" type="submit"></button>
-          </form>
-        </div>
-        <div class="login">
-          <div class="user-actions-btn user-actions-btn--login">Вход</div>
-          <form action="/echo" class="login__form">
-            <input type="email" class="login__input" placeholder="Электронная почта">
-            <input type="password" class="login__input" placeholder="Пароль">
-            <button type="submit" class="btn login__btn">Войти</button>
-            <div class="login__links">
-              <a href="#" class="link">Забыли пароль?</a>
-              <a href="#" class="link">Новая регистрация</a>
+        <div class="page-header__actions-wrap">
+          <div class="search">
+            <form action="/echo" class="search__form">
+              <input class="search__input" type="search" placeholder="Что ищем?">
+              <button class="user-actions-btn user-actions-btn--search" type="submit"></button>
+            </form>
+          </div>
+          <div class="login">
+            <div class="user-actions-btn user-actions-btn--login">Вход</div>
+            <form action="/echo" class="login__form">
+              <input type="email" class="login__input" placeholder="Электронная почта">
+              <input type="password" class="login__input" placeholder="Пароль">
+              <button type="submit" class="btn login__btn">Войти</button>
+              <div class="login__links">
+                <a href="#" class="link">Забыли пароль?</a>
+                <a href="#" class="link">Новая регистрация</a>
+              </div>
+            </form>
+          </div>
+          <div class="cart">
+            <div class="user-actions-btn user-actions-btn--cart">2 товара</div>
+            <div class="cart__form">
+              <table class="cart__table">
+                <tr>
+                  <td><a href="#" class="cart__close"></a></td>
+                  <td><img src="./img/img_product-1.jpg" alt="Фотография мороженого" width="33" height="33"></td>
+                  <td>Пломбир с апельсиновым джемом</td>
+                  <td>1,5кг x 200 руб.</td>
+                  <td>300 руб.</td>
+                </tr>
+                <tr>
+                  <td><a href="#" class="cart__close"></a></td>
+                  <td><img src="./img/img_product-3.jpg" alt="Фотография мороженого" width="33" height="33"></td>
+                  <td>Клубничный пломбир с присыпкой из белого шоколада</td>
+                  <td>1,5кг x 300 руб.</td>
+                  <td>450 руб.</td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td>Итого: 750 руб.</td>
+                </tr>
+              </table>
+              <button type="submit" class="btn">Оформить заказ</button>
             </div>
-          </form>
-        </div>
-        <div class="cart">
-          <div class="user-actions-btn user-actions-btn--cart">2 товара</div>
-          <div class="cart__form">
-            <table class="cart__table">
-              <tr>
-                <td><a href="#" class="cart__close"></a></td>
-                <td><img src="./img/img_product-1.jpg" alt="Фотография мороженого" width="33" height="33"></td>
-                <td>Пломбир с апельсиновым джемом</td>
-                <td>1,5кг x 200 руб.</td>
-                <td>300 руб.</td>
-              </tr>
-              <tr>
-                <td><a href="#" class="cart__close"></a></td>
-                <td><img src="./img/img_product-3.jpg" alt="Фотография мороженого" width="33" height="33"></td>
-                <td>Клубничный пломбир с присыпкой из белого шоколада</td>
-                <td>1,5кг x 300 руб.</td>
-                <td>450 руб.</td>
-              </tr>
-              <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td>Итого: 750 руб.</td>
-              </tr>
-            </table>
-            <button type="submit" class="btn">Оформить заказ</button>
           </div>
         </div>
       </div>
-    </div>
   </header>
-  <main class="catalog-content">
-    <section class="schedule">
-      <p class="schedule__time">С 10 до 20, ежедневно</p>
-      <p class="schedule__phone">8 812 450-25-25</p>
-    </section>
-    <div class="catalog-content__breadcrumbs breadcrumbs">
-      <a class="breadcrumbs__item" href="index.html">Главная</a>
-      <a class="breadcrumbs__item" href="catalog.html">Каталог</a>
-      <span class="breadcrumbs__item">Сливочное</span>
+  <main class="page-content">
+    <div class="page-content__wrap">
+      <div class="catalog-content__breadcrumbs breadcrumbs">
+        <a class="breadcrumbs__item" href="index.html">Главная</a>
+        <a class="breadcrumbs__item" href="catalog.html">Каталог</a>
+        <span class="breadcrumbs__item">Сливочное</span>
+      </div>
+      <div class="schedule">
+        <p class="schedule__time">С 10 до 20, ежедневно</p>
+        <p class="schedule__phone">8 812 450-25-25</p>
+      </div>
     </div>
     <h1 class="catalog-content__title">Сливочное мороженое</h1>
     <form class="filters" action="/echo" method="get">
@@ -274,6 +277,7 @@
         </p>
     </div>
   </footer>
+</div>
 </body>
 </html>
   

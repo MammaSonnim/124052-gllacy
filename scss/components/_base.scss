@@ -1,5 +1,5 @@
 body {
-  min-width: 900px;
+  min-width: $w_min;
   font: $font_base;
   color: $c_text_base;
   background-color: $bg_page_green;

@@ -1,10 +1,16 @@
 @import
   'variables',
   'mixins',
+  //base
   'components/base',
+  'components/page-wrap',
   'components/btn',
+  //header
   'components/page-header',
   'components/page-nav',
   'components/search',
   'components/login',
-  'components/cart';
+  'components/cart',
+  //content
+  'components/page-content',
+  'components/schedule';

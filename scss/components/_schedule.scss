@@ -1,0 +1,6 @@
+.schedule {
+  text-align: right;
+  & p {
+    @include clear-mp;
+  }
+}

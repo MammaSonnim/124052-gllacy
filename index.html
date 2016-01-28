@@ -8,8 +8,8 @@
   <link href='https://fonts.googleapis.com/css?family=Roboto:700,400,500,900&subset=cyrillic-ext' rel='stylesheet' type='text/css'>
 </head>
 <body>
+<div class="page-wrap">
   <header class="page-header">
-    <div class="page-header__inner">
       <div class="page-header__col">
         <div class="page-header__logo-wrap"><img src="./img/logo.svg" alt="Gllacy Shop" class="page-header__logo-img" width="154" height="64"></div>
         <nav class="page-header__nav-wrap page-nav">
@@ -34,62 +34,60 @@
         </nav>
       </div>
       <div class="page-header__col">
-        <div class="search">
-          <form action="/echo" class="search__form">
-            <input class="search__input" type="search" placeholder="Что ищем?">
-            <button class="user-actions-btn user-actions-btn--search" type="submit"></button>
-          </form>
-        </div>
-        <div class="login">
-          <div class="user-actions-btn user-actions-btn--login">Вход</div>
-          <form action="/echo" class="login__form">
-            <input type="email" class="login__input" placeholder="Электронная почта">
-            <input type="password" class="login__input" placeholder="Пароль">
-            <button type="submit" class="btn login__btn">Войти</button>
-            <div class="login__links">
-              <a href="#" class="link">Забыли пароль?</a>
-              <a href="#" class="link">Новая регистрация</a>
+        <div class="page-header__actions-wrap">
+          <div class="search">
+            <form action="/echo" class="search__form">
+              <input class="search__input" type="search" placeholder="Что ищем?">
+              <button class="user-actions-btn user-actions-btn--search" type="submit"></button>
+            </form>
+          </div>
+          <div class="login">
+            <div class="user-actions-btn user-actions-btn--login">Вход</div>
+            <form action="/echo" class="login__form">
+              <input type="email" class="login__input" placeholder="Электронная почта">
+              <input type="password" class="login__input" placeholder="Пароль">
+              <button type="submit" class="btn login__btn">Войти</button>
+              <div class="login__links">
+                <a href="#" class="link">Забыли пароль?</a>
+                <a href="#" class="link">Новая регистрация</a>
+              </div>
+            </form>
+          </div>
+          <div class="cart">
+            <div class="user-actions-btn user-actions-btn--cart">Пусто</div>
+            <div class="cart__form">
+              <table class="cart__table">
+                <tr>
+                  <td><a href="#" class="cart__close"></a></td>
+                  <td><img src="./img/img_product-1.jpg" alt="Фотография мороженого" width="33" height="33"></td>
+                  <td>Пломбир с апельсиновым джемом</td>
+                  <td>1,5кг x 200 руб.</td>
+                  <td>300 руб.</td>
+                </tr>
+                <tr>
+                  <td><a href="#" class="cart__close"></a></td>
+                  <td><img src="./img/img_product-3.jpg" alt="Фотография мороженого" width="33" height="33"></td>
+                  <td>Клубничный пломбир с присыпкой из белого шоколада</td>
+                  <td>1,5кг x 300 руб.</td>
+                  <td>450 руб.</td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td>Итого: 750 руб.</td>
+                </tr>
+              </table>
+              <button type="submit" class="btn">Оформить заказ</button>
             </div>
-          </form>
-        </div>
-        <div class="cart">
-          <div class="user-actions-btn user-actions-btn--cart">Пусто</div>
-          <div class="cart__form">
-            <table class="cart__table">
-              <tr>
-                <td><a href="#" class="cart__close"></a></td>
-                <td><img src="./img/img_product-1.jpg" alt="Фотография мороженого" width="33" height="33"></td>
-                <td>Пломбир с апельсиновым джемом</td>
-                <td>1,5кг x 200 руб.</td>
-                <td>300 руб.</td>
-              </tr>
-              <tr>
-                <td><a href="#" class="cart__close"></a></td>
-                <td><img src="./img/img_product-3.jpg" alt="Фотография мороженого" width="33" height="33"></td>
-                <td>Клубничный пломбир с присыпкой из белого шоколада</td>
-                <td>1,5кг x 300 руб.</td>
-                <td>450 руб.</td>
-              </tr>
-              <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td>Итого: 750 руб.</td>
-              </tr>
-            </table>
-            <button type="submit" class="btn">Оформить заказ</button>
           </div>
         </div>
       </div>
-    </div>
   </header>
-  <main class="index-content">
-    <section class="schedule">
-      <p class="schedule__time">С 10 до 20, ежедневно</p>
-      <p class="schedule__phone">8 812 450-25-25</p>
-    </section>
-    <section class="slider">
+  <main class="page-content">
+    <div class="page-content__wrap">
+      <section class="slider">
       <input class="slider__input slider__input--1" id="input-1" name="input" type="radio" checked>
       <input class="slider__input slider__input--2" id="input-2" name="input" type="radio">
       <input class="slider__input slider__input--3" id="input-3" name="input" type="radio">
@@ -115,6 +113,12 @@
         <label class="slider__control slider__control--3" for="input-3"></label>
       </div>
     </section>
+      <div class="schedule">
+        <p class="schedule__time">С 10 до 20, ежедневно</p>
+        <p class="schedule__phone">8 812 450-25-25</p>
+      </div>
+    </div>
+    
     <div class="banners">
       <section class="banners__item banner">
         <h2 class="banner__title">Малинка даром!</h2>
@@ -232,5 +236,6 @@
       <button class="modal-contact__btn btn" type="submit" name="send">Отправить</button>
     </form>
   </div>
+</div>
 </body>
 </html>

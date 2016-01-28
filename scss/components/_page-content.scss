@@ -1,0 +1,7 @@
+.page-content {
+  &__wrap {
+    display: flex;
+    justify-content: space-between;
+    @include add-p;
+  }
+}

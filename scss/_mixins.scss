@@ -1,8 +1,16 @@
 @mixin center {
-  box-sizing: border-box;
-  max-width: 1200px;
+  max-width: $w_max;
   margin: 0 auto;
-  padding: 0 2%;
+}
+
+@mixin add-p {
+  box-sizing: border-box;
+  padding: 0 2.3%;
+}
+
+@mixin clear-mp {
+  margin: 0;
+  padding: 0;
 }
 
 @mixin clear-list {
