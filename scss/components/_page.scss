@@ -1,0 +1,6 @@
+.page {
+  @include center;
+  &__wrap {
+    @include add-p;
+  }
+}

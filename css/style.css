@@ -14,9 +14,14 @@ img {
   height: auto;
 }
 
-.page-wrap {
+.page {
   max-width: 1200px;
   margin: 0 auto;
+}
+
+.page__wrap {
+  box-sizing: border-box;
+  padding: 0 2.3%;
 }
 
 .page-header {
@@ -146,8 +151,6 @@ img {
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  box-sizing: border-box;
-  padding: 0 2.3%;
 }
 
 .schedule {
@@ -157,4 +160,13 @@ img {
 .schedule p {
   margin: 0;
   padding: 0;
+}
+
+.slider {
+  min-height: 550px;
+  text-align: center;
+}
+
+.slider__input {
+  display: none;
 }
