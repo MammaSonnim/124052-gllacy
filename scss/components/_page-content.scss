@@ -2,6 +2,7 @@
   &__wrap {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
   }
   &__col {
     box-sizing: border-box;
