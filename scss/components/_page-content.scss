@@ -3,4 +3,8 @@
     display: flex;
     justify-content: space-between;
   }
+  &__col {
+    box-sizing: border-box;
+    width: 48.9%;
+  }
 }

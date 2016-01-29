@@ -33,6 +33,8 @@ $bg_nav-ch: #d07058;
 $bg_sub-nav-hov: #fbded7;
 $bg_sub-nav-act: #f6b5a5;
 
+$gr_btn: linear-gradient(to top, #e74a35, #f26843);
+
 //TYPE
 
 $ff_base: "Roboto", sans-serif;
@@ -41,6 +43,8 @@ $lh_base: 22px;
 $fw_base: 400;
 
 $font_base: $fw_base #{$fz_base}/#{$lh_base} $ff_base;
+
+$font_xxl: 900 60px/60.35px $ff_base;
 
 //SIZE
 

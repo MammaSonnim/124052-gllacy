@@ -24,6 +24,25 @@ img {
   padding: 0 2.3%;
 }
 
+.btn {
+  display: inline-block;
+  padding: 0px 20px;
+  text-decoration: none;
+  color: #ffffff;
+  background: linear-gradient(to top, #e74a35, #f26843);
+  border-radius: 30px;
+  box-shadow: 0 2px 2px 0 #ac1000;
+  border: none;
+  outline: none;
+}
+
+.btn--large {
+  padding: 0 43px;
+  font-size: 31.5px;
+  line-height: 63px;
+  border-radius: 40px;
+}
+
 .page-header {
   box-sizing: border-box;
   padding: 0 2.3%;
@@ -153,6 +172,11 @@ img {
           justify-content: space-between;
 }
 
+.page-content__col {
+  box-sizing: border-box;
+  width: 48.9%;
+}
+
 .schedule {
   text-align: right;
 }
@@ -163,10 +187,53 @@ img {
 }
 
 .slider {
-  min-height: 550px;
+  padding: 40px 0;
   text-align: center;
+  overflow: hidden;
 }
 
 .slider__input {
   display: none;
+}
+
+.slider__inner {
+  min-height: 450px;
+  width: 300%;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.slider__slide {
+  width: 100%;
+}
+
+.slider__title {
+  width: 700px;
+  margin: 0 auto 30px;
+  font: 900 60px/60.35px "Roboto", sans-serif;
+  color: #ffffff;
+}
+
+.slider__btn {
+  margin-bottom: 0px;
+}
+
+.banner {
+  padding: 20px;
+  color: #ffffff;
+}
+
+.banner__title {
+  margin: 0;
+  padding: 0;
+}
+
+.banner__text {
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
 }
