@@ -1,0 +1,10 @@
+.page-footer {
+  display: flex;
+  justify-content: space-between;
+  &__col {
+    width: 16.6%;
+    &--wide {
+      width: 30%;
+    }
+  }
+}

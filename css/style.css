@@ -257,3 +257,55 @@ img {
   box-sizing: border-box;
   width: 23.3%;
 }
+
+.map {
+  position: relative;
+  min-height: 430px;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: url(../img/bg_map.png) no-repeat;
+}
+
+.map__contact {
+  position: relative;
+  width: 303px;
+  z-index: 10;
+}
+
+.page-footer {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.page-footer__col {
+  width: 16.6%;
+}
+
+.page-footer__col--wide {
+  width: 30%;
+}
+
+.extra-nav {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.modal-contact {
+  position: absolute;
+  display: none;
+}
