@@ -177,7 +177,7 @@ img {
 
 .page-content__col {
   box-sizing: border-box;
-  width: 48.9%;
+  width: 48.84696%;
 }
 
 .schedule {
@@ -255,7 +255,7 @@ img {
 
 .products__col {
   box-sizing: border-box;
-  width: 23.3%;
+  width: 23.27044%;
 }
 
 .map {
@@ -277,6 +277,15 @@ img {
   position: relative;
   width: 303px;
   z-index: 10;
+}
+
+.filters {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
 }
 
 .page-footer {

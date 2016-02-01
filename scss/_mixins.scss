@@ -5,7 +5,7 @@
 
 @mixin add-p {
   box-sizing: border-box;
-  padding: 0 2.3%;
+  padding: 0 $p_base;
 }
 
 @mixin clear-mp {

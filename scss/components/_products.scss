@@ -4,6 +4,6 @@
   flex-wrap: wrap;
   &__col {
     box-sizing: border-box;
-    width: 23.3%;
+    width: $w_cols-4_col_pct;
   }
 }
