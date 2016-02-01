@@ -103,7 +103,7 @@
       <h1 class="page-content__title">Сливочное мороженое</h1>
       <form class="filters" action="/echo" method="get">
         <fieldset class="filters__item">
-          <h2 class="filters__title">Сортировка</h2>
+          <legend class="filters__title">Сортировка</legend>
           <select class="filter filter--sort" name="sort" id="sort">
             <option value="low-price">сначала недорогие</option>
             <option value="high-price">сначала дорогие</option>
@@ -111,7 +111,7 @@
           </select>
         </fieldset>
         <fieldset class="filters__item">
-          <h2 class="filters__title">Цена: 100 руб. — 500 руб.</h2>
+          <legend class="filters__title">Цена: 100 руб. — 500 руб.</legend>
           <div class="filter filter--price">
             <div class="filter-price__scale">
               <div class="filter-price_range" style="margin-left: 20px; width: 70%"></div>
@@ -121,7 +121,7 @@
           </div>
         </fieldset>
         <fieldset class="filters__item">
-          <h2 class="filter__title">Жирность</h2>
+          <legend class="filter__title">Жирность</legend>
           <div class="filter filter--fat">
             <input class="filer__radio" id="radio-1" type="radio" name="fat-radio" value="0%">
             <label class="filter__label" for="radio-1">0%</label>
@@ -134,7 +134,7 @@
           </div>
         </fieldset>
         <fieldset class="filters__item">
-          <h2 class="filters__title">Наполнители</h2>
+          <legend class="filters__title">Наполнители</legend>
           <div class="filter filter--topping">
             <input class="filer__checkbox" id="checkbox-1" type="checkbox" name="topping-checkbox" value="choco">
             <label class="filter__label" for="checkbox-1">шоколадные</label>
@@ -151,102 +151,102 @@
         <button class="filters__btn btn btn_filter" type="submit">Применить</button>
       </form>
       <section class="products">
-        <section class="products__col product">
+        <article class="products__col product">
           <div class="product__actions">
             <a href="#" class="product__btn btn">Быстрый просмотр</a>
           </div>
           <div class="product__img"><img src="./img/img_product-1.jpg" alt="Фотография мороженого" width="200" height="200"></div>
           <div class="product__price"><span>310₽</span>/кг</div>
-          <a href="#" class="product__link">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
-        </section>
-        <section class="products__col product">
+          <h2 class="product__title"><a href="#" class="product__link">Сливочное с апельсиновым джемом и цитрусовой стружкой</a></h2>
+        </article>
+        <article class="products__col product">
           <div class="product__actions">
             <a href="#" class="product__btn btn">Быстрый просмотр</a>
           </div>
           <div class="product__img"><img src="./img/img_product-2.jpg" alt="Фотография мороженого" width="200" height="200"></div>
           <div class="product__price"><span>380₽</span>/кг</div>
-          <a href="#" class="product__link">Сливочно-кофейное с кусочками шоколада</a>
-        </section>
-        <section class="products__col product">
+          <h2 class="product__title"><a href="#" class="product__link">Сливочно-кофейное с кусочками шоколада</a></h2>
+        </article>
+        <article class="products__col product">
           <div class="product__actions">
             <a href="#" class="product__btn btn">Быстрый просмотр</a>
           </div>
           <div class="product__img"><img src="./img/img_product-3.jpg" alt="Фотография мороженого" width="200" height="200"></div>
           <div class="product__price"><span>355₽</span>/кг</div>
-          <a href="#" class="product__link">Сливочно-клубничное с присыпкой из белого шоколада</a>
-        </section>
-        <section class="products__col product">
+          <h2 class="product__title"><a href="#" class="product__link">Сливочно-клубничное с присыпкой из белого шоколада</a></h2>
+        </article>
+        <article class="products__col product">
           <div class="product__actions">
             <a href="#" class="product__btn btn">Быстрый просмотр</a>
           </div>
           <div class="product__img"><img src="./img/img_product-4.jpg" alt="Фотография мороженого" width="200" height="200"></div>
           <div class="product__price"><span>415₽</span>/кг</div>
-          <a href="#" class="product__link">Сливочное крем-брюле с карамельной подливкой</a>
-        </section>
-        <section class="products__col product">
+          <h2 class="product__title"><a href="#" class="product__link">Сливочное крем-брюле с карамельной подливкой</a></h2>
+        </article>
+        <article class="products__col product">
           <div class="product__actions">
             <a href="#" class="product__btn btn">Быстрый просмотр</a>
           </div>
           <div class="product__img"><img src="./img/img_product-5.jpg" alt="Фотография мороженого" width="200" height="200"></div>
           <div class="product__price"><span>325₽</span>/кг</div>
-          <a href="#" class="product__link">Сливочное с брусничным джемом</a>
-        </section>
-        <section class="products__col product">
+          <h2 class="product__title"><a href="#" class="product__link">Сливочное с брусничным джемом</a></h2>
+        </article>
+        <article class="products__col product">
           <div class="product__actions">
             <a href="#" class="product__btn btn">Быстрый просмотр</a>
           </div>
           <div class="product__img"><img src="./img/img_product-6.jpg" alt="Фотография мороженого" width="200" height="200"></div>
           <div class="product__price"><span>410₽</span>/кг</div>
-          <a href="#" class="product__link">Сливочно-черничное с цельными ягодами черники </a>
-        </section>
-        <section class="products__col product">
+          <h2 class="product__title"><a href="#" class="product__link">Сливочно-черничное с цельными ягодами черники </a></h2>
+        </article>
+        <article class="products__col product">
           <div class="product__actions">
             <a href="#" class="product__btn btn">Быстрый просмотр</a>
           </div>
           <div class="product__img"><img src="./img/img_product-7.jpg" alt="Фотография мороженого" width="200" height="200"></div>
           <div class="product__price"><span>375₽</span>/кг</div>
-          <a href="#" class="product__link">Сливочно-лимонное с карамельной присыпкой</a>
-        </section>
-        <section class="products__col product">
+          <h2 class="product__title"><a href="#" class="product__link">Сливочно-лимонное с карамельной присыпкой</a></h2>
+        </article>
+        <article class="products__col product">
           <div class="product__actions">
             <a href="#" class="product__btn btn">Быстрый просмотр</a>
           </div>
           <div class="product__img"><img src="./img/img_product-8.jpg" alt="Фотография мороженого" width="200" height="200"></div>
           <div class="product__price"><span>320₽</span>/кг</div>
-          <a href="#" class="product__link">Сливочное с шоколадной стружкой</a>
-        </section>
-        <section class="products__col product">
+          <h2 class="product__title"><a href="#" class="product__link">Сливочное с шоколадной стружкой</a></h2>
+        </article>
+        <article class="products__col product">
           <div class="product__actions">
             <a href="#" class="product__btn btn">Быстрый просмотр</a>
           </div>
           <div class="product__img"><img src="./img/img_product-9.jpg" alt="Фотография мороженого" width="200" height="200"></div>
           <div class="product__price"><span>440₽</span>/кг</div>
-          <a href="#" class="product__link">Сливочно-ванильное с кусочками шоколада</a>
-        </section>
-        <section class="products__col product">
+          <h2 class="product__title"><a href="#" class="product__link">Сливочно-ванильное с кусочками шоколада</a></h2>
+        </article>
+        <article class="products__col product">
           <div class="product__actions">
             <a href="#" class="product__btn btn">Быстрый просмотр</a>
           </div>
           <div class="product__img"><img src="./img/img_product-10.jpg" alt="Фотография мороженого" width="200" height="200"></div>
           <div class="product__price"><span>435₽</span>/кг</div>
-          <a href="#" class="product__link">Сливочноe с ментоловым сиропом</a>
-        </section>
-        <section class="products__col product">
+          <h2 class="product__title"><a href="#" class="product__link">Сливочноe с ментоловым сиропом</a></h2>
+        </article>
+        <article class="products__col product">
           <div class="product__actions">
             <a href="#" class="product__btn btn">Быстрый просмотр</a>
           </div>
           <div class="product__img"><img src="./img/img_product-11.jpg" alt="Фотография мороженого" width="200" height="200"></div>
           <div class="product__price"><span>355₽</span>/кг</div>
-          <a href="#" class="product__link">Сливочное с кусочками черного шоколада</a>
-        </section>
-        <section class="products__col product">
+          <h2 class="product__title"><a href="#" class="product__link">Сливочное с кусочками черного шоколада</a></h2>
+        </article>
+        <article class="products__col product">
           <div class="product__actions">
             <a href="#" class="product__btn btn">Быстрый просмотр</a>
           </div>
           <div class="product__img"><img src="./img/img_product-12.jpg" alt="Фотография мороженого" width="200" height="200"></div>
           <div class="product__price"><span>420₽</span>/кг</div>
-          <a href="#" class="product__link">Сливочное с мятным сиропом</a>
-        </section>
+          <h2 class="product__title"><a href="#" class="product__link">Сливочное с мятным сиропом</a></h2>
+        </article>
       </section>
       <div class="paginator">
         <a class="paginator__item" href="#">Предыдущая</a>
