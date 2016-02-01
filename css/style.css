@@ -316,14 +316,32 @@ img {
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .page-footer__col {
-  width: 16.6%;
+  width: 16.5%;
 }
 
 .page-footer__col--wide {
   width: 30%;
+}
+
+.socials {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.social {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
 }
 
 .extra-nav {

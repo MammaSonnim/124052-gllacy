@@ -1,8 +1,9 @@
 .page-footer {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   &__col {
-    width: 16.6%;
+    width: 16.5%;
     &--wide {
       width: 30%;
     }
