@@ -131,6 +131,8 @@ img {
 .search__input {
   display: none;
   position: absolute;
+  top: 100%;
+  right: 0;
 }
 
 .search:hover .search__input {
@@ -144,6 +146,8 @@ img {
 .login__form {
   display: none;
   position: absolute;
+  top: 100%;
+  right: 0;
 }
 
 .login:hover .login__form {
@@ -157,6 +161,8 @@ img {
 .cart__form {
   display: none;
   position: absolute;
+  top: 100%;
+  right: 0;
 }
 
 .cart:hover .cart__form {
@@ -288,6 +294,21 @@ img {
           flex-wrap: wrap;
 }
 
+.paginator {
+  text-align: right;
+  font-size: 0;
+}
+
+.paginator__dir {
+  display: inline-block;
+  font-size: 16px;
+}
+
+.paginator__btn {
+  display: inline-block;
+  font-size: 16px;
+}
+
 .page-footer {
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -315,6 +336,42 @@ img {
 }
 
 .modal-contact {
-  position: absolute;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 100;
   display: none;
+  margin: auto;
+  width: 480px;
+  height: 442px;
+  -webkit-animation: fade 0.3s both;
+          animation: fade 0.3s both;
+}
+
+@-webkit-keyframes fade {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(20px);
+            transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(20px);
+            transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
 }

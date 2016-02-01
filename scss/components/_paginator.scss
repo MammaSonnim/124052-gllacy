@@ -1,0 +1,12 @@
+.paginator {
+  text-align: right;
+  font-size: 0;
+  &__dir {
+    display: inline-block;
+    font-size: $fz_base;
+  }
+  &__btn {
+    display: inline-block;
+    font-size: $fz_base;
+  }
+}
