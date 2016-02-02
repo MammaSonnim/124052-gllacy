@@ -1,5 +1,4 @@
 .page-nav {
-  
   &__list {
     display: flex;
     justify-content: space-between;
@@ -7,24 +6,87 @@
     }
   &__item {
     position: relative;
+    padding: 6px 12px;
+    border-radius: $br_base;
+    &:hover {
+      color: $c_text_base;
+      background-color: $bg_light;
+    }
+    &:hover a {
+      color: $c_text_base;
+    }
+    &:active {
+      
+    }
+    &--current {
+      background-color: $bg_nav-cur;
+      &:hover {
+        background-color: $bg_nav-cur;
+      }
+      &:hover > a {
+        color: $c_text_alt;
+      }
+    }
   }
   &__link {
-    font-size: 16px;
-    color: $white;
+    color: $c_text_alt;
   }
-  
+      
   &__sub-list {
     position: absolute;
-    display: none;
+    left: -7px;
+    top: 38px;
+    display: block;
+    box-sizing: border-box;
+    min-width: 145px;
     @include clear-list;
+    background-color: $bg_light;
+    border-radius: $br_small;
   }
   &__item:hover &__sub-list {
     display: block;
   }
+  
   &__sub-item {
-    
+    padding: 7px 20px;
+    font-size: 14px;
+    text-decoration: none;
+    &:hover {
+      background-color: #fbded7;
+    }
+    &:active {
+      background-color: #f6b5a5;
+    }
+    &--current {
+      background-color: #d07058;
+      &:hover {
+        background-color: #d07058;
+      }
+    }
+    &:last-child  {
+      border-radius: 0 0 $br_small $br_small;
+      }
   }
   &__sub-link {
-    
+    color: $c_text_base;
+    font-size: 14px;
+    text-decoration: none;
+  }
+  
+  &__sub-title {
+    position: relative;
+    padding: 9px 20px 11px 20px;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: default;
+    &:after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 6px;
+      right: 9px;
+      height: 1px;
+      background-color: #d1d0ce;
+    }
   }
 }

@@ -3,12 +3,13 @@ body {
   font: $font_base;
   color: $c_text_base;
   background-color: $bg_page_green;
-  & * {
-    outline: 1px solid red;
-  }
 }
 
 img {
   max-width: 100%;
   height: auto;
 }
+
+//* {
+//  outline: 1px solid grey;
+//}

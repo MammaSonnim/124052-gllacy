@@ -5,7 +5,7 @@
   text-decoration: none;
   color: $c_text_alt;
   background: $gr_btn;
-  border-radius: 30px;
+  border-radius: $br_base;
   box-shadow: 0 2px 2px 0 #ac1000;
   &--large {
     padding: 0 43px;

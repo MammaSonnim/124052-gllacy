@@ -5,10 +5,6 @@ body {
   background-color: #849d8f;
 }
 
-body * {
-  outline: 1px solid red;
-}
-
 img {
   max-width: 100%;
   height: auto;
@@ -48,8 +44,6 @@ img {
 }
 
 .page-header {
-  box-sizing: border-box;
-  padding: 0 2.3%;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -72,7 +66,7 @@ img {
   position: relative;
   display: block;
   width: 154px;
-  margin-right: 25px;
+  margin-right: 10px;
 }
 
 .page-header__logo-img {
@@ -82,7 +76,7 @@ img {
 }
 
 .page-header__nav-wrap {
-  width: 350px;
+  width: 375px;
 }
 
 .page-header__actions-wrap {
@@ -109,23 +103,101 @@ img {
 
 .page-nav__item {
   position: relative;
+  padding: 6px 12px;
+  border-radius: 30px;
+}
+
+.page-nav__item:hover {
+  color: #333333;
+  background-color: #f8f7f4;
+}
+
+.page-nav__item:hover a {
+  color: #333333;
+}
+
+.page-nav__item--current {
+  background-color: #d07058;
+}
+
+.page-nav__item--current:hover {
+  background-color: #d07058;
+}
+
+.page-nav__item--current:hover > a {
+  color: #ffffff;
 }
 
 .page-nav__link {
-  font-size: 16px;
   color: #ffffff;
 }
 
 .page-nav__sub-list {
   position: absolute;
-  display: none;
+  left: -7px;
+  top: 38px;
+  display: block;
+  box-sizing: border-box;
+  min-width: 145px;
   padding: 0;
   margin: 0;
   list-style: none;
+  background-color: #f8f7f4;
+  border-radius: 5px;
 }
 
 .page-nav__item:hover .page-nav__sub-list {
   display: block;
+}
+
+.page-nav__sub-item {
+  padding: 7px 20px;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.page-nav__sub-item:hover {
+  background-color: #fbded7;
+}
+
+.page-nav__sub-item:active {
+  background-color: #f6b5a5;
+}
+
+.page-nav__sub-item--current {
+  background-color: #d07058;
+}
+
+.page-nav__sub-item--current:hover {
+  background-color: #d07058;
+}
+
+.page-nav__sub-item:last-child {
+  border-radius: 0 0 5px 5px;
+}
+
+.page-nav__sub-link {
+  color: #333333;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.page-nav__sub-title {
+  position: relative;
+  padding: 9px 20px 11px 20px;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: default;
+}
+
+.page-nav__sub-title:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 6px;
+  right: 9px;
+  height: 1px;
+  background-color: #d1d0ce;
 }
 
 .actions-btn {
@@ -139,7 +211,7 @@ img {
   white-space: nowrap;
   overflow: hidden;
   line-height: 1;
-  border-radius: 25px;
+  border-radius: 30px;
 }
 
 .actions-btn--search {

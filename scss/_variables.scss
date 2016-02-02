@@ -28,10 +28,12 @@ $bg_page_brown: #9d8b84;
 
 $bg_light: #f8f7f4;
 
-$bg_nav-ch: #d07058;
+$bg_nav-cur: #d07058;
 
 $bg_sub-nav-hov: #fbded7;
 $bg_sub-nav-act: #f6b5a5;
+
+$bg_sub-nav-title: #d1d0ce;
 
 $gr_btn: linear-gradient(to top, #e74a35, #f26843);
 
@@ -49,7 +51,7 @@ $font_base: $fw_base #{$fz_base}/#{$lh_base} $ff_base;
 
 $font_xxl: 900 60px/60.35px $ff_base;
 
-//SIZE
+//SIZE (w — width, h — height, p — padding)
 
 $w_max: 1200px;
 $w_min: 900px;
@@ -80,3 +82,7 @@ $cols-2_col_w_pct_max: $col_w_pct * 2 + $p_inner_pct;
 $cols-2_col_w_max: $cols-2_col_w_pct_max * $w_1pct_max;
 // расчет процентной ширины колонки в 2-колоночной сетке относительно размера контейнера колоночной сетки
 $cols-2_col_w_pct: percentage($cols-2_col_w_max / $cols_w_1pct_max) / 100;
+
+//EXTRA (br — border-radius)
+$br_small: 5px;
+$br_base: 30px;

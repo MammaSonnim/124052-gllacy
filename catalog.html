@@ -17,15 +17,15 @@
         </a>
         <nav class="page-header__nav-wrap page-nav">
           <ul class="page-nav__list">
-            <li class="page-nav__item page-nav__item--active">
+            <li class="page-nav__item page-nav__item--current">
               <a href="catalog.html" class="page-nav__link">Каталог</a>
-              <ul class="page-nav__sub-list">
-                <li class="page-nav__sub-item">Новинки</li>
-                <li class="page-nav__sub-item"><a href="#" class="page-nav__sub-link">Сливочное</a></li>
-                <li class="page-nav__sub-item"><a href="#" class="page-nav__sub-link">Щербеты</a></li>
-                <li class="page-nav__sub-item"><a href="#" class="page-nav__sub-link">Фруктовый лёд</a></li>
-                <li class="page-nav__sub-item"><a href="#" class="page-nav__sub-link">Мелорин</a></li>
-              </ul>
+                <ul class="page-nav__sub-list">
+                  <li class="page-nav__sub-title">Новинки</li>
+                  <li class="page-nav__sub-item page-nav__sub-item--current"><a href="#" class="page-nav__sub-link">Сливочное</a></li>
+                  <li class="page-nav__sub-item"><a href="#" class="page-nav__sub-link">Щербеты</a></li>
+                  <li class="page-nav__sub-item"><a href="#" class="page-nav__sub-link">Фруктовый лёд</a></li>
+                  <li class="page-nav__sub-item"><a href="#" class="page-nav__sub-link">Мелорин</a></li>
+                </ul>
             </li>
             <li class="page-nav__item">
               <a href="#" class="page-nav__link">Доставка и оплата</a>
@@ -38,14 +38,14 @@
       </div>
       <div class="page-header__col">
         <div class="page-header__actions-wrap">
-          <div class="search">
+          <div class="page-header__action search">
             <form action="/echo" class="search__form">
               <input class="search__input" type="search" placeholder="Что ищем?">
-              <button class="user-actions-btn user-actions-btn--search" type="submit"></button>
+              <button class="actions-btn actions-btn--search" type="submit"></button>
             </form>
           </div>
-          <div class="login">
-            <div class="user-actions-btn user-actions-btn--login">Вход</div>
+          <div class="page-header__action login">
+            <div class="actions-btn actions-btn--login">Вход</div>
             <form action="/echo" class="login__form">
               <input type="email" class="login__input" placeholder="Электронная почта">
               <input type="password" class="login__input" placeholder="Пароль">
@@ -56,8 +56,8 @@
               </div>
             </form>
           </div>
-          <div class="cart">
-            <div class="user-actions-btn user-actions-btn--cart">2 товара</div>
+          <div class="page-header__action cart">
+            <div class="actions-btn actions-btn--cart">2 товара</div>
             <div class="cart__form">
               <table class="cart__table">
                 <tr>

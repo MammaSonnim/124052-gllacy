@@ -27,3 +27,9 @@
   overflow: hidden;
   line-height: 1;
 }
+
+@mixin clear-link {
+  white-space: nowrap;
+  overflow: hidden;
+  line-height: 1;
+}
