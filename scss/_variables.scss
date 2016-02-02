@@ -35,11 +35,14 @@ $bg_sub-nav-act: #f6b5a5;
 
 $gr_btn: linear-gradient(to top, #e74a35, #f26843);
 
+$bg_blocks: #a1b5aa;
+$bg_blocks-hover:;
+
 //TYPE
 
 $ff_base: "Roboto", sans-serif;
 $fz_base: 16px;
-$lh_base: 22px;
+$lh_base: 22/16;
 $fw_base: 400;
 
 $font_base: $fw_base #{$fz_base}/#{$lh_base} $ff_base;

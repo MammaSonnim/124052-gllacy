@@ -18,3 +18,12 @@
   margin: 0;
   list-style: none;
 }
+
+@mixin clear-btn {
+  text-decoration: none;
+  border: none;
+  outline: none;
+  white-space: nowrap;
+  overflow: hidden;
+  line-height: 1;
+}

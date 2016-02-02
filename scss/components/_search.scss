@@ -1,5 +1,9 @@
 .search {
   position: relative;
+  &__form {
+    height: 30px;
+    @include clear-mp;
+  }
   &__input {
     display: none;
     position: absolute;
