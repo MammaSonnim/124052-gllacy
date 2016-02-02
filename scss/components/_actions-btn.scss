@@ -1,0 +1,30 @@
+.actions-btn {
+  font-size: 14px;
+  color: $c_text_alt;
+  background-color: $bg_blocks;
+  background-repeat: no-repeat;
+  @include clear-btn;
+  border-radius: 25px;
+  &--search {
+    width: 32px;
+    height: 32px;
+    @include clear-mp;
+    background-image: url(../img/icon_search.svg);
+    background-position: 49% 49%;
+    background-size: 17px;
+    border-radius: 50%;
+  }
+  &--login {
+    padding: 9px 15px 9px 42px;
+    background-image: url(../img/icon_login.svg);
+    background-size: 20px;
+    background-position: 20% 49%;
+  }
+  &--cart {
+    min-width: 57px;
+    padding: 9px 15px 9px 42px;
+    background-image: url(../img/icon_cart.svg);
+    background-size: 21px;
+    background-position: 17% 49%;
+  }
+}

@@ -33,16 +33,50 @@ $bg_nav-ch: #d07058;
 $bg_sub-nav-hov: #fbded7;
 $bg_sub-nav-act: #f6b5a5;
 
+$gr_btn: linear-gradient(to top, #e74a35, #f26843);
+
+$bg_blocks: #a1b5aa;
+$bg_blocks-hover:;
+
 //TYPE
 
 $ff_base: "Roboto", sans-serif;
 $fz_base: 16px;
-$lh_base: 22px;
+$lh_base: 22/16;
 $fw_base: 400;
 
 $font_base: $fw_base #{$fz_base}/#{$lh_base} $ff_base;
+
+$font_xxl: 900 60px/60.35px $ff_base;
 
 //SIZE
 
 $w_max: 1200px;
 $w_min: 900px;
+
+$col_w_pct: 22.2;
+
+$p_base_pct: 2.3;
+$p_base: percentage($p_base_pct) / 100;
+
+$p_inner_pct: 2.2;
+
+// 1% общей максимальной ширины
+$w_1pct_max: $w_max / 100;
+// ширина одной колонки в пикселях при максимальной ширине
+$col_w_max: $col_w_pct * $w_1pct_max;
+// расчетное значение внешнего паддинга при максимальной ширине
+$p_base_count_max: $p_base_pct * $w_1pct_max;
+// ширина контейнера колоночной сетки без двух внешних паддингов при максимальной ширине
+$cols_w_max: $w_max - ($p_base_count_max * 2);
+// 1% максимальной ширины контейнера
+$cols_w_1pct_max: $cols_w_max / 100;
+// расчет процентной ширины колонки в 4-колоночной сетке относительно размера контейнера колоночной сетки
+$cols-4_col_w_pct: percentage($col_w_max / $cols_w_1pct_max) / 100;
+
+// расчет процентной ширины колонки в 2-колоночной сетке относительно максимальной ширины макета
+$cols-2_col_w_pct_max: $col_w_pct * 2 + $p_inner_pct;
+// ширина одной колонки в 2-колоночной сетке в пикселях при максимальной ширине макета
+$cols-2_col_w_max: $cols-2_col_w_pct_max * $w_1pct_max;
+// расчет процентной ширины колонки в 2-колоночной сетке относительно размера контейнера колоночной сетки
+$cols-2_col_w_pct: percentage($cols-2_col_w_max / $cols_w_1pct_max) / 100;

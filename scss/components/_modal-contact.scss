@@ -1,0 +1,13 @@
+.modal-contact {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 100;
+  display: none;
+  margin: auto;
+  width: 480px;
+  height: 442px;
+  animation: fade 0.3s both;
+}

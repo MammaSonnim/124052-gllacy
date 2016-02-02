@@ -1,0 +1,13 @@
+.map {
+  position: relative;
+  min-height: 430px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background: url(../img/bg_map.png) no-repeat;
+  &__contact {
+    position: relative;
+    width: 303px;
+    z-index: 10;
+  }
+}

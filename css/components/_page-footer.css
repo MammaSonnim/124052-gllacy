@@ -2,10 +2,12 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  &__col {
-    width: 16.5%;
-    &--wide {
-      width: 30%;
-    }
-  }
+}
+
+.page-footer__col {
+  width: 16.5%;
+}
+
+.page-footer__col--wide {
+  width: 30%;
 }

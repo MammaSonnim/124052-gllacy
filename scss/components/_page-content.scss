@@ -2,6 +2,10 @@
   &__wrap {
     display: flex;
     justify-content: space-between;
-    @include add-p;
+    flex-wrap: wrap;
+  }
+  &__col {
+    box-sizing: border-box;
+    width: $cols-2_col_w_pct;
   }
 }

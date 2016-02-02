@@ -5,7 +5,7 @@
 
 @mixin add-p {
   box-sizing: border-box;
-  padding: 0 2.3%;
+  padding: 0 $p_base;
 }
 
 @mixin clear-mp {
@@ -17,4 +17,13 @@
   padding: 0;
   margin: 0;
   list-style: none;
+}
+
+@mixin clear-btn {
+  text-decoration: none;
+  border: none;
+  outline: none;
+  white-space: nowrap;
+  overflow: hidden;
+  line-height: 1;
 }
