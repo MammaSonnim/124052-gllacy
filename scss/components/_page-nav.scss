@@ -82,13 +82,8 @@
     font-weight: 700;
     cursor: default;
     &:after {
-      content: "";
-      position: absolute;
+      @include line;
       bottom: 0;
-      left: 6px;
-      right: 9px;
-      height: 1px;
-      background-color: #d1d0ce;
     }
   }
 }

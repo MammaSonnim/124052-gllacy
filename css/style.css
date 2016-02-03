@@ -24,11 +24,10 @@ img {
   text-decoration: none;
   border: none;
   outline: none;
-  white-space: nowrap;
   overflow: hidden;
   line-height: 1;
   display: inline-block;
-  padding: 0px 27px;
+  padding: 0 18px;
   line-height: 2.1;
   text-decoration: none;
   color: #ffffff;
@@ -41,6 +40,10 @@ img {
   padding: 0 43px;
   font-size: 31.5px;
   border-radius: 40px;
+}
+
+.btn--wide {
+  padding: 0 27px;
 }
 
 .link {
@@ -226,11 +229,11 @@ img {
 .page-nav__sub-title:after {
   content: "";
   position: absolute;
-  bottom: 0;
   left: 6px;
   right: 9px;
   height: 1px;
   background-color: #d1d0ce;
+  bottom: 0;
 }
 
 .actions-btn {
@@ -241,10 +244,10 @@ img {
   text-decoration: none;
   border: none;
   outline: none;
-  white-space: nowrap;
   overflow: hidden;
   line-height: 1;
   border-radius: 30px;
+  cursor: pointer;
 }
 
 .actions-btn--search {
@@ -439,10 +442,98 @@ img {
   position: absolute;
   top: 113%;
   right: 0;
+  width: 515px;
+  padding: 26px 15px 23px 10px;
+  background-color: #f8f7f4;
+  border-radius: 5px;
 }
 
 .cart:hover .cart__form {
   display: block;
+}
+
+.cart__table {
+  margin-bottom: 12px;
+}
+
+.cart__btn {
+  text-align: right;
+}
+
+.cart-list {
+  font-size: 13px;
+}
+
+.cart-list td {
+  vertical-align: top;
+}
+
+.cart-list__remove {
+  width: 6%;
+  padding: 0;
+}
+
+.cart-list__icon-remove {
+  position: relative;
+  display: block;
+  width: 25px;
+  height: 25px;
+}
+
+.cart-list__icon-remove:before, .cart-list__icon-remove:after {
+  content: '';
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  width: 1px;
+  height: 15px;
+  background-color: #353535;
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.cart-list__icon-remove:after {
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.cart-list__img {
+  width: 7%;
+  padding: 0;
+}
+
+.cart-list__descr {
+  width: 47%;
+  padding: 8px 10px 28px 10px;
+}
+
+.cart-list__price {
+  width: 25%;
+  padding: 8px 10px;
+}
+
+.cart-list__count {
+  width: 15%;
+  padding: 8px 10px;
+}
+
+.cart-list__total {
+  position: relative;
+  padding: 0 10px;
+  text-align: right;
+  font-size: 16px;
+}
+
+.cart-list__total:before {
+  content: "";
+  position: absolute;
+  left: 6px;
+  right: 9px;
+  height: 1px;
+  background-color: #d1d0ce;
+  top: -13px;
 }
 
 .page-content__wrap {

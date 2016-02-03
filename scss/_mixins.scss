@@ -23,7 +23,6 @@
   text-decoration: none;
   border: none;
   outline: none;
-  white-space: nowrap;
   overflow: hidden;
   line-height: 1;
 }
@@ -77,4 +76,13 @@
   &:-moz-placeholder {font-weight: 400;}
   &::-moz-placeholder {font-weight: 400;}
   &:-ms-input-placeholder {font-weight: 400;}
+}
+
+@mixin line {
+  content: "";
+  position: absolute;
+  left: 6px;
+  right: 9px;
+  height: 1px;
+  background-color: #d1d0ce;
 }
