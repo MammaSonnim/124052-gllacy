@@ -1,10 +1,7 @@
 .login {
   position: relative;
   &__form {
-    display: none;
-    position: absolute;
-    top: 100%;
-    right: 0;
+    @include poz-hover;
   }
   &:hover &__form {
     display: block;

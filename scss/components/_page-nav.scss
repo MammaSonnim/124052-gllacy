@@ -14,6 +14,7 @@
     }
     &:hover a {
       color: $c_text_base;
+      text-decoration: none;
     }
     &:active {
       
@@ -28,11 +29,7 @@
       }
     }
     &:after {
-      content: "";
-      position: absolute;
-      left: 0;
-      right: 0;
-      height: 10px;
+      @include hover-helper;
     }
   }
   &__link {
@@ -42,7 +39,7 @@
   &__sub-list {
     position: absolute;
     left: -7px;
-    top: 38px;
+    top: 110%;
     display: none;
     box-sizing: border-box;
     min-width: 144px;

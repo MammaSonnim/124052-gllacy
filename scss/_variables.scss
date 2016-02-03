@@ -1,4 +1,4 @@
-//COLORS
+//COLORS (c - color, bg - background, gr - gradient, bc - border-color)
 
 $white: #ffffff;
 $black: #000000;
@@ -39,6 +39,11 @@ $gr_btn: linear-gradient(to top, #e74a35, #f26843);
 
 $bg_blocks: #a1b5aa;
 $bg_blocks-hover:;
+
+$bc_input: #d3d3d2;
+$bc_input-hov: #c7c6c5;
+$bc_input-foc: #8fbdec;
+
 
 //TYPE
 

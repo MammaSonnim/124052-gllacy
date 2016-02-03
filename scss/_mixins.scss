@@ -33,3 +33,46 @@
   overflow: hidden;
   line-height: 1;
 }
+
+@mixin poz-hover {
+  display: none;
+  position: absolute;
+  top: 113%;
+  right: 0;
+}
+
+@mixin hover-helper {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 10px;
+}
+
+@mixin style-form {
+  background-color: $bg_light;
+  border-radius: $br_small;
+}
+
+@mixin style-input {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid $bc_input;
+  border-radius: $br_small;
+  font-size: 14px;
+  font-weight: 700;
+  &:hover {
+    padding: 9px;
+    border: 2px solid $bc_input-hov;
+  }
+  &:focus {
+    outline: none;
+    padding: 9px;
+    border: 2px solid $bc_input-foc;
+  }
+  &::-webkit-input-placeholder {font-weight: 400;}
+  &:-moz-placeholder {font-weight: 400;}
+  &::-moz-placeholder {font-weight: 400;}
+  &:-ms-input-placeholder {font-weight: 400;}
+}
