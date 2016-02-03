@@ -247,7 +247,7 @@ img {
   overflow: hidden;
   line-height: 1;
   border-radius: 30px;
-  cursor: pointer;
+  cursor: default;
 }
 
 .actions-btn--search {
@@ -435,6 +435,14 @@ img {
 
 .cart {
   position: relative;
+}
+
+.cart:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 10px;
 }
 
 .cart__form {

@@ -1,4 +1,5 @@
 .cart {
+  @include hover-helper;
   position: relative;
   &__form {
     @include poz-hover;
