@@ -45,15 +45,19 @@
         </div>
         <div class="page-header__action login">
           <div class="actions-btn actions-btn--login">Вход</div>
-          <form action="/echo" class="login__form">
-            <input type="email" class="login__input" placeholder="Электронная почта">
-            <input type="password" class="login__input" placeholder="Пароль">
-            <button type="submit" class="btn login__btn">Войти</button>
-            <div class="login__links">
-              <a href="#" class="link">Забыли пароль?</a>
-              <a href="#" class="link">Новая регистрация</a>
-            </div>
-          </form>
+          <div class="login__wrap">
+            <form action="/echo" class="login__form">
+              <input type="email" class="login__input" placeholder="Электронная почта">
+              <input type="password" class="login__input" placeholder="Пароль">
+              <div class="login__col">
+                <button type="submit" class="btn">Войти</button>
+              </div>
+              <div class="login__col login__links">
+                <a href="#" class="link">Забыли пароль?</a>
+                <a href="#" class="link">Новая регистрация</a>
+              </div>
+            </form>
+          </div>
         </div>
         <div class="page-header__action cart">
           <div class="actions-btn actions-btn--cart">Пусто</div>

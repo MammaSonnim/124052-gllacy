@@ -42,11 +42,13 @@
 }
 
 @mixin hover-helper {
-  content: "";
-  position: absolute;
-  left: 0;
-  right: 0;
-  height: 10px;
+  &:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 10px;
+    }
 }
 
 @mixin style-form {

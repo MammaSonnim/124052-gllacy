@@ -28,9 +28,7 @@
         color: $c_text_alt;
       }
     }
-    &:after {
-      @include hover-helper;
-    }
+    @include hover-helper;
   }
   &__link {
     color: $c_text_alt;

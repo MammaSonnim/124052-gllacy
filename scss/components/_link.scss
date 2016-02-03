@@ -1,0 +1,18 @@
+.link {
+  color: $c_text_base;
+  &:hover {
+    color: #ec593c;
+  }
+  &:active {
+    color: #ec593c;
+  }
+  &--alt {
+    color: $c_text_alt;
+    &:hover {
+    color: #ffbc9e;
+    }
+    &:active {
+      color: #ffbc9e;
+    }
+  }
+}
