@@ -27,6 +27,13 @@
         color: $c_text_alt;
       }
     }
+    &:after {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      height: 10px;
+    }
   }
   &__link {
     color: $c_text_alt;
@@ -36,9 +43,9 @@
     position: absolute;
     left: -7px;
     top: 38px;
-    display: block;
+    display: none;
     box-sizing: border-box;
-    min-width: 145px;
+    min-width: 144px;
     @include clear-list;
     background-color: $bg_light;
     border-radius: $br_small;
