@@ -1,17 +1,51 @@
 .product {
-  &__actions {
-    
-  }
-  &__btn {
-    
-  }
+  position: relative;
+  box-sizing: content-box;
+  margin: -10px;
+  padding: 10px;
+  color: $c_text_alt;
+  z-index: $zi_hover;
   &__img {
-    
+    position: relative;
+    margin-bottom: 7px;
+    z-index: $zi_base;
+    & img {
+      border-radius: 50%;
+    }
   }
   &__price {
-    
+    position: absolute;
+    bottom: 15px;
+    font-size: 30px;
+    font-weight: $fw_bold;
+    & span {
+      font-size: 45px;
+    }
   }
   &__title {
-    
+    @include clear-mp;
+    font-size: $fz_base;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  &__link {
+    color: $c_text_alt;
+  }
+  &__actions {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: none;
+    text-align: center;
+  }
+  &__btn {
+    white-space: nowrap;
+  }
+  &:hover {
+    background-color: $bg_blocks;
+  }
+  &:hover &__actions {
+    display: block;
   }
 }
