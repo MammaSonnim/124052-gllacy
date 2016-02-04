@@ -38,6 +38,7 @@
   position: absolute;
   top: 113%;
   right: 0;
+  z-index: $zi_hover;
 }
 
 @mixin hover-helper {
@@ -61,7 +62,7 @@
   padding: 10px;
   border: 1px solid $bc_input;
   border-radius: $br_small;
-  font-size: 14px;
+  font-size: $fz_s;
   font-weight: 700;
   &:hover {
     padding: 9px;

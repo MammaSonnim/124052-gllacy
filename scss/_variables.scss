@@ -37,7 +37,7 @@ $bg_sub-nav-title: #d1d0ce;
 
 $gr_btn: linear-gradient(to top, #e74a35, #f26843);
 
-$bg_blocks: #a1b5aa;
+$bg_blocks: rgba(255, 255, 255, 0.2);
 $bg_blocks-hover:;
 
 $bc_input: #d3d3d2;
@@ -48,13 +48,24 @@ $bc_input-foc: #8fbdec;
 //TYPE
 
 $ff_base: "Roboto", sans-serif;
+
+$fz_xs: 12px;
+$fz_s: 14px;
 $fz_base: 16px;
+$fz_l: 22px;
+$fz_xl: 35px;
+$fz_xxl: 60px;
+
 $lh_base: 22/16;
+
 $fw_base: 400;
+$fw_medium: 500;
+$fw_bold: 700;
+$fw_ultra: 900;
 
 $font_base: $fw_base #{$fz_base}/#{$lh_base} $ff_base;
 
-$font_xxl: 900 60px/60.35px $ff_base;
+$font_xxl: $fw_ultra #{$fz_xxl}/60.35px $ff_base;
 
 //SIZE (w — width, h — height, p — padding)
 
@@ -91,3 +102,7 @@ $cols-2_col_w_pct: percentage($cols-2_col_w_max / $cols_w_1pct_max) / 100;
 //EXTRA (br — border-radius)
 $br_small: 5px;
 $br_base: 30px;
+
+$zi_base: 0;
+$zi_hover: 2;
+$zi_modal: 10;
