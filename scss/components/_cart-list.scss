@@ -30,6 +30,9 @@
   &__img {
     width: 7%;
     padding: 0;
+    & img {
+      border-radius: 50%;
+    }
   }
   &__descr {
     width: 47%;
@@ -38,6 +41,9 @@
   &__price {
     width: 25%;
     padding: 8px 10px;
+    & span {
+      color: $grey-50;
+    }
   }
   &__count {
     width: 15%;

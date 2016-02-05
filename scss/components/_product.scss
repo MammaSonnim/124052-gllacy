@@ -1,14 +1,9 @@
 .product {
   position: relative;
-  box-sizing: content-box;
-  margin: -10px;
-  padding: 10px;
   color: $c_text_alt;
-  z-index: $zi_hover;
+  margin-bottom: 20px;
   &__img {
     position: relative;
-    margin-bottom: 7px;
-    z-index: $zi_base;
     & img {
       border-radius: 50%;
     }
@@ -18,34 +13,70 @@
     bottom: 15px;
     font-size: 30px;
     font-weight: $fw_bold;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
     & span {
       font-size: 45px;
     }
   }
   &__title {
+    position: relative;
     @include clear-mp;
     font-size: $fz_base;
     text-align: center;
-    margin-bottom: 40px;
-  }
-  &__link {
-    color: $c_text_alt;
+    margin-bottom: 10px;
+    & a {
+      color: $c_text_alt;
+    }
   }
   &__actions {
     position: absolute;
-    right: 0;
-    bottom: 0;
-    left: 0;
+    left: -6px;
+    bottom: -80px;
+    right: -6px;
     display: none;
+    padding: 20px 0;
     text-align: center;
+    background-color: $bg_hover;
+    border-bottom-left-radius: $br_small;
+    border-bottom-right-radius: $br_small;
+    
   }
-  &__btn {
-    white-space: nowrap;
+  &:before {
+    content: "";
+    position: absolute;
+    top: -6px;
+    right: -6px;
+    bottom: -1px;
+    left: -6px;
+    display: none;
+    background-color: $bg_hover;
+    border-top-left-radius: $br_small;
+    border-top-right-radius: $br_small;
+    z-index: $zi_base;
   }
-  &:hover {
-    background-color: $bg_blocks;
+  
+  &:after {
+    content: "";
+    position: absolute;
+    top: -6px;
+    right: -6px;
+    bottom: -80px;
+    left: -6px;
+    display: none;
+    box-shadow: $bs_hover;
+    border-bottom-left-radius: $br_small;
+    border-bottom-right-radius: $br_small;
+    z-index: $zi_base;
   }
+  
+  &:hover:before,
+  &:hover:after,
   &:hover &__actions {
     display: block;
+  }
+  &:hover &__img,
+  &:hover &__title,
+  &:hover &__actions {
+    z-index: 2;
   }
 }

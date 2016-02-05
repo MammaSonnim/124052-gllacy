@@ -20,17 +20,18 @@
 }
 
 @mixin clear-btn {
-  text-decoration: none;
   border: none;
   outline: none;
   overflow: hidden;
   line-height: 1;
+  text-decoration: none;
 }
 
 @mixin clear-link {
   white-space: nowrap;
   overflow: hidden;
   line-height: 1;
+  text-decoration: none;
 }
 
 @mixin poz-hover {

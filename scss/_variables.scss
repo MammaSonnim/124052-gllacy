@@ -40,6 +40,8 @@ $gr_btn: linear-gradient(to top, #e74a35, #f26843);
 $bg_blocks: rgba(255, 255, 255, 0.2);
 $bg_blocks-hover:;
 
+$bg_hover: rgba(255, 255, 255, 0.3);
+
 $bc_input: #d3d3d2;
 $bc_input-hov: #c7c6c5;
 $bc_input-foc: #8fbdec;
@@ -99,10 +101,12 @@ $cols-2_col_w_max: $cols-2_col_w_pct_max * $w_1pct_max;
 // расчет процентной ширины колонки в 2-колоночной сетке относительно размера контейнера колоночной сетки
 $cols-2_col_w_pct: percentage($cols-2_col_w_max / $cols_w_1pct_max) / 100;
 
-//EXTRA (br — border-radius)
+//EXTRA (br — border-radius, zi - z-index, bs — box-shadow)
 $br_small: 5px;
 $br_base: 30px;
 
-$zi_base: 0;
+$zi_base: 1;
 $zi_hover: 2;
 $zi_modal: 10;
+
+$bs_hover: 0 20px 20px 0 rgba(0, 0, 0, 0.3);
