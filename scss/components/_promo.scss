@@ -1,3 +1,18 @@
 .promo {
-
+  margin-bottom: 40px;
+  padding: 20px 13px 10px 20px;
+  background: url(../img/bg_promo.jpg);
+  border-radius: $br_medium;
+  &__title {
+    @include clear-mp;
+    margin-bottom: 16px;
+    font-size: 24px;
+    line-height: 1.25;
+  }
+  &__text {
+    margin: 0;
+    padding: 10px 0 12px 55px;
+    background-image: url(../img/icon_promo-cow.svg);
+    background-repeat: no-repeat;
+  }
 }

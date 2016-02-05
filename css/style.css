@@ -633,7 +633,6 @@ img {
   -webkit-flex-wrap: wrap;
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
-  margin-bottom: 40px;
 }
 
 .page-content__col {
@@ -705,6 +704,7 @@ img {
 }
 
 .banner {
+  margin-bottom: 40px;
   padding: 12px 20px 20px 20px;
   color: #ffffff;
   background-repeat: no-repeat;
@@ -852,6 +852,28 @@ img {
 .product:hover .product__title,
 .product:hover .product__actions {
   z-index: 2;
+}
+
+.promo {
+  margin-bottom: 40px;
+  padding: 20px 13px 10px 20px;
+  background: url(../img/bg_promo.jpg);
+  border-radius: 15px;
+}
+
+.promo__title {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 16px;
+  font-size: 24px;
+  line-height: 1.25;
+}
+
+.promo__text {
+  margin: 0;
+  padding: 10px 0 12px 55px;
+  background-image: url(../img/icon_promo-cow.svg);
+  background-repeat: no-repeat;
 }
 
 .map {
