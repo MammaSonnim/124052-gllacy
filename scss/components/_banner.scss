@@ -1,11 +1,31 @@
 .banner {
-  padding: 20px;
+  padding: 12px 20px 20px 20px;
   color: $c_text_alt;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: $br_medium;
+  &--berry {
+    background-color: #a63856;
+    background-image: url(../img/bg_banner-1.jpg);
+  }
+  &--choco {
+    background-color: #835542;
+    background-image: url(../img/bg_banner-2.jpg);
+    
+  }
   &__title {
     @include clear-mp;
+    font-size: $fz_xl;
+    margin-bottom: 10px;
+    
   }
   &__text {
     @include clear-mp;
     font-size: 18px;
+    margin-bottom: 40px;
+  }
+  &__btn {
+    text-align: right;
   }
 }

@@ -75,8 +75,9 @@ img {
   line-height: 1;
   text-decoration: none;
   display: inline-block;
-  padding: 0 18px;
-  line-height: 2.1;
+  padding: 0 25px;
+  font-size: 15px;
+  line-height: 2.3;
   text-decoration: none;
   color: #ffffff;
   background: linear-gradient(to top, #e74a35, #f26843);
@@ -84,14 +85,28 @@ img {
   box-shadow: 0 2px 2px 0 #ac1000;
 }
 
+.btn--middle {
+  font-size: 17px;
+}
+
 .btn--large {
+  font-size: 18px;
+  line-height: 2.6;
+}
+
+.btn--xxl {
   padding: 0 43px;
   font-size: 31.5px;
+  line-height: 2;
   border-radius: 40px;
 }
 
+.btn--narrow {
+  padding: 0 23px;
+}
+
 .btn--wide {
-  padding: 0 27px;
+  padding: 0 34px;
 }
 
 .link {
@@ -618,6 +633,7 @@ img {
   -webkit-flex-wrap: wrap;
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
+  margin-bottom: 40px;
 }
 
 .page-content__col {
@@ -647,7 +663,7 @@ img {
 
 .slider {
   position: relative;
-  padding: 273px 0 40px;
+  padding: 273px 0 30px;
   text-align: center;
   overflow: hidden;
   z-index: 1;
@@ -689,19 +705,40 @@ img {
 }
 
 .banner {
-  padding: 20px;
+  padding: 12px 20px 20px 20px;
   color: #ffffff;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 15px;
+}
+
+.banner--berry {
+  background-color: #a63856;
+  background-image: url(../img/bg_banner-1.jpg);
+}
+
+.banner--choco {
+  background-color: #835542;
+  background-image: url(../img/bg_banner-2.jpg);
 }
 
 .banner__title {
   margin: 0;
   padding: 0;
+  font-size: 35px;
+  margin-bottom: 10px;
 }
 
 .banner__text {
   margin: 0;
   padding: 0;
   font-size: 18px;
+  margin-bottom: 40px;
+}
+
+.banner__btn {
+  text-align: right;
 }
 
 .products {
@@ -732,6 +769,7 @@ img {
 
 .product__img {
   position: relative;
+  margin-bottom: 10px;
 }
 
 .product__img img {
@@ -756,20 +794,21 @@ img {
   padding: 0;
   font-size: 16px;
   text-align: center;
-  margin-bottom: 10px;
 }
 
 .product__title a {
   color: #ffffff;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  text-decoration: none;
 }
 
 .product__actions {
   position: absolute;
   left: -6px;
-  bottom: -80px;
+  bottom: -76px;
   right: -6px;
   display: none;
-  padding: 20px 0;
+  padding: 18px 0;
   text-align: center;
   background-color: rgba(255, 255, 255, 0.3);
   border-bottom-left-radius: 5px;
@@ -781,7 +820,7 @@ img {
   position: absolute;
   top: -6px;
   right: -6px;
-  bottom: -1px;
+  bottom: 0px;
   left: -6px;
   display: none;
   background-color: rgba(255, 255, 255, 0.3);
@@ -795,7 +834,7 @@ img {
   position: absolute;
   top: -6px;
   right: -6px;
-  bottom: -80px;
+  bottom: -76px;
   left: -6px;
   display: none;
   box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.3);
