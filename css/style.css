@@ -977,17 +977,27 @@ img {
 }
 
 .contact {
-  padding: 30px 20px 30px 25px;
+  padding: 30px 20px 20px 25px;
   background-color: rgba(255, 255, 255, 0.98);
   border-radius: 15px;
-  min-height: 300px;
 }
 
 .contact__text {
   margin: 0;
   padding: 0;
+  margin-bottom: 20px;
   font-size: 14px;
   line-height: 20px;
+}
+
+.contact__text span {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.contact__text:last-of-type {
+  margin-bottom: 30px;
 }
 
 .filters {
