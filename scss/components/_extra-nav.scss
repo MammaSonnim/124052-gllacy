@@ -1,4 +1,27 @@
 .extra-nav {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  font-size: 13px;
+  &__item {
+    box-sizing: border-box;
+    margin-right: 20px;
+    width: 50%;
+    margin-right: 0;
+    &--suppliers {
+      position: relative;
+      font-weight: 700;
+      &:before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: -20px;
+        transform: translateY(-50%);
+        width: 14px;
+        height: 12px;
+        background: url(../img/icon_nav-heart.svg) no-repeat;
+      }
+      
+    }
+  }
 }

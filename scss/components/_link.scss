@@ -12,6 +12,7 @@
   }
   &--alt {
     color: $c_text_alt;
+    border-bottom-color: $bc_link_alt;
     &:hover {
     color: $c_link-hov_alt;
     }
