@@ -11,12 +11,6 @@
     padding: 15px;
     @include style-form;
   }
-  &__input {
-    &[type="search"] {
-      box-sizing: border-box;
-    }
-    @include style-input;
-  }
   &:hover &__wrap {
     display: block;
   }

@@ -1,31 +1,35 @@
 .btn {
   @include clear-btn;
   display: inline-block;
-  padding: 0 25px;
+  padding: 10px 25px;
   font-size: 15px;
-  line-height: 2.3;
+  text-align: center;
   text-decoration: none;
   color: $c_text_alt;
   background: $gr_btn;
   border-radius: $br_base;
   box-shadow: 0 2px 2px 0 #ac1000;
   &--middle {
+    padding-top: 13px;
+    padding-bottom: 13px;
     font-size: 17px;
   }
   &--large {
+    padding-top: 15px;
+    padding-bottom: 15px;
     font-size: 18px;
-    line-height: 2.6;
   }
   &--xxl {
-    padding: 0 43px;
+    padding: 16px 43px;
     font-size: 31.5px;
-    line-height: 2;
     border-radius: 40px;
   }
   &--narrow {
-    padding: 0 23px;
+    padding-left: 23px;
+    padding-right: 23px;
   }
   &--wide {
-    padding: 0 34px;
+    padding-left: 34px;
+    padding-right: 34px;
   }
 }

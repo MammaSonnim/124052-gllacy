@@ -1,0 +1,14 @@
+.contact {
+  padding: 30px 20px 30px 25px;
+  background-color: rgba(255, 255, 255, 0.98);
+  border-radius: $br_medium;
+  min-height: 300px;
+  &__text {
+    @include clear-mp;
+    font-size: $fz_s;
+    line-height: 20px;
+    & span {
+      
+    }
+  }
+}

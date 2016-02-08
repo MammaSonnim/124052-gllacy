@@ -24,16 +24,16 @@
     @include clear-mp;
     font-size: $fz_base;
     text-align: center;
-    & a {
-      color: $c_text_alt;
-      border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-      text-decoration: none;
-    }
+  }
+  &__link {
+    color: $c_text_alt;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    text-decoration: none;
   }
   &__actions {
     position: absolute;
     left: -6px;
-    bottom: -76px;
+    bottom: -77px;
     right: -6px;
     display: none;
     padding: 18px 0;
@@ -41,7 +41,6 @@
     background-color: $bg_hover;
     border-bottom-left-radius: $br_small;
     border-bottom-right-radius: $br_small;
-    
   }
   &:before {
     content: "";
@@ -56,13 +55,12 @@
     border-top-right-radius: $br_small;
     z-index: $zi_base;
   }
-  
   &:after {
     content: "";
     position: absolute;
     top: -6px;
     right: -6px;
-    bottom: -76px;
+    bottom: -77px;
     left: -6px;
     display: none;
     box-shadow: $bs_hover;
@@ -70,7 +68,6 @@
     border-bottom-right-radius: $br_small;
     z-index: $zi_base;
   }
-  
   &:hover:before,
   &:hover:after,
   &:hover &__actions {
@@ -80,5 +77,8 @@
   &:hover &__title,
   &:hover &__actions {
     z-index: 2;
+  }
+  &:hover &__link {
+    border-bottom: none;
   }
 }

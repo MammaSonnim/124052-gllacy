@@ -1,18 +1,28 @@
 .link {
   color: $c_text_base;
+  text-decoration: none;
+  border-bottom: 1px solid $bc_link;
   &:hover {
-    color: #ec593c;
+    color: $c_link-hov;
+    border-bottom-color: $bc_link-hov;
   }
   &:active {
-    color: #ec593c;
+    color: $c_link-act;
+    border-bottom-color: $bc_link-act;
   }
   &--alt {
     color: $c_text_alt;
     &:hover {
-    color: #ffbc9e;
+    color: $c_link-hov_alt;
     }
     &:active {
-      color: #ffbc9e;
+      color: $c_link-act_alt;
     }
+  }
+  &--middle {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.23;
+    border-bottom: 2px solid $c_link;
   }
 }

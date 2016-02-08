@@ -12,7 +12,6 @@
     flex-wrap: wrap;
   }
   &__input {
-    @include style-input;
     margin-bottom: 12px;
   }
   &__col {

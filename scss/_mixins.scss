@@ -57,28 +57,28 @@
   border-radius: $br_small;
 }
 
-@mixin style-input {
-  box-sizing: border-box;
-  width: 100%;
-  padding: 10px;
-  border: 1px solid $bc_input;
-  border-radius: $br_small;
-  font-size: $fz_s;
-  font-weight: 700;
-  &:hover {
-    padding: 9px;
-    border: 2px solid $bc_input-hov;
-  }
-  &:focus {
-    outline: none;
-    padding: 9px;
-    border: 2px solid $bc_input-foc;
-  }
-  &::-webkit-input-placeholder {font-weight: 400;}
-  &:-moz-placeholder {font-weight: 400;}
-  &::-moz-placeholder {font-weight: 400;}
-  &:-ms-input-placeholder {font-weight: 400;}
-}
+//@mixin style-input {
+//  box-sizing: border-box;
+//  width: 100%;
+//  padding: 10px;
+//  border: 1px solid $bc_input;
+//  border-radius: $br_small;
+//  font-size: $fz_s;
+//  font-weight: 700;
+//  &:hover {
+//    padding: 9px;
+//    border: 2px solid $bc_input-hov;
+//  }
+//  &:focus {
+//    outline: none;
+//    padding: 9px;
+//    border: 2px solid $bc_input-foc;
+//  }
+//  &::-webkit-input-placeholder {font-weight: 400;}
+//  &:-moz-placeholder {font-weight: 400;}
+//  &::-moz-placeholder {font-weight: 400;}
+//  &:-ms-input-placeholder {font-weight: 400;}
+//}
 
 @mixin line {
   content: "";
