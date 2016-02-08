@@ -6,6 +6,9 @@
   border-radius: $br_small;
   font-size: $fz_s;
   font-weight: 700;
+  &[type="search"] {
+    box-sizing: border-box;
+  }
   &:hover {
     padding: 9px;
     border: 2px solid $bc_input-hov;
@@ -15,23 +18,20 @@
     padding: 9px;
     border: 2px solid $bc_input-foc;
   }
-  &::-webkit-input-placeholder {font-weight: 400;}
-  &:-moz-placeholder {font-weight: 400;}
-  &::-moz-placeholder {font-weight: 400;}
-  &:-ms-input-placeholder {font-weight: 400;}
-  &[type="search"] {
-      box-sizing: border-box;
-    }
   &--tall {
     padding: 12px;
     &:hover {
     padding: 11px;
     border: 2px solid $bc_input-hov;
     }
-  }
-  &:focus {
+    &:focus {
     outline: none;
     padding: 11px;
     border: 2px solid $bc_input-foc;
+    }
   }
+  &::-webkit-input-placeholder {font-weight: 400;}
+  &:-moz-placeholder {font-weight: 400;}
+  &::-moz-placeholder {font-weight: 400;}
+  &:-ms-input-placeholder {font-weight: 400;}
 }
