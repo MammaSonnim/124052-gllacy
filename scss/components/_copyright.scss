@@ -1,10 +1,12 @@
 .copyright {
   &__img {
     & img {
-      display: block;
+      
     }
   }
   &__text {
+    @include clear-mp;
     font-size: $fz_xs;
+    color: $c_text_alt;
   }
 }

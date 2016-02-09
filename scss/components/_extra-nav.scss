@@ -1,19 +1,22 @@
 .extra-nav {
   display: flex;
   flex-wrap: wrap;
+  margin-top: 13px;
   font-size: 13px;
   line-height: 22px;
-  & ul {
+  &__col {
     @include clear-list;
-  }
-  &__col-left {
+    &--left {
     width: 40%;
     margin-right: 10px;
-  }
-  &__col-right {
+    }
+    &--right {
     width: 55%;
+    }
   }
+ 
   &__item {
+    @include clear-mp;
     &--suppliers {
       position: relative;
       font-weight: $fw_bold;

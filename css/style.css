@@ -1034,6 +1034,7 @@ img {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .page-footer__col {
@@ -1052,6 +1053,7 @@ img {
   -webkit-align-items: flex-start;
       -ms-flex-align: start;
           align-items: flex-start;
+  margin-top: 15px;
 }
 
 .socials__item {
@@ -1104,23 +1106,29 @@ img {
   -webkit-flex-wrap: wrap;
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
+  margin-top: 13px;
   font-size: 13px;
   line-height: 22px;
 }
 
-.extra-nav ul {
+.extra-nav__col {
   padding: 0;
   margin: 0;
   list-style: none;
 }
 
-.extra-nav__col-left {
+.extra-nav__col--left {
   width: 40%;
   margin-right: 10px;
 }
 
-.extra-nav__col-right {
+.extra-nav__col--right {
   width: 55%;
+}
+
+.extra-nav__item {
+  margin: 0;
+  padding: 0;
 }
 
 .extra-nav__item--suppliers {
@@ -1138,12 +1146,11 @@ img {
   background: url(../img/icon_nav-heart.svg) no-repeat;
 }
 
-.copyright__img img {
-  display: block;
-}
-
 .copyright__text {
+  margin: 0;
+  padding: 0;
   font-size: 12px;
+  color: #ffffff;
 }
 
 .modal-contact {
