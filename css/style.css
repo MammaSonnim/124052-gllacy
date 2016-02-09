@@ -236,6 +236,18 @@ img {
           transform: rotate(-45deg);
 }
 
+.icon-close--large {
+  width: 26px;
+  height: 26px;
+}
+
+.icon-close--large:before, .icon-close--large:after {
+  width: 2px;
+  height: 22px;
+  top: 3px;
+  left: 12px;
+}
+
 .page-header {
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -722,7 +734,7 @@ img {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  border-radius: 15px;
+  border-radius: 10px;
 }
 
 .banner--berry {
@@ -876,7 +888,7 @@ img {
   margin-bottom: 40px;
   padding: 20px 12px 10px 20px;
   background: url(../img/bg_promo.jpg);
-  border-radius: 15px;
+  border-radius: 10px;
 }
 
 .promo__title {
@@ -912,7 +924,7 @@ img {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  border-radius: 15px;
+  border-radius: 10px;
 }
 
 .blog-new__title {
@@ -934,7 +946,7 @@ img {
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100% 100%;
-  border-radius: 15px;
+  border-radius: 10px;
 }
 
 .subscribe__text {
@@ -989,7 +1001,7 @@ img {
 .contact {
   padding: 30px 20px 20px 25px;
   background-color: rgba(255, 255, 255, 0.98);
-  border-radius: 15px;
+  border-radius: 10px;
 }
 
 .contact__text {
@@ -1238,10 +1250,26 @@ img {
   z-index: 10;
   display: block;
   margin: auto;
-  width: 480px;
-  height: 442px;
-  -webkit-animation: fade 0.3s both;
-          animation: fade 0.3s both;
+  width: 430px;
+  height: 380px;
+  padding: 25px;
+  background-color: #f8f7f4;
+  border-radius: 10px;
+}
+
+.modal-contact__text {
+  margin: 0;
+  padding: 0;
+  font-size: 22px;
+}
+
+.modal-contact__item {
+  width: 56%;
+  margin-bottom: 20px;
+}
+
+.modal-contact__btn {
+  text-align: right;
 }
 
 @-webkit-keyframes fade {

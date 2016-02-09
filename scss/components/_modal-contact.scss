@@ -7,7 +7,23 @@
   z-index: $zi_modal;
   display: block;
   margin: auto;
-  width: 480px;
-  height: 442px;
-  animation: fade 0.3s both;
+  width: 430px;
+  height: 380px;
+  padding: 25px;
+  background-color: $bg_light;
+  border-radius: $br_medium;
+//  animation: fade 0.3s both;
+  &__close {
+  }
+  &__text {
+    @include clear-mp;
+    font-size: 22px;
+  }
+  &__item {
+    width: 56%;
+    margin-bottom: 20px;
+  }
+  &__btn {
+    text-align: right;
+  }
 }

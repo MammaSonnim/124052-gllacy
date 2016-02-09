@@ -267,12 +267,15 @@
       </div>
     </footer>
     <div class="modal-contact">
-      <a class="modal-contact__close icon-close" href="#">Назад</a>
+      <a class="modal-contact__close icon-close icon-close--large" href="#">Назад</a>
+      <p class="modal-contact__text">Мы обязательно вам ответим!</p>
       <form class="modal-contact__form" action="/echo" method="post">
-        <input class="modal-contact__item" type="text" name="name" id="name-field" placeholder="Как вас зовут?">
-        <input class="modal-contact__item" type="email" name="email" id="email-field" placeholder="Ваша почта для ответа?">
-        <textarea class="modal-contact__item modal-contact__text-field" name="text" rows="5" id="text-field" placeholder="Напишите что-нибудь..."></textarea>
-        <button class="modal-contact__btn btn btn--middle btn--narrow" type="submit" name="send">Отправить</button>
+        <input class="modal-contact__item field field--tall" type="text" name="name" id="name-field" placeholder="Как вас зовут?">
+        <input class="modal-contact__item field field--tall" type="email" name="email" id="email-field" placeholder="Ваша почта для ответа?">
+        <textarea class="modal-contact__text-field field field--tall" name="text" rows="5" id="text-field" placeholder="Напишите что-нибудь..."></textarea>
+        <div class="modal-contact__btn">
+          <button class=" btn btn--middle btn--narrow" type="submit" name="send">Отправить</button>
+        </div>
       </form>
     </div>
   </div>
