@@ -88,3 +88,10 @@
   height: 1px;
   background-color: #d1d0ce;
 }
+
+@mixin style-filter {
+  line-height: 1;
+  font-weight: $fw_medium;
+  background-color: $bg_blocks;
+  border-radius: $br_base;
+}

@@ -1,4 +1,13 @@
 .filters {
   display: flex;
   flex-wrap: wrap;
+  padding: 20px 0;
+  color: $c_text_alt;
+  &__item {
+    border: none;
+  }
+  &__title {
+    font-size: $fz_s;
+    margin-left: 15px;
+  }
 }

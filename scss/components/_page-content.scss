@@ -4,10 +4,15 @@
     justify-content: space-between;
     flex-wrap: wrap;
     align-items: flex-start;
-    margin-bottom: 40px;
   }
   &__col {
     box-sizing: border-box;
     width: $cols-2_col_w_pct;
+  }
+  &__title {
+    @include clear-mp;
+    font-size: $fz_xl;
+    line-height: 1.2;
+    color: $c_text_alt;
   }
 }

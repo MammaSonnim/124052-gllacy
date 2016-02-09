@@ -106,53 +106,58 @@
       </div>
       <h1 class="page-content__title">Сливочное мороженое</h1>
       <form class="filters" action="/echo" method="get">
-        <fieldset class="filters__item">
+        <fieldset class="filters__item filter-sort">
           <legend class="filters__title">Сортировка</legend>
-          <select class="filter filter--sort" name="sort" id="sort">
-            <option value="low-price">сначала недорогие</option>
-            <option value="high-price">сначала дорогие</option>
-            <option value="fat">по жирности</option>
-          </select>
+          <div>
+            <select class="filter-sort__field" name="sort" id="sort">
+              <option value="top">по популярности</option>
+              <option value="low-price">сначала недорогие</option>
+              <option value="high-price">сначала дорогие</option>
+              <option value="fat">по жирности</option>
+            </select>
+          </div>
         </fieldset>
-        <fieldset class="filters__item">
+        <fieldset class="filters__item filter-price">
           <legend class="filters__title">Цена: 100 руб. — 500 руб.</legend>
-          <div class="filter filter--price">
+          <div class="filter-price__field">
             <div class="filter-price__scale">
-              <div class="filter-price_range" style="margin-left: 20px; width: 70%"></div>
+              <div class="filter-price__range" style="margin-left: 20px; width: 70%"></div>
             </div>
             <div class="filter-price__toggle filter-price__toggle--min"></div>
             <div class="filter-price__toggle filter-price__toggle--max"></div>
           </div>
         </fieldset>
-        <fieldset class="filters__item">
-          <legend class="filter__title">Жирность</legend>
-          <div class="filter filter--fat">
-            <input class="filer__radio" id="radio-1" type="radio" name="fat-radio" value="0%">
+        <fieldset class="filters__item filter">
+          <legend class="filters__title">Жирность</legend>
+          <div class="filter__field">
+            <input class="filter__radio" id="radio-1" type="radio" name="fat-radio" value="0%">
             <label class="filter__label" for="radio-1">0%</label>
-            <input class="filer__radio" id="radio-2" type="radio" name="fat-radio" value="before10%">
+            <input class="filter__radio" id="radio-2" type="radio" name="fat-radio" value="before10%">
             <label class="filter__label" for="radio-2">до 10%</label>
-            <input class="filer__radio" id="radio-3" type="radio" name="fat-radio" value="before30%">
+            <input class="filter__radio" id="radio-3" type="radio" name="fat-radio" value="before30%">
             <label class="filter__label" for="radio-3">до 30%</label>
-            <input class="filer__radio" id="radio-4" type="radio" name="fat-radio" value="after30%">
+            <input class="filter__radio" id="radio-4" type="radio" name="fat-radio" value="after30%">
             <label class="filter__label" for="radio-4">выше 30%</label>
           </div>
         </fieldset>
-        <fieldset class="filters__item">
+        <fieldset class="filters__item filter">
           <legend class="filters__title">Наполнители</legend>
-          <div class="filter filter--topping">
-            <input class="filer__checkbox" id="checkbox-1" type="checkbox" name="topping-checkbox" value="choco">
+          <div class="filter__field">
+            <input class="filter__checkbox" id="checkbox-1" type="checkbox" name="topping-checkbox" value="choco">
             <label class="filter__label" for="checkbox-1">шоколадные</label>
-            <input class="filer__checkbox" id="checkbox-2" type="checkbox" name="topping-checkbox" value="sugar" checked>
+            <input class="filter__checkbox" id="checkbox-2" type="checkbox" name="topping-checkbox" value="sugar" checked>
             <label class="filter__label" for="checkbox-2">сахарные присыпки</label>
-            <input class="filer__checkbox" id="checkbox-3" type="checkbox" name="topping-checkbox" value="fruit">
+            <input class="filter__checkbox" id="checkbox-3" type="checkbox" name="topping-checkbox" value="fruit">
             <label class="filter__label" for="checkbox-3">фрукты</label>
-            <input class="filer__checkbox" id="checkbox-4" type="checkbox" name="topping-checkbox" value="syrup">
+            <input class="filter__checkbox" id="checkbox-4" type="checkbox" name="topping-checkbox" value="syrup">
             <label class="filter__label" for="checkbox-4">сиропы</label>
-            <input class="filer__checkbox" id="checkbox-5" type="checkbox" name="topping-checkbox" value="jam">
+            <input class="filter__checkbox" id="checkbox-5" type="checkbox" name="topping-checkbox" value="jam">
             <label class="filter__label" for="checkbox-5">джемы</label>
           </div>
         </fieldset>
-        <button class="filters__btn btn btn_filter" type="submit">Применить</button>
+        <div class="filters__btn">
+          <button class="btn btn_filter" type="submit">Применить</button>
+        </div>
       </form>
       <section class="products">
         <article class="products__col product">

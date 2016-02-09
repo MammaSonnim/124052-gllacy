@@ -1,8 +1,4 @@
-.filter {
-  &__radio,
-  &__checkbox {
-    display: none;
-  }
+.filter-price {
   &__field {
     padding: 10px;
     @include style-filter;

@@ -1,0 +1,10 @@
+.filter-sort {
+  &__field {
+    padding: 6px 10px 7px 10px;
+    @include style-filter;
+    &:hover {
+      background-color: #ffffff;
+      color: $c_text_base;
+    }
+  }
+}
