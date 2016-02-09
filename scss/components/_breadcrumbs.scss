@@ -1,0 +1,19 @@
+.breadcrumbs {
+  align-self: flex-end;
+  font-size: $fz_s;
+  color: $c_text_alt;
+  
+  &__item {
+    position: relative;
+    margin-right: 18px;
+    vertical-align: bottom;
+    &:after {
+      content: "»";
+      position: absolute;
+      right: -15px;
+    }
+    &:last-child:after {
+      content: none;
+    }
+  }
+}
