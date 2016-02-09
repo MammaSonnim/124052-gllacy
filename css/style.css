@@ -774,16 +774,17 @@ img {
 
 .product__img {
   position: relative;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 
 .product__img img {
   border-radius: 50%;
+  display: block;
 }
 
 .product__price {
   position: absolute;
-  bottom: 15px;
+  bottom: 0;
   font-size: 30px;
   font-weight: 700;
   text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
@@ -1032,34 +1033,34 @@ img {
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
+  padding-top: 20px;
 }
 
 .page-footer__col {
-  width: 16.5%;
+  width: 190px;
 }
 
 .page-footer__col--wide {
-  width: 30%;
+  width: 330px;
+  margin-left: 25px;
 }
 
 .socials {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-bottom: 12px;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.socials__item {
+  margin-right: 11px;
 }
 
 .social {
   box-sizing: border-box;
+  display: block;
   width: 38px;
   height: 38px;
   border-radius: 50%;
@@ -1100,20 +1101,26 @@ img {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-justify-content: flex-start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
   -webkit-flex-wrap: wrap;
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
   font-size: 13px;
+  line-height: 22px;
 }
 
-.extra-nav__item {
-  box-sizing: border-box;
-  margin-right: 20px;
-  width: 50%;
-  margin-right: 0;
+.extra-nav ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.extra-nav__col-left {
+  width: 40%;
+  margin-right: 10px;
+}
+
+.extra-nav__col-right {
+  width: 55%;
 }
 
 .extra-nav__item--suppliers {
@@ -1124,14 +1131,19 @@ img {
 .extra-nav__item--suppliers:before {
   content: "";
   position: absolute;
-  top: 50%;
+  top: 5px;
   left: -20px;
-  -webkit-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-          transform: translateY(-50%);
   width: 14px;
   height: 12px;
   background: url(../img/icon_nav-heart.svg) no-repeat;
+}
+
+.copyright__img img {
+  display: block;
+}
+
+.copyright__text {
+  font-size: 12px;
 }
 
 .modal-contact {

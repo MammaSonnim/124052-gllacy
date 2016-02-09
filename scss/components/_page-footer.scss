@@ -1,11 +1,12 @@
 .page-footer {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  padding-top: 20px;
   &__col {
-    width: 16.5%;
+    width: 190px;
     &--wide {
-      width: 30%;
+      width: 330px;
+      margin-left: 25px;
     }
   }
 }

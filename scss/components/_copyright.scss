@@ -1,8 +1,10 @@
 .copyright {
   &__img {
-
+    & img {
+      display: block;
+    }
   }
   &__text {
-
+    font-size: $fz_xs;
   }
 }
