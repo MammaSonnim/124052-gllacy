@@ -1,9 +1,13 @@
 .page-content {
-  &__wrap {
+  &__cols {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     align-items: flex-start;
+    margin-bottom: 40px;
+    &--catalog {
+      margin-bottom: 0;
+    }
   }
   &__col {
     box-sizing: border-box;

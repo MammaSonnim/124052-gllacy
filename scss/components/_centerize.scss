@@ -1,6 +1,6 @@
-.page {
+.centerize {
   @include center;
-  &__wrap {
+  &__inner {
     @include add-p;
   }
 }

@@ -1,27 +1,41 @@
 .modal-contact {
   position: fixed;
-  top: 0;
-  right: 0;
-  left: 0;
-  bottom: 0;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
   z-index: $zi_modal;
-  display: block;
-  margin: auto;
-  width: 430px;
-  height: 380px;
-  padding: 25px;
+  display: none;
+  width: 425px;
+  padding: 13px 25px 25px 25px;
   background-color: $bg_light;
   border-radius: $br_medium;
 //  animation: fade 0.3s both;
   &__close {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 26px;
+    height: 26px;
+    &:before,
+    &:after {
+      width: 2px;
+      height: 22px;
+      top: 3px;
+      left: 12px;
+    }
   }
   &__text {
     @include clear-mp;
-    font-size: 22px;
+    margin-bottom: 18px;
+    font-size: 24px;
+    font-weight: $fw_medium;
   }
   &__item {
-    width: 56%;
+    width: 63%;
     margin-bottom: 20px;
+  }
+  &__text-field {
+    margin-bottom: 15px;
   }
   &__btn {
     text-align: right;

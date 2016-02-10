@@ -11,8 +11,8 @@
   &:after {
     content: '';
     position: absolute;
-    top: 25%;
-    left: 50%;
+    top: 6px;
+    left: 12px;
     width: 1px;
     height: 15px;
     background-color: #353535;
@@ -21,15 +21,5 @@
   &:after {
     transform: rotate(-45deg);
   }
-  &--large {
-    width: 26px;
-    height: 26px;
-    &:before,
-    &:after {
-      width: 2px;
-      height: 22px;
-      top: 3px;
-      left: 12px;
-    }
-  }
+
 }

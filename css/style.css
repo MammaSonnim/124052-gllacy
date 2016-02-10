@@ -59,12 +59,12 @@ img {
   background-position: 50% 0;
 }
 
-.page {
+.centerize {
   max-width: 1200px;
   margin: 0 auto;
 }
 
-.page__wrap {
+.centerize__inner {
   box-sizing: border-box;
   padding: 0 2.3%;
 }
@@ -177,6 +177,7 @@ img {
 
 .field--tall {
   padding: 12px;
+  font-size: 16px;
 }
 
 .field--tall:hover {
@@ -220,8 +221,8 @@ img {
 .icon-close:before, .icon-close:after {
   content: '';
   position: absolute;
-  top: 25%;
-  left: 50%;
+  top: 6px;
+  left: 12px;
   width: 1px;
   height: 15px;
   background-color: #353535;
@@ -234,18 +235,6 @@ img {
   -webkit-transform: rotate(-45deg);
       -ms-transform: rotate(-45deg);
           transform: rotate(-45deg);
-}
-
-.icon-close--large {
-  width: 26px;
-  height: 26px;
-}
-
-.icon-close--large:before, .icon-close--large:after {
-  width: 2px;
-  height: 22px;
-  top: 3px;
-  left: 12px;
 }
 
 .page-header {
@@ -637,7 +626,7 @@ img {
   top: -13px;
 }
 
-.page-content__wrap {
+.page-content__cols {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -650,6 +639,11 @@ img {
   -webkit-align-items: flex-start;
       -ms-flex-align: start;
           align-items: flex-start;
+  margin-bottom: 40px;
+}
+
+.page-content__cols--catalog {
+  margin-bottom: 0;
 }
 
 .page-content__col {
@@ -1243,29 +1237,49 @@ img {
 
 .modal-contact {
   position: fixed;
-  top: 0;
-  right: 0;
-  left: 0;
-  bottom: 0;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   z-index: 10;
-  display: block;
-  margin: auto;
-  width: 430px;
-  height: 380px;
-  padding: 25px;
+  display: none;
+  width: 425px;
+  padding: 13px 25px 25px 25px;
   background-color: #f8f7f4;
   border-radius: 10px;
+}
+
+.modal-contact__close {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  width: 26px;
+  height: 26px;
+}
+
+.modal-contact__close:before, .modal-contact__close:after {
+  width: 2px;
+  height: 22px;
+  top: 3px;
+  left: 12px;
 }
 
 .modal-contact__text {
   margin: 0;
   padding: 0;
-  font-size: 22px;
+  margin-bottom: 18px;
+  font-size: 24px;
+  font-weight: 500;
 }
 
 .modal-contact__item {
-  width: 56%;
+  width: 63%;
   margin-bottom: 20px;
+}
+
+.modal-contact__text-field {
+  margin-bottom: 15px;
 }
 
 .modal-contact__btn {
