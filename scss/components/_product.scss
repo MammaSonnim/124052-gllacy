@@ -4,6 +4,7 @@
   margin-bottom: 40px;
   &__img {
     position: relative;
+    z-index: 1;
     margin-bottom: 15px;
     & img {
       border-radius: 50%;
@@ -20,6 +21,21 @@
       font-size: 45px;
     }
   }
+  &__rub {
+    font-size: 0;
+    line-height: 0;
+    color: transparent;
+    text-shadow: none;
+    &:after {
+        content: "";
+        margin-right: 3px;
+        margin-left: 5px;
+        font-family: "gllacy";
+        font-size: 38px;
+        font-weight: normal;
+        font-style: normal;
+    }
+  }
   &__title {
     position: relative;
     @include clear-mp;
@@ -33,44 +49,33 @@
   }
   &__actions {
     position: absolute;
-    left: -6px;
-    bottom: -77px;
-    right: -6px;
+    z-index: 2;
+    bottom: 10px;
+    left: 0;
+    width: 100%;
     display: none;
-    padding: 18px 0;
     text-align: center;
-    background-color: $bg_hover;
-    border-bottom-left-radius: $br_small;
-    border-bottom-right-radius: $br_small;
   }
-  &:before {
-    content: "";
-    position: absolute;
-    top: -6px;
-    right: -6px;
-    bottom: 0px;
-    left: -6px;
-    display: none;
-    background-color: $bg_hover;
-    border-top-left-radius: $br_small;
-    border-top-right-radius: $br_small;
-    z-index: $zi_base;
+  &:hover {
+    z-index: 2;
+    margin-bottom: -68px;
+    padding-bottom: 68px;
+    cursor: pointer;
+    &:after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      display: block;
+      width: 104%;
+      height: 102%;
+      border-radius: 5px;
+      background-color: rgba(248, 247, 244, 0.3);
+      box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.15);
+      transform: translate(-50%, -50%);
+    }
   }
-  &:after {
-    content: "";
-    position: absolute;
-    top: -6px;
-    right: -6px;
-    bottom: -77px;
-    left: -6px;
-    display: none;
-    box-shadow: $bs_hover;
-    border-bottom-left-radius: $br_small;
-    border-bottom-right-radius: $br_small;
-    z-index: $zi_base;
-  }
-  &:hover:before,
-  &:hover:after,
+
   &:hover &__actions {
     display: block;
   }
@@ -81,5 +86,19 @@
   }
   &:hover &__link {
     border-bottom: none;
+  }
+  &--top {
+    margin-bottom: 20px;
+    &:before {
+      content: "";
+      position: absolute;
+      z-index: 2;
+      top: 0;
+      left: 0;
+      width: 61px;
+      height: 61px;
+      background-image: url(../img/icon_product-top.png);
+      background-repeat: no-repeat;
+    }
   }
 }

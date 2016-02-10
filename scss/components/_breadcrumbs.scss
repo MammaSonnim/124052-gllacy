@@ -7,7 +7,7 @@
     position: relative;
     margin-right: 18px;
     &:after {
-      content: "»";
+      content: "\00BB";
       position: absolute;
       right: -15px;
     }
