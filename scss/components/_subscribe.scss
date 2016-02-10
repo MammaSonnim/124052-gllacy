@@ -1,4 +1,8 @@
 .subscribe {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 220px;
   padding: 35px 20px 42px 25px;
   background-image: url(../img/bg_blog-subscribe.png);
   background-color: #ffffff;
@@ -8,7 +12,6 @@
   border-radius: $br_medium;
   &__text {
     @include clear-mp;
-    margin-bottom: 35px;
     color: #5a5a5a;
   }
   &__form {

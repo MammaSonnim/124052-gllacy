@@ -1,8 +1,8 @@
 .copyright {
-  &__img {
-    & img {
-      
-    }
+  text-align: right;
+  &__inner {
+    display: inline-block;
+    text-align: left;
   }
   &__text {
     @include clear-mp;

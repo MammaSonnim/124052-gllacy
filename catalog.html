@@ -98,8 +98,8 @@
           </div>
         </div>
       </header>
-      <main class="page-content">
-        <div class="page-content__cols page-content__cols--catalog">
+      <main>
+        <div class="content content--catalog">
           <div class="breadcrumbs">
             <a class="breadcrumbs__item link link--alt" href="index.html">Главная</a>
             <a class="breadcrumbs__item link link--alt" href="catalog.html">Каталог</a>
@@ -110,7 +110,7 @@
             <p class="schedule__phone">8 812 450-25-25</p>
           </div>
         </div>
-        <h1 class="page-content__title">Сливочное мороженое</h1>
+        <h1 class="content__title">Сливочное мороженое</h1>
         <form class="filters" action="/echo" method="get">
           <fieldset class="filters__item filter-sort">
             <legend class="filters__title">Сортировка</legend>
@@ -298,17 +298,10 @@
       </main>
       <footer class="page-footer">
         <div class="page-footer__col socials">
-          <div class="socials__item">
-            <a href="#" class="social social--tw">Twitter</a>
-          </div>
-          <div class="socials__item">
-            <a href="#" class="social social--fb">Facebook</a></div>
-          <div class="socials__item">
-            <a href="#" class="social social--inst">Instagram</a>
-          </div>
-          <div class="socials__item">
-            <a href="#" class="social social--vk">Вконтакте</a>
-          </div>
+          <a href="#" class="social social--tw">Twitter</a>
+          <a href="#" class="social social--fb">Facebook</a>
+          <a href="#" class="social social--inst">Instagram</a>
+          <a href="#" class="social social--vk">Вконтакте</a>
         </div>
         <div class="page-footer__col page-footer__col--wide">
           <nav class="extra-nav">
@@ -331,12 +324,14 @@
           </nav>
         </div>
         <div class="page-footer__col copyright">
-          <div class="copyright__img">
-            <img src="./img/logo_copyright.svg" alt="HTML Academy" width="108" height="37">
+         <div class="copyright__inner">
+            <div class="copyright__img">
+              <img src="./img/logo_copyright.svg" alt="HTML Academy" width="108" height="37">
+            </div>
+            <p class="copyright__text">
+              Сделано&#160;в&#160;<a class="link link--alt" href="#">HTML&#160;Academy</a>&#160;©2016
+            </p>
           </div>
-          <p class="copyright__text">
-            Сделано в <a class="link link--alt" href="#">HTML Academy</a> ©2016
-          </p>
         </div>
       </footer>
     </div>

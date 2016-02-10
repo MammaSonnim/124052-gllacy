@@ -1,4 +1,8 @@
 .banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 220px;
   padding: 12px 20px 20px 20px;
   color: $c_text_alt;
   background-repeat: no-repeat;
@@ -23,7 +27,6 @@
   &__text {
     @include clear-mp;
     font-size: 18px;
-    margin-bottom: 40px;
   }
   &__btn {
     text-align: right;
