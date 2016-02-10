@@ -1,4 +1,5 @@
 .centerize {
+  position: relative;
   @include center;
   &__inner {
     @include add-p;

@@ -60,6 +60,7 @@ img {
 }
 
 .centerize {
+  position: relative;
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -972,7 +973,8 @@ img {
 .map {
   position: relative;
   min-height: 430px;
-  background: url(../img/bg_map.png) no-repeat;
+  background: url(../img/bg_map.png) no-repeat center;
+  background-size: contain;
 }
 
 .map__ya {
@@ -982,11 +984,8 @@ img {
 
 .map__contact {
   position: absolute;
-  top: 50%;
+  top: 65px;
   right: 2.3%;
-  -webkit-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-          transform: translateY(-50%);
   box-sizing: border-box;
   width: 300px;
   z-index: 2;
