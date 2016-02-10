@@ -784,7 +784,7 @@ img {
 .product {
   position: relative;
   color: #ffffff;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 
 .product__img {
@@ -1092,18 +1092,80 @@ img {
 }
 
 .paginator {
+  padding: 20px 0;
   text-align: right;
   font-size: 0;
 }
 
-.paginator__dir {
+.paginator__item {
   display: inline-block;
+  width: 26px;
+  height: 26px;
+  margin-right: 3px;
+  vertical-align: middle;
   font-size: 16px;
+  line-height: 27px;
+  color: #ffffff;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-decoration: none;
 }
 
-.paginator__btn {
+.paginator__item:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+}
+
+.paginator__item--current {
+  color: #333333;
+  background-color: #ffffff;
+  border-radius: 50%;
+}
+
+.paginator__item--current:hover {
+  background-color: #ffffff;
+}
+
+.paginator__dir {
+  box-sizing: border-box;
+  position: relative;
   display: inline-block;
-  font-size: 16px;
+  vertical-align: middle;
+  width: 21px;
+  height: 26px;
+  margin-right: 8px;
+}
+
+.paginator__dir:before {
+  content: "";
+  position: absolute;
+  top: 7px;
+  left: 7px;
+  width: 7px;
+  height: 7px;
+  border: 2px solid #ffffff;
+  border-top-color: transparent;
+  border-right-color: transparent;
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.paginator__dir--next {
+  margin-right: -2px;
+}
+
+.paginator__dir--next:before {
+  -webkit-transform: rotate(-135deg);
+      -ms-transform: rotate(-135deg);
+          transform: rotate(-135deg);
+}
+
+.paginator__dir--disabled:before {
+  border-color: rgba(255, 255, 255, 0.2);
+  border-top-color: transparent;
+  border-right-color: transparent;
 }
 
 .page-footer {
