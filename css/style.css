@@ -1088,6 +1088,17 @@ img {
   font-weight: 500;
   background-color: rgba(255, 255, 255, 0.2);
   border-radius: 30px;
+  border: none;
+  outline: none;
+  text-indent: 0.01px;
+  text-overflow: '';
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+
+.filter-sort__field select::-ms-expand {
+  display: none;
 }
 
 .filter-sort__field:hover {
