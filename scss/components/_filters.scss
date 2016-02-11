@@ -1,12 +1,13 @@
 .filters {
   display: flex;
   flex-wrap: wrap;
+  align-items: flex-end;
   margin: 0;
   padding: 20px 0;
   color: $c_text_alt;
   &__item {
     border: none;
-    margin-right: 20px;
+    margin-right: 13px;
     padding: 0;
   }
   &__title {

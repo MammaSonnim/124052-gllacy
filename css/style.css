@@ -1091,6 +1091,9 @@ img {
   -webkit-flex-wrap: wrap;
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
+  -webkit-align-items: flex-end;
+      -ms-flex-align: end;
+          align-items: flex-end;
   margin: 0;
   padding: 20px 0;
   color: #ffffff;
@@ -1098,7 +1101,7 @@ img {
 
 .filters__item {
   border: none;
-  margin-right: 20px;
+  margin-right: 13px;
   padding: 0;
 }
 
@@ -1113,7 +1116,7 @@ img {
 
 .filter-sort__field {
   width: 100%;
-  height: 37px;
+  height: 36px;
   padding: 6px 25px 7px 10px;
   box-sizing: border-box;
   line-height: 1;
@@ -1155,8 +1158,20 @@ img {
   color: #333333;
 }
 
+.filter-price {
+  width: 220px;
+}
+
 .filter-price__field {
-  padding: 10px;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 36px;
+  padding: 15px;
   box-sizing: border-box;
   line-height: 1;
   font-weight: 500;
@@ -1164,11 +1179,55 @@ img {
   background-color: rgba(255, 255, 255, 0.2);
 }
 
+.filter-price__scale {
+  box-sizing: border-box;
+  width: 100%;
+  height: 4px;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.filter-price__range {
+  position: relative;
+  height: inherit;
+  background-color: #f8f7f4;
+}
+
+.filter-price__toggle {
+  position: absolute;
+  top: 50%;
+  width: 20px;
+  height: 20px;
+  background-color: #f8f7f4;
+  border-radius: 50%;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+}
+
+.filter-price__toggle:hover {
+  width: 22px;
+  height: 22px;
+}
+
+.filter-price__toggle--min {
+  left: 0;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+      -ms-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%);
+}
+
+.filter-price__toggle--max {
+  right: 0;
+  -webkit-transform: translateX(50%) translateY(-50%);
+      -ms-transform: translateX(50%) translateY(-50%);
+          transform: translateX(50%) translateY(-50%);
+}
+
 .filter__radio, .filter__checkbox {
   display: none;
 }
 
 .filter__field {
+  width: 100%;
+  height: 37px;
   padding: 10px;
   box-sizing: border-box;
   line-height: 1;

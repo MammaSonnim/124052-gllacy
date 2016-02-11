@@ -14,7 +14,7 @@
     text-align: center;
     @include clear-link;
     &:hover {
-      background-color: $bg_blocks;
+      background-color: $bg_block;
       border-radius: 50%;
     }
     &--current {
@@ -53,7 +53,7 @@
       }
     }
     &--disabled:before {
-      border-color: $bg_blocks;
+      border-color: $bg_block;
       border-top-color: transparent;
       border-right-color: transparent;
     }
