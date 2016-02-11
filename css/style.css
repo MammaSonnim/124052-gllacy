@@ -152,10 +152,10 @@ img {
 .field {
   box-sizing: border-box;
   width: 100%;
-  padding: 10px;
-  border: 1px solid #d3d3d2;
+  padding: 12px;
+  border: none;
+  box-shadow: 0 0 0 1px #d3d3d2 inset;
   border-radius: 5px;
-  font-size: 14px;
   font-weight: 700;
 }
 
@@ -164,30 +164,17 @@ img {
 }
 
 .field:hover {
-  padding: 9px;
-  border: 2px solid #c7c6c5;
+  box-shadow: 0 0 0 2px #c7c6c5 inset;
 }
 
 .field:focus {
   outline: none;
-  padding: 9px;
-  border: 2px solid #8fbdec;
+  box-shadow: 0 0 0 2px #8fbdec inset;
 }
 
-.field--tall {
-  padding: 12px;
-  font-size: 16px;
-}
-
-.field--tall:hover {
-  padding: 11px;
-  border: 2px solid #c7c6c5;
-}
-
-.field--tall:focus {
-  outline: none;
-  padding: 11px;
-  border: 2px solid #8fbdec;
+.field--small {
+  padding: 10px;
+  font-size: 14px;
 }
 
 .field::-webkit-input-placeholder {
@@ -552,8 +539,8 @@ img {
 
 .cart-list__icon-remove {
   position: relative;
-  width: 25px;
-  height: 33px;
+  width: 26px;
+  height: 32px;
   display: block;
   font-size: 0;
   border: none;
@@ -565,19 +552,23 @@ img {
   content: '';
   position: absolute;
   top: 50%;
-  left: 50%;
   width: 1px;
   height: 15px;
   background-color: #353535;
-  -webkit-transform: translate(-50%) rotate(45deg);
-      -ms-transform: translate(-50%) rotate(45deg);
-          transform: translate(-50%) rotate(45deg);
+}
+
+.cart-list__icon-remove:before {
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%) rotate(45deg);
+      -ms-transform: translate(-50%, -50%) rotate(45deg);
+          transform: translate(-50%, -50%) rotate(45deg);
 }
 
 .cart-list__icon-remove:after {
-  -webkit-transform: translate(-50%) rotate(-45deg);
-      -ms-transform: translate(-50%) rotate(-45deg);
-          transform: translate(-50%) rotate(-45deg);
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%) rotate(-45deg);
+      -ms-transform: translate(-50%, -50%) rotate(-45deg);
+          transform: translate(-50%, -50%) rotate(-45deg);
 }
 
 .cart-list__img {
@@ -1389,17 +1380,38 @@ img {
 
 .modal-contact__close {
   position: absolute;
-  right: 10px;
-  top: 10px;
   width: 26px;
   height: 26px;
+  display: block;
+  font-size: 0;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  right: 10px;
+  top: 10px;
 }
 
 .modal-contact__close:before, .modal-contact__close:after {
+  content: '';
+  position: absolute;
+  top: 50%;
   width: 2px;
   height: 22px;
-  top: 3px;
-  left: 12px;
+  background-color: #353535;
+}
+
+.modal-contact__close:before {
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%) rotate(45deg);
+      -ms-transform: translate(-50%, -50%) rotate(45deg);
+          transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.modal-contact__close:after {
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%) rotate(-45deg);
+      -ms-transform: translate(-50%, -50%) rotate(-45deg);
+          transform: translate(-50%, -50%) rotate(-45deg);
 }
 
 .modal-contact__text {

@@ -116,8 +116,8 @@
   }
 }
 
-@mixin icon-close($width_el: 25px, $height_el: 25px, $width_ps: 1px, $height_ps: 15px) {
-  position: relative;
+@mixin icon-close($poz_el, $width_el, $height_el, $width_ps, $height_ps) {
+  position: $poz_el;
   width: $width_el;
   height: $height_el;
   display: block;
@@ -130,14 +130,17 @@
     content: '';
     position: absolute;
     top: 50%;
-    left: 50%;
     width: $width_ps;
     height: $height_ps;
     background-color: #353535;
-    transform: translate(-50%) rotate(45deg);
+  }
+  &:before {
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
   }
   &:after {
-    transform: translate(-50%) rotate(-45deg);
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
   }
 }
 

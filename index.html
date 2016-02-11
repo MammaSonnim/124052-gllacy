@@ -24,7 +24,7 @@
                 <a href="catalog.html" class="page-nav__link">Каталог</a>
                 <ul class="page-nav__sub-list">
                   <li class="page-nav__sub-title">Новинки</li>
-                  <li class="page-nav__sub-item"><a href="#" class="page-nav__sub-link">Сливочное</a></li>
+                  <li class="page-nav__sub-item"><a href="catalog.html" class="page-nav__sub-link">Сливочное</a></li>
                   <li class="page-nav__sub-item"><a href="#" class="page-nav__sub-link">Щербеты</a></li>
                   <li class="page-nav__sub-item"><a href="#" class="page-nav__sub-link">Фруктовый лёд</a></li>
                   <li class="page-nav__sub-item"><a href="#" class="page-nav__sub-link">Мелорин</a></li>
@@ -44,7 +44,7 @@
             <div class="page-header__action search">
               <form action="/echo" class="search__form">
                 <div class="search__wrap">
-                  <input class="search__input field" type="search" placeholder="Что ищем?">
+                  <input class="search__input field field--small" type="search" placeholder="Что ищем?">
                 </div>
                 <button class="search__btn actions-btn actions-btn--search" type="submit"></button>
               </form>
@@ -53,8 +53,8 @@
               <div class="actions-btn actions-btn--login">Вход</div>
               <div class="login__wrap">
                 <form action="/echo" class="login__form">
-                  <input type="email" class="login__input field" placeholder="Электронная почта">
-                  <input type="password" class="login__input field" placeholder="Пароль">
+                  <input type="email" class="login__input field field--small" placeholder="Электронная почта">
+                  <input type="password" class="login__input field field--small" placeholder="Пароль">
                   <div class="login__col">
                     <button type="submit" class="btn btn--wide">Войти</button>
                   </div>
@@ -208,7 +208,7 @@
               <p class="subscribe__text">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой не нужной ерунды. Честно =&#41;</p>
               <form action="/echo" class="subscribe__form">
                 <div class="subscribe__input">
-                  <input type="email" class="field field--tall" placeholder="Электронная почта">
+                  <input type="email" class="field" placeholder="Электронная почта">
                 </div>
                 <div class="subscribe__btn">
                   <button type="submit" class="btn btn--middle">Отправить</button>
@@ -282,12 +282,12 @@
       </footer>
     </div>
     <div class="modal-contact">
-      <button class="modal-contact__close icon-close" type="button">Назад</button>
+      <button class="modal-contact__close" type="button">Назад</button>
       <p class="modal-contact__text">Мы обязательно вам ответим!</p>
       <form class="modal-contact__form" action="/echo" method="post">
-        <input class="modal-contact__item field field--tall" type="text" name="name" id="name-field" placeholder="Как вас зовут?">
-        <input class="modal-contact__item field field--tall" type="email" name="email" id="email-field" placeholder="Ваша почта для ответа?">
-        <textarea class="modal-contact__text-field field field--tall" name="text" rows="6" id="text-field" placeholder="Напишите что-нибудь..."></textarea>
+        <input class="modal-contact__item field" type="text" name="name" id="name-field" placeholder="Как вас зовут?">
+        <input class="modal-contact__item field" type="email" name="email" id="email-field" placeholder="Ваша почта для ответа?">
+        <textarea class="modal-contact__text-field field" name="text" rows="6" id="text-field" placeholder="Напишите что-нибудь..."></textarea>
         <div class="modal-contact__btn">
           <button class=" btn btn--middle btn--narrow" type="submit" name="send">Отправить</button>
         </div>

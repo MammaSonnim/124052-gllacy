@@ -1,35 +1,24 @@
 .field {
   box-sizing: border-box;
   width: 100%;
-  padding: 10px;
-  border: 1px solid $bc_input;
+  padding: 12px;
+  border: none;
+  box-shadow: 0 0 0 1px $bc_input inset;
   border-radius: $br_small;
-  font-size: $fz_s;
   font-weight: 700;
   &[type="search"] {
     box-sizing: border-box;
   }
   &:hover {
-    padding: 9px;
-    border: 2px solid $bc_input-hov;
+    box-shadow: 0 0 0 2px $bc_input-hov inset;
   }
   &:focus {
     outline: none;
-    padding: 9px;
-    border: 2px solid $bc_input-foc;
+    box-shadow: 0 0 0 2px $bc_input-foc inset;
   }
-  &--tall {
-    padding: 12px;
-    font-size: $fz_base;
-    &:hover {
-      padding: 11px;
-      border: 2px solid $bc_input-hov;
-    }
-    &:focus {
-      outline: none;
-      padding: 11px;
-      border: 2px solid $bc_input-foc;
-    }
+  &--small {
+    padding: 10px;
+    font-size: $fz_s;
   }
   &::-webkit-input-placeholder {font-weight: 400;}
   &:-moz-placeholder {font-weight: 400;}
