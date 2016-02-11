@@ -70,17 +70,16 @@ img {
 
 .btn {
   border: none;
+  text-align: center;
+  line-height: 1;
   outline: none;
   overflow: hidden;
-  line-height: 1;
   text-decoration: none;
   display: inline-block;
   padding: 10px 25px;
   font-size: 15px;
-  text-align: center;
-  text-decoration: none;
   color: #ffffff;
-  background: linear-gradient(to top, #e74a35, #f26843);
+  background-image: linear-gradient(to top, #e74a35, #f26843);
   border-radius: 30px;
   box-shadow: 0 2px 2px 0 #ac1000;
 }
@@ -370,9 +369,10 @@ img {
   background-color: rgba(255, 255, 255, 0.2);
   background-repeat: no-repeat;
   border: none;
+  text-align: center;
+  line-height: 1;
   outline: none;
   overflow: hidden;
-  line-height: 1;
   text-decoration: none;
   border-radius: 30px;
   cursor: default;
@@ -1341,6 +1341,33 @@ img {
   border: 2px solid #f8f7f4;
   border-top-color: transparent;
   border-right-color: transparent;
+}
+
+.plain-btn {
+  border: none;
+  text-align: center;
+  line-height: 1;
+  outline: none;
+  overflow: hidden;
+  text-decoration: none;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin: 0 2px 2px 0;
+  padding: 8px 26px;
+  box-shadow: 0 0 0 2px #ffffff;
+  border-radius: 30px;
+}
+
+.plain-btn:hover {
+  background-color: #ffffff;
+  color: #333333;
+}
+
+.plain-btn:active {
+  margin: 0;
+  padding: 10px 28px;
+  background-color: #f8f7f4;
+  color: #333333;
+  box-shadow: 0 2px 0 1px #696969 inset;
 }
 
 .paginator {

@@ -19,11 +19,12 @@
   list-style: none;
 }
 
-@mixin clear-btn {
+@mixin btn {
   border: none;
+  text-align: center;
+  line-height: 1;
   outline: none;
   overflow: hidden;
-  line-height: 1;
   text-decoration: none;
 }
 

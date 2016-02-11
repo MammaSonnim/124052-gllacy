@@ -1,0 +1,19 @@
+.plain-btn {
+  @include btn;
+  background-color: $bg_block;
+  margin: 0 2px 2px 0;
+  padding: 8px 26px;
+  box-shadow: 0 0 0 2px #ffffff;
+  border-radius: $br_base;
+  &:hover {
+    background-color: #ffffff;
+    color: $c_text_base;
+  }
+  &:active {
+    margin: 0;
+    padding: 10px 28px;
+    background-color: $bg_light;
+    color: $c_text_base;
+    box-shadow: 0 2px 0 1px #696969 inset;
+  }
+}

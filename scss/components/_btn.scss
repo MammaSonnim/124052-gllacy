@@ -1,12 +1,10 @@
 .btn {
-  @include clear-btn;
+  @include btn;
   display: inline-block;
   padding: 10px 25px;
   font-size: 15px;
-  text-align: center;
-  text-decoration: none;
   color: $c_text_alt;
-  background: $gr_btn;
+  background-image: $gr_btn;
   border-radius: $br_base;
   box-shadow: 0 2px 2px 0 #ac1000;
   &--middle {

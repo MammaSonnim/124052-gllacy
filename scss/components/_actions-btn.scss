@@ -3,7 +3,7 @@
   color: $c_text_alt;
   background-color: $bg_block;
   background-repeat: no-repeat;
-  @include clear-btn;
+  @include btn;
   border-radius: $br_base;
   cursor: default;
   &--search {
