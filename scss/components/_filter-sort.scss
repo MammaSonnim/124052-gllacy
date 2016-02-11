@@ -1,10 +1,17 @@
 .filter-sort {
+  width: 192px;
   &__field {
-    padding: 6px 10px 7px 10px;
+    width: 100%;
+    height: 37px;
+    padding: 6px 25px 7px 10px;
     @include style-filter;
+    background-image: url(../img/icon_select-white.svg);
+    background-repeat: no-repeat;
+    background-position: 92%;
     @include clear-select;
     &:hover, &:focus {
       background-color: #ffffff;
+      background-image: url(../img/icon_select-black.svg);
       color: $c_text_base;
     }
   }

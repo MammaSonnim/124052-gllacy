@@ -1091,12 +1091,15 @@ img {
   -webkit-flex-wrap: wrap;
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
+  margin: 0;
   padding: 20px 0;
   color: #ffffff;
 }
 
 .filters__item {
   border: none;
+  margin-right: 20px;
+  padding: 0;
 }
 
 .filters__title {
@@ -1104,12 +1107,22 @@ img {
   margin-left: 15px;
 }
 
+.filter-sort {
+  width: 192px;
+}
+
 .filter-sort__field {
-  padding: 6px 10px 7px 10px;
+  width: 100%;
+  height: 37px;
+  padding: 6px 25px 7px 10px;
+  box-sizing: border-box;
   line-height: 1;
   font-weight: 500;
-  background-color: rgba(255, 255, 255, 0.2);
   border-radius: 30px;
+  background-color: rgba(255, 255, 255, 0.2);
+  background-image: url(../img/icon_select-white.svg);
+  background-repeat: no-repeat;
+  background-position: 92%;
   border: none;
   outline: none;
   text-indent: 0.01px;
@@ -1117,6 +1130,7 @@ img {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
+  cursor: pointer;
 }
 
 .filter-sort__field select::-ms-expand {
@@ -1137,15 +1151,17 @@ img {
 
 .filter-sort__field:hover, .filter-sort__field:focus {
   background-color: #ffffff;
+  background-image: url(../img/icon_select-black.svg);
   color: #333333;
 }
 
 .filter-price__field {
   padding: 10px;
+  box-sizing: border-box;
   line-height: 1;
   font-weight: 500;
-  background-color: rgba(255, 255, 255, 0.2);
   border-radius: 30px;
+  background-color: rgba(255, 255, 255, 0.2);
 }
 
 .filter__radio, .filter__checkbox {
@@ -1154,10 +1170,11 @@ img {
 
 .filter__field {
   padding: 10px;
+  box-sizing: border-box;
   line-height: 1;
   font-weight: 500;
-  background-color: rgba(255, 255, 255, 0.2);
   border-radius: 30px;
+  background-color: rgba(255, 255, 255, 0.2);
 }
 
 .paginator {

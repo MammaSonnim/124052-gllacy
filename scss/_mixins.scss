@@ -90,10 +90,11 @@
 }
 
 @mixin style-filter {
+  box-sizing: border-box;
   line-height: 1;
   font-weight: $fw_medium;
-  background-color: $bg_blocks;
   border-radius: $br_base;
+  background-color: $bg_blocks;
 }
 
 @mixin clear-select {
@@ -102,6 +103,7 @@
   text-indent: 0.01px;
   text-overflow: '';
   appearance: none;
+  cursor: pointer;
   & select::-ms-expand {
     display: none;
   }
