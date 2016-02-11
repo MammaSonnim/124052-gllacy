@@ -132,32 +132,40 @@
               </div>
             </div>
           </fieldset>
-          <fieldset class="filters__item filter">
+          <fieldset class="filters__item filter-radio">
             <legend class="filters__title">Жирность</legend>
-            <div class="filter__field">
-              <input class="filter__radio" id="radio-1" type="radio" name="fat-radio" value="0%">
-              <label class="filter__label" for="radio-1">0%</label>
-              <input class="filter__radio" id="radio-2" type="radio" name="fat-radio" value="before10%">
-              <label class="filter__label" for="radio-2">до 10%</label>
-              <input class="filter__radio" id="radio-3" type="radio" name="fat-radio" value="before30%">
-              <label class="filter__label" for="radio-3">до 30%</label>
-              <input class="filter__radio" id="radio-4" type="radio" name="fat-radio" value="after30%">
-              <label class="filter__label" for="radio-4">выше 30%</label>
+            <div class="filter-radio__field">
+              <input class="filter-radio__input" id="radio-1" type="radio" name="fat" value="0%">
+              <label class="filter-radio__label" for="radio-1">
+                <span class="filter-radio__indicator"></span>0%
+              </label>
+              <input class="filter-radio__input" id="radio-2" type="radio" name="fat" value="before10%">
+              <label class="filter-radio__label" for="radio-2">
+                <span class="filter-radio__indicator"></span>до 10%
+              </label>
+              <input class="filter-radio__input" id="radio-3" type="radio" name="fat" value="before30%">
+              <label class="filter-radio__label" for="radio-3">
+                <span class="filter-radio__indicator"></span>до 30%
+              </label>
+              <input class="filter-radio__input" id="radio-4" type="radio" name="fat" value="after30%">
+              <label class="filter-radio__label" for="radio-4">
+                <span class="filter-radio__indicator"></span>выше 30%
+              </label>
             </div>
           </fieldset>
-          <fieldset class="filters__item filter">
+          <fieldset class="filters__item filter-check">
             <legend class="filters__title">Наполнители</legend>
-            <div class="filter__field">
-              <input class="filter__checkbox" id="checkbox-1" type="checkbox" name="topping-checkbox" value="choco">
-              <label class="filter__label" for="checkbox-1">шоколадные</label>
-              <input class="filter__checkbox" id="checkbox-2" type="checkbox" name="topping-checkbox" value="sugar" checked>
-              <label class="filter__label" for="checkbox-2">сахарные присыпки</label>
-              <input class="filter__checkbox" id="checkbox-3" type="checkbox" name="topping-checkbox" value="fruit">
-              <label class="filter__label" for="checkbox-3">фрукты</label>
-              <input class="filter__checkbox" id="checkbox-4" type="checkbox" name="topping-checkbox" value="syrup">
-              <label class="filter__label" for="checkbox-4">сиропы</label>
-              <input class="filter__checkbox" id="checkbox-5" type="checkbox" name="topping-checkbox" value="jam">
-              <label class="filter__label" for="checkbox-5">джемы</label>
+            <div class="filter-check__field">
+              <input class="filter-check__input" id="check-1" type="checkbox" name="topping" value="choco">
+              <label class="filter-check__label" for="check-1">шоколадные</label>
+              <input class="filter-check__input" id="check-2" type="checkbox" name="topping" value="sugar" checked>
+              <label class="filter-check__label" for="check-2">сахарные присыпки</label>
+              <input class="filter-check__input" id="check-3" type="checkbox" name="topping" value="fruit">
+              <label class="filter-check__label" for="check-3">фрукты</label>
+              <input class="filter-check__input" id="check-4" type="checkbox" name="topping" value="syrup">
+              <label class="filter-check__label" for="check-4">сиропы</label>
+              <input class="filter-check__input" id="check-5" type="checkbox" name="topping" value="jam">
+              <label class="filter-check__label" for="check-5">джемы</label>
             </div>
           </fieldset>
           <div class="filters__btn">
