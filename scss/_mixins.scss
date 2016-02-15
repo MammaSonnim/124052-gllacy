@@ -98,26 +98,6 @@
   background-color: $bg_block;
 }
 
-@mixin clear-select {
-  border: none;
-  outline: none;
-  text-indent: 0.01px;
-  text-overflow: '';
-  appearance: none;
-  cursor: pointer;
-  & select::-ms-expand {
-    display: none;
-  }
-  &:-moz-focus-inner {
-  border: 0;
-  }
-  & option {
-    text-shadow: none
-    &:not(:checked) {
-      color: #000000;
-    }
-  }
-}
 
 @mixin icon-close($poz_el, $width_el, $height_el, $width_ps, $height_ps) {
   position: $poz_el;

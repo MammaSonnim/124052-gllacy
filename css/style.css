@@ -1125,47 +1125,78 @@ img {
 }
 
 .filter-sort__field {
+  position: relative;
+  box-sizing: border-box;
   width: 100%;
   height: 36px;
-  padding: 6px 25px 7px 10px;
-  box-sizing: border-box;
-  line-height: 1;
   font-weight: 500;
+  background-color: #9bafa3;
   border-radius: 30px;
-  background-color: rgba(255, 255, 255, 0.2);
-  background-image: url(../img/icon_select-white.svg);
-  background-repeat: no-repeat;
-  background-position: 92%;
-  border: none;
-  outline: none;
-  text-indent: 0.01px;
-  text-overflow: '';
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
   cursor: pointer;
-}
-
-.filter-sort__field select::-ms-expand {
-  display: none;
-}
-
-.filter-sort__field:-moz-focus-inner {
-  border: 0;
-}
-
-.filter-sort__field option {
-  text-shadow: none   .filter-sort__field option;
-}
-
-.filter-sort__field option :not(:checked) {
-  color: #000000;
 }
 
 .filter-sort__field:hover, .filter-sort__field:focus {
   background-color: #ffffff;
-  background-image: url(../img/icon_select-black.svg);
   color: #333333;
+}
+
+.filter-sort__field .select-icon:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 7%;
+  width: 0;
+  height: 0;
+  margin-top: -.15rem;
+  pointer-events: none;
+  border-top: .35rem solid;
+  border-right: .35rem solid transparent;
+  border-bottom: .35rem solid transparent;
+  border-left: .35rem solid transparent;
+}
+
+.filter-sort__field .select {
+  width: 100%;
+  height: 36px;
+  margin: 0;
+  padding: 0 25px 0 10px;
+  background-color: #9bafa3;
+  border: 0;
+  border-radius: 30px;
+  cursor: pointer;
+  outline: 0;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+
+.filter-sort__field .select:focus:-moz-focusring {
+  color: transparent;
+  text-shadow: 0 0 0 #000;
+}
+
+.filter-sort__field .select:hover, .filter-sort__field .select:focus, .filter-sort__field .select:active {
+  background-color: #ffffff;
+  color: #333333;
+}
+
+.filter-sort__field .select::-ms-expand {
+  display: none;
+}
+
+.select:focus ~ .select-icon:after {
+  border-top-color: #333333;
+}
+
+@-moz-document url-prefix() {
+  .filter-sort .select {
+    text-indent: 0.01px;
+    text-overflow: '';
+    padding-right: 1rem;
+  }
+  .filter-sort option {
+    background-color: white;
+  }
 }
 
 .filter-price {
