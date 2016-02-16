@@ -19,14 +19,12 @@
     &--suppliers {
       position: relative;
       font-weight: $fw_bold;
-      &:before {
-        content: "";
+      & svg {
         position: absolute;
         top: 5px;
         left: -20px;
-        width: 14px;
-        height: 12px;
-        background: url(../img/icon_nav-heart.svg) no-repeat;
+        width: 14.562px;
+        height: 12.66px;
       }
     }
   }

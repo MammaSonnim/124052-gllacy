@@ -2,13 +2,13 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  min-height: 220px;
+  min-height: 230px;
   padding: 12px 20px 20px 20px;
   color: $c_text_alt;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  border-radius: $br_medium;
+  border-radius: 15px;
   &--berry {
     background-color: #a63856;
     background-image: url(../img/bg_banner-1.jpg);

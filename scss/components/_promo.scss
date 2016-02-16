@@ -13,15 +13,12 @@
     position: relative;
     margin: 0;
     padding: 14px 0 10px 55px;
-    &:before {
-      content: "";
+    & svg {
       position: absolute;
       top: 0;
       left: 0;
-      width: 47px;
-      height: 47px;
-      background-image: url(../img/icon_promo-cow.svg);
-      background-repeat: no-repeat;
+      width: 47.375px;
+      height: 47.38px;
     }
   }
 }
