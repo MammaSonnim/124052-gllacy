@@ -22,19 +22,25 @@
     }
   }
   &__rub {
+    white-space: nowrap;
+    &:after {
+      content: "\e800";
+      margin-right: 3px;
+      font-family: "gllacy";
+      font-size: 40px;
+      font-weight: normal;
+      font-style: normal;
+      speak: none;
+      font-variant: normal;
+      text-transform: none;
+    }
+  }
+  &__rub-hide {
     font-size: 0;
-    line-height: 0;
     color: transparent;
     text-shadow: none;
-    &:after {
-        content: "";
-        margin-right: 3px;
-        margin-left: 5px;
-        font-family: "gllacy";
-        font-size: 38px;
-        font-weight: normal;
-        font-style: normal;
-    }
+    background-color: transparent;
+    border: 0;
   }
   &__title {
     position: relative;

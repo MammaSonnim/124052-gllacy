@@ -1,3 +1,11 @@
+@font-face {
+  font-family: 'gllacy';
+  src: url("../font/gllacy.eot?33611331");
+  src: url("../font/gllacy.eot?33611331#iefix") format("embedded-opentype"), url("../font/gllacy.woff?33611331") format("woff"), url("../font/gllacy.ttf?33611331") format("truetype"), url("../font/gllacy.svg?33611331#gllacy") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
   min-width: 900px;
   font: 400 16px/1.375 "Roboto", sans-serif;
@@ -851,20 +859,27 @@ img {
 }
 
 .product__rub {
-  font-size: 0;
-  line-height: 0;
-  color: transparent;
-  text-shadow: none;
+  white-space: nowrap;
 }
 
 .product__rub:after {
-  content: "";
+  content: "\e800";
   margin-right: 3px;
-  margin-left: 5px;
   font-family: "gllacy";
-  font-size: 38px;
+  font-size: 40px;
   font-weight: normal;
   font-style: normal;
+  speak: none;
+  font-variant: normal;
+  text-transform: none;
+}
+
+.product__rub-hide {
+  font-size: 0;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0;
 }
 
 .product__title {

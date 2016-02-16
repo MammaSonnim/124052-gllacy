@@ -1,3 +1,14 @@
+@font-face {
+  font-family: 'gllacy';
+  src: url('../font/gllacy.eot?33611331');
+  src: url('../font/gllacy.eot?33611331#iefix') format('embedded-opentype'),
+       url('../font/gllacy.woff?33611331') format('woff'),
+       url('../font/gllacy.ttf?33611331') format('truetype'),
+       url('../font/gllacy.svg?33611331#gllacy') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
   min-width: $w_min;
   font: $font_base;
@@ -9,7 +20,3 @@ img {
   max-width: 100%;
   height: auto;
 }
-
-//* {
-//  outline: 1px solid grey;
-//}
