@@ -63,12 +63,12 @@
               <div class="login__wrap">
                 <form action="/echo" class="login__form">
                   <div class="field">
-                    <input type="email" class="login__input field__input field__input--small" required>
-                    <label class="field__label field__label--small" data="Электронная почта"></label>
+                    <input class="login__input field__input field__input--small" type="email" id="login-email" required>
+                    <label class="field__label field__label--small" data="Электронная почта" for="login-email"></label>
                   </div>
                   <div class="field">
-                    <input type="password" class="login__input field__input field__input--small" required>
-                    <label class="field__label field__label--small" data="Пароль"></label>
+                    <input class="login__input field__input field__input--small" type="password" id="login-pass" required>
+                    <label class="field__label field__label--small" data="Пароль" for="login-pass"></label>
                   </div>
                   <div class="login__col">
                     <button type="submit" class="btn btn--wide">Войти</button>
@@ -245,8 +245,8 @@
               <p class="subscribe__text">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой не нужной ерунды. Честно =&#41;</p>
               <form action="/echo" class="subscribe__form">
                 <div class="subscribe__field field">
-                  <input type="email" class="field__input" id="input-subscribe" required>
-                  <label class="field__label" for="input-subscribe" data="Электронная почта"></label>
+                  <input class="field__input" type="email" name="subsr-email" id="subscr-email" required>
+                  <label class="field__label" for="subscr-email" data="Электронная почта"></label>
                 </div>
                 <div class="subscribe__btn">
                   <button type="submit" class="btn btn--middle">Отправить</button>
@@ -331,12 +331,12 @@
       <p class="modal-contact__text">Мы обязательно вам ответим!</p>
       <form class="modal-contact__form" action="/echo" method="post">
         <div class="field">
-          <input class="modal-contact__item field__input" type="text" name="name" id="input-name" required>
-          <label class="field__label" for="input-name" data="Как вас зовут"></label>
+          <input class="modal-contact__item field__input" type="text" name="name" id="contact-name" required>
+          <label class="field__label" for="contact-name" data="Как вас зовут"></label>
         </div>
         <div class="field">
-          <input class="modal-contact__item field__input" type="email" name="email" id="input-email" required>
-          <label class="field__label" for="input-email" data="Ваша почта для ответа?"></label>
+          <input class="modal-contact__item field__input" type="email" name="email" id="contact-email" required>
+          <label class="field__label" for="contact-email" data="Ваша почта для ответа?"></label>
         </div>
         <div class="field">
           <textarea class="modal-contact__text-field__input field__input" name="text" rows="6" id="input-text" required></textarea>

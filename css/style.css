@@ -27,6 +27,15 @@ img {
   background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.2), transparent);
 }
 
+.bg__line {
+  height: 1px;
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  background-color: #cacac7;
+}
+
 .centerize {
   max-width: 1200px;
   margin: 0 auto;
@@ -119,6 +128,7 @@ img {
 
 .field {
   position: relative;
+  width: 100%;
 }
 
 .field__label {

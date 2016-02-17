@@ -45,8 +45,8 @@
               <form action="/echo" class="search__form">
                 <div class="search__wrap">
                   <div class="field">
-                    <input class="field__input field__input--small" type="search" required>
-                    <label class="field__label field__label--small" data="Что ищем?"></label>
+                    <input class="field__input field__input--small" type="search" name="search" id="search" required>
+                    <label class="field__label field__label--small" for="search" data="Что ищем?"></label>
                   </div>
                 </div>
                 <button class="search__btn actions-btn actions-btn--search" type="submit">
@@ -61,12 +61,12 @@
               <div class="login__wrap">
                 <form action="/echo" class="login__form">
                   <div class="field">
-                    <input type="email" class="login__input field__input field__input--small" required>
-                    <label class="field__label field__label--small" data="Электронная почта"></label>
+                    <input class="login__input field__input field__input--small" type="email" id="login-email" required>
+                    <label class="field__label field__label--small" data="Электронная почта" for="login-email"></label>
                   </div>
                   <div class="field">
-                    <input type="password" class="login__input field__input field__input--small" required>
-                    <label class="field__label field__label--small" data="Пароль"></label>
+                    <input class="login__input field__input field__input--small" type="password" id="login-pass" required>
+                    <label class="field__label field__label--small" data="Пароль" for="login-pass"></label>
                   </div>
                   <div class="login__col">
                     <button type="submit" class="btn btn--wide">Войти</button>
@@ -356,6 +356,7 @@
           <a class="paginator__item" href="#">5</a>
           <a class="paginator__dir paginator__dir--next" href="#">Следующая</a>
         </div>
+        <hr class="bg__line">
       </main>
       <footer class="page-footer">
         <div class="page-footer__col socials">
