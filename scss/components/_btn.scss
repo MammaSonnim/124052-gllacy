@@ -21,6 +21,7 @@
     padding: 16px 43px;
     font-size: 31.5px;
     border-radius: 40px;
+    text-shadow: 0 2px 5px rgba(160, 32, 11, 0.76);
   }
   &--narrow {
     padding-left: 23px;
@@ -29,5 +30,14 @@
   &--wide {
     padding-left: 34px;
     padding-right: 34px;
+  }
+  
+  &:hover {
+    background-image: linear-gradient(to top, #ec6f5e, #f58669);
+    box-shadow: 0 2px 2px 0 #ac1000;
+  }
+  &:active {
+    background-image: linear-gradient(to top, #e1613e, #d74632);
+    box-shadow: inset 0 2px 2px 0 #942718;
   }
 }

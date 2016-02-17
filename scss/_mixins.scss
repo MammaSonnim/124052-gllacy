@@ -40,6 +40,7 @@
   top: 113%;
   right: 0;
   z-index: $zi_hover;
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
 }
 
 @mixin hover-helper {

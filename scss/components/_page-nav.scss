@@ -16,8 +16,8 @@
       color: $c_text_base;
       text-decoration: none;
     }
-    &:active {
-      
+    &:not(.page-nav__item--active):active {
+      box-shadow: inset 0 2px 1px 0px #696969;
     }
     &--current {
       background-color: $bg_nav-cur;
