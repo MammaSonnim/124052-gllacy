@@ -2,9 +2,9 @@
   position: fixed;
   left: 50%;
   top: 50%;
+  display: none;
   transform: translate(-50%, -50%);
   z-index: $zi_modal;
-  display: none;
   width: 425px;
   padding: 13px 25px 25px 25px;
   background-color: $bg_light;
@@ -32,4 +32,8 @@
   &__btn {
     text-align: right;
   }
+  &--show {
+    display: block;
+  }
 }
+

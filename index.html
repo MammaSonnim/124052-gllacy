@@ -46,7 +46,10 @@
             <div class="page-header__action search">
               <form action="/echo" class="search__form">
                 <div class="search__wrap">
-                  <input class="search__input field field--small" type="search" placeholder="Что ищем?">
+                  <div class="field">
+                    <input class="field__input field__input--small" type="search" required>
+                    <label class="field__label field__label--small" data="Что ищем?"></label>
+                  </div>
                 </div>
                 <button class="search__btn actions-btn actions-btn--search" type="submit">
                   <svg><use xlink:href='#icon_search'/></svg>
@@ -59,8 +62,14 @@
               </div>
               <div class="login__wrap">
                 <form action="/echo" class="login__form">
-                  <input type="email" class="login__input field field--small" placeholder="Электронная почта">
-                  <input type="password" class="login__input field field--small" placeholder="Пароль">
+                  <div class="field">
+                    <input type="email" class="login__input field__input field__input--small" required>
+                    <label class="field__label field__label--small" data="Электронная почта"></label>
+                  </div>
+                  <div class="field">
+                    <input type="password" class="login__input field__input field__input--small" required>
+                    <label class="field__label field__label--small" data="Пароль"></label>
+                  </div>
                   <div class="login__col">
                     <button type="submit" class="btn btn--wide">Войти</button>
                   </div>
@@ -235,8 +244,9 @@
             <section class="content__col subscribe">
               <p class="subscribe__text">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой не нужной ерунды. Честно =&#41;</p>
               <form action="/echo" class="subscribe__form">
-                <div class="subscribe__input">
-                  <input type="email" class="field" placeholder="Электронная почта">
+                <div class="subscribe__field field">
+                  <input type="email" class="field__input" id="input-subscribe" required>
+                  <label class="field__label" for="input-subscribe" data="Электронная почта"></label>
                 </div>
                 <div class="subscribe__btn">
                   <button type="submit" class="btn btn--middle">Отправить</button>
@@ -322,9 +332,18 @@
       <button class="modal-contact__close" type="button">Назад</button>
       <p class="modal-contact__text">Мы обязательно вам ответим!</p>
       <form class="modal-contact__form" action="/echo" method="post">
-        <input class="modal-contact__item field" type="text" name="name" id="name-field" placeholder="Как вас зовут?">
-        <input class="modal-contact__item field" type="email" name="email" id="email-field" placeholder="Ваша почта для ответа?">
-        <textarea class="modal-contact__text-field field" name="text" rows="6" id="text-field" placeholder="Напишите что-нибудь..."></textarea>
+        <div class="field">
+          <input class="modal-contact__item field__input" type="text" name="name" id="input-name" required>
+          <label class="field__label" for="input-name" data="Как вас зовут"></label>
+        </div>
+        <div class="field">
+          <input class="modal-contact__item field__input" type="email" name="email" id="input-email" required>
+          <label class="field__label" for="input-email" data="Ваша почта для ответа?"></label>
+        </div>
+        <div class="field">
+          <textarea class="modal-contact__text-field__input field__input" name="text" rows="6" id="input-text" required></textarea>
+          <label class="field__label" for="input-text" data="Напишите что-нибудь..."></label>
+        </div>
         <div class="modal-contact__btn">
           <button class=" btn btn--middle btn--narrow" type="submit" name="send">Отправить</button>
         </div>
