@@ -1,21 +1,22 @@
-@-webkit-keyframes fade {
-  0% {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
 @keyframes fade {
   0% {
     opacity: 0;
-    transform: translateY(20px);
+    transform: translate(-50%, -40%);
   }
   100% {
     opacity: 1;
-    transform: translateY(0);
+    transform: translate(-50%, -50%);
   }
 }
+
+//@keyframes shake {
+//    0%, 100% {
+//        transform: translate(-50%, -50%);
+//    }
+//    10%, 30%, 50%, 70%, 90% {
+//        transform: translate(-51%, -50%);
+//    }
+//    20%, 40%, 60%, 80% {
+//        transform: translate(-49%, -50%);
+//    }
+//}

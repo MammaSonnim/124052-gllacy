@@ -1599,8 +1599,7 @@ img {
 }
 
 .page-footer__col--wide {
-  width: 330px;
-  margin-left: 25px;
+  width: 400px;
 }
 
 .socials {
@@ -1639,30 +1638,20 @@ img {
 }
 
 .extra-nav {
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-wrap: wrap;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
+  -webkit-column-count: 2;
+     -moz-column-count: 2;
+          column-count: 2;
   margin-top: 13px;
+  margin-left: -50px;
   font-size: 13px;
   line-height: 22px;
 }
 
-.extra-nav__col {
+.extra-nav__cols {
   padding: 0;
   margin: 0;
   list-style: none;
-}
-
-.extra-nav__col--left {
-  width: 40%;
-  margin-right: 10px;
-}
-
-.extra-nav__col--right {
-  width: 55%;
+  padding-left: 10px;
 }
 
 .extra-nav__item {
@@ -1673,6 +1662,7 @@ img {
 .extra-nav__item--suppliers {
   position: relative;
   font-weight: 700;
+  margin-left: 90px;
 }
 
 .extra-nav__item--suppliers svg {
@@ -1681,6 +1671,10 @@ img {
   left: -20px;
   width: 14.562px;
   height: 12.66px;
+}
+
+.extra-nav__item--production {
+  margin-left: 90px;
 }
 
 .copyright {
@@ -1722,6 +1716,8 @@ img {
   padding: 13px 25px 25px 25px;
   background-color: #f8f7f4;
   border-radius: 10px;
+  -webkit-animation: fade 0.3s both;
+          animation: fade 0.3s both;
 }
 
 .modal-contact__close {
@@ -1788,25 +1784,25 @@ img {
 @-webkit-keyframes fade {
   0% {
     opacity: 0;
-    -webkit-transform: translateY(20px);
-            transform: translateY(20px);
+    -webkit-transform: translate(-50%, -40%);
+            transform: translate(-50%, -40%);
   }
   100% {
     opacity: 1;
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
   }
 }
 
 @keyframes fade {
   0% {
     opacity: 0;
-    -webkit-transform: translateY(20px);
-            transform: translateY(20px);
+    -webkit-transform: translate(-50%, -40%);
+            transform: translate(-50%, -40%);
   }
   100% {
     opacity: 1;
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
   }
 }

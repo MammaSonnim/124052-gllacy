@@ -9,7 +9,7 @@
   padding: 13px 25px 25px 25px;
   background-color: $bg_light;
   border-radius: $br_medium;
-//  animation: fade 0.3s both;
+  animation: fade 0.3s both;
   &__close {
     @include icon-close(absolute, 26px, 26px, 2px, 22px);
     right: 10px;
@@ -35,5 +35,8 @@
   &--show {
     display: block;
   }
+//  &--error {
+//    animation: shake 0.3s both;
+//  }
 }
 
