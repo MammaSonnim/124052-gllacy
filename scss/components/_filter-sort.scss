@@ -6,7 +6,7 @@
       width: 100%;
       height: 36px;
       font-weight: $fw_medium;
-      background-color: #9bafa3;
+      background-color: $bg_block;
       border-radius: $br_base;
       cursor: pointer;
       &:hover,
@@ -34,7 +34,7 @@
         height: 36px;
         margin: 0;
         padding: 0 25px 0 10px;
-        background-color: #9bafa3;
+        background-color: transparent;
         border: 0;
         border-radius: $br_base;
         cursor: pointer;

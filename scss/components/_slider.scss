@@ -33,11 +33,6 @@
 }
 
 //Логика слайдера
-.bg {
-  background-repeat: no-repeat;
-  background-position: 50% 0;
-}
-
 .input {
   display: none;
   &--1:checked ~ .bg {
