@@ -973,7 +973,7 @@ img {
 
 .product:hover {
   z-index: 2;
-  margin-bottom: -68px;
+  margin-bottom: -28px;
   padding-bottom: 68px;
   cursor: pointer;
 }
@@ -1010,6 +1010,10 @@ img {
 
 .product--top {
   margin-bottom: 20px;
+}
+
+.product--top:hover {
+  margin-bottom: -48px;
 }
 
 .product--top:before {

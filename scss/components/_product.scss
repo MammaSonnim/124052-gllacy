@@ -64,7 +64,7 @@
   }
   &:hover {
     z-index: 2;
-    margin-bottom: -68px;
+    margin-bottom: -28px;
     padding-bottom: 68px;
     cursor: pointer;
     &:after {
@@ -95,6 +95,9 @@
   }
   &--top {
     margin-bottom: 20px;
+    &:hover {
+      margin-bottom: -48px;
+    }
     &:before {
       content: "";
       position: absolute;
