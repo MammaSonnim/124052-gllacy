@@ -1,17 +1,17 @@
 .filters {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: flex-end;
   box-sizing: border-box;
-  width: 860px;
+  width: 870px;
   margin: 0;
-  padding: 20px 0;
+  padding: 20px 0 25px 0;
   font-weight: $fw_medium;
   color: $c_text_alt;
   &__item {
     border: none;
-    margin-bottom: 12px;
+    margin: 0 15px 12px 0;
     padding: 0;
   }
   &__title {

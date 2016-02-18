@@ -1,9 +1,8 @@
 .banner {
+  position: relative;
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
   min-height: 230px;
-  padding: 12px 20px 20px 20px;
+  padding: 12px 20px 80px 20px;
   color: $c_text_alt;
   background-repeat: no-repeat;
   background-position: center;
@@ -16,19 +15,19 @@
   &--choco {
     background-color: #835542;
     background-image: url(../img/bg_banner-2.jpg);
-    
   }
   &__title {
     @include clear-mp;
     font-size: $fz_xl;
     margin-bottom: 10px;
-    
   }
   &__text {
     @include clear-mp;
     font-size: 18px;
   }
   &__btn {
-    text-align: right;
+    position: absolute;
+    right: 20px;
+    bottom: 17px;
   }
 }

@@ -1,6 +1,6 @@
 .slider {
   position: relative;
-  padding: 273px 0 30px;
+  padding-top: 290px;
   text-align: center;
   overflow: hidden;
   z-index: $zi_base;
@@ -11,16 +11,17 @@
   }
   &__slide {
     width: 100%;
+    margin-bottom: 35px;
   }
   &__title {
     width: 700px;
-    margin: 0 auto 28px;
+    margin: 0 auto 32px;
     font: $font_xxl;
     color: $c_text_alt;
   }
   &__controls {
     position: absolute;
-    bottom: 70px;
+    bottom: 65px;
     display: flex;
     width: 100px;
   }
@@ -35,6 +36,8 @@
       background-color: rgba(248, 247, 244, 0.4);
     }
   }
+  &__btn {
+    }
 }
 
 //Логика слайдера

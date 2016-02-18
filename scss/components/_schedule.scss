@@ -1,4 +1,7 @@
 .schedule {
+  position: absolute;
+  top: 100%;
+  right: 0;
   color: $c_text_alt;
   text-align: right;
   & p {

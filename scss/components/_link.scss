@@ -16,9 +16,11 @@
     border-bottom-color: $bc_link_alt;
     &:hover {
     color: $c_link-hov_alt;
+    border-bottom-color: $bc_link-hov_alt;
     }
     &:active {
       color: $c_link-act_alt;
+      border-bottom-color: $bc_link-hov_alt;
     }
   }
   &--middle {

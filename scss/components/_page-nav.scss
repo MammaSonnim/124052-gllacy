@@ -1,43 +1,55 @@
 .page-nav {
   &__list {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
+    flex-wrap: wrap;
     @include clear-list;
     }
   &__item {
     position: relative;
+    margin: 0 5px 5px 0;
     padding: 6px 12px;
     border-radius: $br_base;
-    transition: all 0.3s ease-out;
+    transition: background-color 0.3s ease-out, box-shadow 0.1s ease-in;
     &:hover {
       color: $c_text_base;
       background-color: $bg_light;
     }
-    &:hover a {
+    &:hover > .link {
       color: $c_text_base;
-      text-decoration: none;
+      border-bottom: none;
     }
-    &:not(.page-nav__item--active):active {
-      box-shadow: inset 0 2px 1px 0px #696969;
+    &:active {
+      background-color: $bg_light;
+      box-shadow: inset 0 2px 1px 0 #696969;
+      & > .link {
+        color: $c_text_base;
+        border-bottom: none;
+      }
     }
     &--current {
       background-color: $bg_nav-cur;
-      & > a {
-        text-decoration: none;
+      & > .link {
+        border-bottom: none;
       }
       &:hover {
         background-color: $bg_nav-cur;
-      }
-      &:hover > a {
+        & > .link {
         color: $c_text_alt;
+        border-bottom: none;
+        }
+      }
+      &:active {
+        background-color: $bg_nav-cur;
+        box-shadow: none;
+        & > .link {
+          color: $c_text_alt;
+          border-bottom: none;
+        }
       }
     }
     @include hover-helper;
   }
-  &__link {
-    color: $c_text_alt;
-  }
-      
   &__sub-list {
     position: absolute;
     left: -7px;

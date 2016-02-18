@@ -1,10 +1,13 @@
 .page-header {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  min-height: 64px;
+  align-items: flex-start;
+  min-height: 44px;
+  padding-top: 20px;
+  margin-bottom: 30px;
   
   &__col {
+    position: relative;
     display: flex;
   }
   
@@ -23,12 +26,14 @@
   }
   
   &__nav-wrap {
-    width: 375px;
+    width: 400px;
   }
   
   &__actions-wrap {
     display: flex;
-    justify-content: space-between;
-    width: 260px;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    width: 290px;
+    margin-bottom: 10px;
   }
 }

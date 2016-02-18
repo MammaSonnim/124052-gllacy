@@ -1,7 +1,7 @@
 .breadcrumbs {
-  align-self: flex-end;
   font-size: $fz_s;
   color: $c_text_alt;
+  max-width: 80%;
   
   &__item {
     position: relative;

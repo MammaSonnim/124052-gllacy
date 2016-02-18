@@ -1,47 +1,41 @@
 .product {
   position: relative;
   color: $c_text_alt;
-  margin-bottom: 40px;
-  transition: all 0.3s ease;
+  margin-bottom: 38px;
+  transition: all 0.3s ease-out;
+  &__inner {
+    position: relative;
+  }
   &__img {
     position: relative;
     z-index: 1;
+    width: 100%;
     margin-bottom: 15px;
+    padding-top: 100%;
+    border-radius: 50%;
+    overflow: hidden;
     & img {
-      border-radius: 50%;
-      display: block;
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      margin: auto;
     }
   }
   &__price {
     position: absolute;
+    z-index: 5;
     bottom: 0;
-    font-size: 30px;
+    max-width: 100%;
+    font-size: 45px;
     font-weight: $fw_bold;
     text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
-    & span {
-      font-size: 45px;
+    overflow: hidden;
+    & small {
+      font-size: 30px;
+      margin-left: -5px;
     }
-  }
-  &__rub {
-    white-space: nowrap;
-    &:after {
-      content: "\e800";
-      margin-right: 3px;
-      font-family: "gllacy";
-      font-size: 40px;
-      font-weight: normal;
-      font-style: normal;
-      speak: none;
-      font-variant: normal;
-      text-transform: none;
-    }
-  }
-  &__rub-hide {
-    font-size: 0;
-    color: transparent;
-    text-shadow: none;
-    background-color: transparent;
-    border: 0;
   }
   &__title {
     position: relative;
@@ -65,7 +59,7 @@
   }
   &:hover {
     z-index: 2;
-    margin-bottom: -28px;
+    margin-bottom: -30px;
     padding-bottom: 68px;
     cursor: pointer;
     &:after {

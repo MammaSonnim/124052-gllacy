@@ -1,9 +1,8 @@
 .subscribe {
+  position: relative;
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
   min-height: 220px;
-  padding: 35px 20px 42px 25px;
+  padding: 35px 20px 80px 25px;
   background-image: url(../img/bg_blog-subscribe.png);
   background-color: #ffffff;
   background-repeat: no-repeat;
@@ -15,9 +14,12 @@
     color: #5a5a5a;
   }
   &__form {
+    position: absolute;
+    left: 25px;
+    right: 25px;
+    bottom: 40px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
   }
   &__field {
     flex-grow: 1;
