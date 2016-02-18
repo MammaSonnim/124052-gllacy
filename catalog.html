@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <title>Gllacy Shop</title>
   <link rel="stylesheet" href="css/normalize.min.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
   <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,700,900' rel='stylesheet' type='text/css'>
 </head>
 
@@ -47,8 +47,8 @@
                 <form action="/echo" class="search__form">
                   <div class="search__wrap">
                     <div class="field">
-                      <input class="field__input field__input--small" type="search" name="search" id="search" required>
-                      <label class="field__label field__label--small" for="search" data="Что ищем?"></label>
+                      <input class="field__input field__input--small" id="search" type="search" name="search" required>
+                      <label class="field__label field__label--small" for="search" data-first="Что ищем?"></label>
                     </div>
                   </div>
                   <button class="search__btn actions-btn actions-btn--search" type="submit">
@@ -68,11 +68,11 @@
                   <form action="/echo" class="login__form">
                     <div class="field">
                       <input class="login__input field__input field__input--small" type="text" id="login-email" required>
-                      <label class="field__label field__label--small" data="Электронная почта" for="login-email"></label>
+                      <label class="field__label field__label--small" data-first="Электронная почта" for="login-email"></label>
                     </div>
                     <div class="field">
                       <input class="login__input field__input field__input--small" type="password" id="login-pass" required>
-                      <label class="field__label field__label--small" data="Пароль" for="login-pass"></label>
+                      <label class="field__label field__label--small" data-first="Пароль" for="login-pass"></label>
                     </div>
                     <div class="login__col">
                       <button type="submit" class="btn btn--wide">Войти</button>

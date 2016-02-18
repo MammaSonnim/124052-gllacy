@@ -77,15 +77,16 @@ img {
 }
 
 .btn {
+  display: inline-block;
+  vertical-align: baseline;
+  max-width: 200px;
+  padding: 10px 25px;
   border: none;
   text-align: center;
   line-height: 1;
   outline: none;
   overflow: hidden;
   text-decoration: none;
-  display: inline-block;
-  max-width: 200px;
-  padding: 10px 25px;
   font-size: 15px;
   color: #ffffff;
   background-image: linear-gradient(to top, #e74a35, #f26843);
@@ -204,7 +205,7 @@ img {
 }
 
 .field__label:before {
-  content: attr(data);
+  content: attr(data-first);
   white-space: nowrap;
 }
 
@@ -1132,14 +1133,15 @@ img {
   border: 0;
 }
 
-.promo {
+.info {
   margin-bottom: 40px;
   padding: 20px 12px 10px 20px;
-  background: url(../img/bg_promo.jpg);
+  background-color: #f1e5cd;
+  background-image: url(../img/bg_promo.jpg);
   border-radius: 15px;
 }
 
-.promo__title {
+.info__title {
   margin: 0;
   padding: 0;
   margin-bottom: 10px;
@@ -1147,13 +1149,13 @@ img {
   line-height: 1.25;
 }
 
-.promo__text {
+.info__text {
   position: relative;
   margin: 0;
   padding: 14px 0 10px 55px;
 }
 
-.promo__text svg {
+.info__text svg {
   position: absolute;
   top: 0;
   left: 0;
@@ -1192,7 +1194,7 @@ img {
   min-height: 220px;
   padding: 35px 20px 80px 25px;
   background-image: url(../img/bg_blog-subscribe.png);
-  background-color: #ffffff;
+  background-color: #f8f7f4;
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100% 100%;
@@ -1234,7 +1236,7 @@ img {
   position: relative;
   min-height: 430px;
   margin: 0 2.3%;
-  background: url(../img/bg_map.png) no-repeat center;
+  background: #ebe4c9 url(../img/bg_map.png) no-repeat center;
   background-size: cover;
 }
 
@@ -1802,6 +1804,7 @@ img {
 
 .copyright__inner {
   display: inline-block;
+  vertical-align: middle;
   text-align: left;
 }
 

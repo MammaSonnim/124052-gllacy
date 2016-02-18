@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <title>Gllacy Shop</title>
   <link rel="stylesheet" href="css/normalize.min.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
   <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,700,900' rel='stylesheet' type='text/css'>
 </head>
 
@@ -50,8 +50,8 @@
               <form action="/echo" class="search__form">
                 <div class="search__wrap">
                   <div class="field">
-                    <input class="field__input field__input--small" type="search" required>
-                    <label class="field__label field__label--small" data="Что ищем?"></label>
+                    <input class="field__input field__input--small" id="search" type="search" name="search" required>
+                    <label class="field__label field__label--small" for="search" data-first="Что ищем?"></label>
                   </div>
                 </div>
                 <button class="search__btn actions-btn actions-btn--search" type="submit">
@@ -71,11 +71,11 @@
                 <form action="/echo" class="login__form">
                   <div class="field">
                     <input class="login__input field__input field__input--small" type="text" id="login-email" required>
-                    <label class="field__label field__label--small" data="Электронная почта" for="login-email"></label>
+                    <label class="field__label field__label--small" data-first="Электронная почта" for="login-email"></label>
                   </div>
                   <div class="field">
                     <input class="login__input field__input field__input--small" type="password" id="login-pass" required>
-                    <label class="field__label field__label--small" data="Пароль" for="login-pass"></label>
+                    <label class="field__label field__label--small" data-first="Пароль" for="login-pass"></label>
                   </div>
                   <div class="login__col">
                     <button type="submit" class="btn btn--wide">Войти</button>
@@ -236,29 +236,29 @@
               </div>
             </article>
           </section>
-          <section class="promo row">
-            <h1 class="promo__title">Магазин Глейси — это онлайн и офлайн магазин по продаже мороженого собственного производства на развес</h1>
-            <p class="row__col promo__text">
+          <section class="info row">
+            <h1 class="info__title">Магазин Глейси — это онлайн и офлайн магазин по продаже мороженого собственного производства на развес</h1>
+            <p class="row__col info__text">
               <svg>
-                <use xlink:href='#icon_promo-ice' />
+                <use xlink:href='#icon_info-ice' />
               </svg>
               Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.
             </p>
-            <p class="row__col promo__text">
+            <p class="row__col info__text">
               <svg>
-                <use xlink:href='#icon_promo-cow' />
+                <use xlink:href='#icon_info-cow' />
               </svg>
               Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.
             </p>
-            <p class="row__col promo__text">
+            <p class="row__col info__text">
               <svg>
-                <use xlink:href='#icon_promo-leaf' />
+                <use xlink:href='#icon_info-leaf' />
               </svg>
               Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья
             </p>
-            <p class="row__col promo__text">
+            <p class="row__col info__text">
               <svg>
-                <use xlink:href='#icon_promo-term' />
+                <use xlink:href='#icon_info-term' />
               </svg>
               Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, которая не дает мороженому растаять в пути и позволяет ему сохранить свой превосходный вкус.
             </p>
@@ -276,7 +276,7 @@
                 <div class="subscribe__field">
                   <div class="field">
                     <input class="field__input" type="email" name="subsr-email" id="subscr-email" required>
-                    <label class="field__label" for="subscr-email" data="Электронная почта"></label>
+                    <label class="field__label" for="subscr-email" data-first="Электронная почта"></label>
                   </div>
                 </div>
                 <div class="subscribe__btn">
@@ -375,15 +375,15 @@
       <form class="modal-contact__form" action="/echo" method="post">
         <div class="field">
           <input class="modal-contact__item field__input" type="text" name="name" id="contact-name" required>
-          <label class="field__label" for="contact-name" data="Как вас зовут"></label>
+          <label class="field__label" for="contact-name" data-first="Как вас зовут"></label>
         </div>
         <div class="field">
           <input class="modal-contact__item field__input" type="text" name="email" id="contact-email" required>
-          <label class="field__label" for="contact-email" data="Ваша почта для ответа?"></label>
+          <label class="field__label" for="contact-email" data-first="Ваша почта для ответа?"></label>
         </div>
         <div class="field">
           <textarea class="modal-contact__text-field__input field__input" name="text" rows="6" id="input-text" required></textarea>
-          <label class="field__label" for="input-text" data="Напишите что-нибудь..."></label>
+          <label class="field__label" for="input-text" data-first="Напишите что-нибудь..."></label>
         </div>
         <div class="modal-contact__btn">
           <button class=" btn btn--middle btn--narrow" type="submit" name="send">Отправить</button>
@@ -420,7 +420,7 @@
       </defs>
       <path d="M7.3 12.653v.02s-.016-.01-.02-.01l-.018.01v-.02C6.862 12.45.015 8.937.015 4.448c0-5.1 5.437-5.923 7.266-1.764 1.83-4.16 7.267-3.337 7.267 1.764 0 4.49-6.847 8.003-7.247 8.205z" class="dcls-1" />
     </symbol>
-    <symbol preserveAspectRatio="xMidYMid" viewBox="0 0 47.406 47.38" id="icon_promo-cow">
+    <symbol preserveAspectRatio="xMidYMid" viewBox="0 0 47.406 47.38" id="icon_info-cow">
       <defs>
         <style>
           .ecls-1 {
@@ -431,7 +431,7 @@
       </defs>
       <path d="M39.11 23.187c-.26.39-.88 1.047-2.128 1.047-.89 0-2.2-.38-3.256-.84.23 2.52-.273 5.392-1.576 8.343.472.954.672 2 .517 3.08-.488 3.385-4.283 5.238-8.524 5.238-4.242 0-8.018-1.853-8.48-5.24a5.163 5.163 0 0 1 .33-2.616c-1.443-3.082-2.012-6.092-1.786-8.726-1.02.423-2.228.76-3.065.76-1.248 0-1.868-.657-2.127-1.047-.427-.646-.485-1.452-.162-2.214.812-1.912 3.593-2.743 4.75-3.012l.096-.02c-1.4-2.902-.724-7.602-.198-9.192L16.56 9c.055 1.005.765 2.882 3.435 5.01l1.585 1.093c.75-.14 1.537-.237 2.397-.237.818 0 1.57.09 2.29.217l1.69-1.165c2.67-2.13 3.38-4.007 3.436-5.01l3.058-.254c.53 1.6 1.208 6.342-.223 9.24l.294.067c1.158.27 3.938 1.1 4.75 3.013.324.762.266 1.568-.16 2.214zM14.04 19.91s-2.86.663-3.362 1.845c-.502 1.183 3.155-.13 3.835-.692-.326-.474-.355-.59-.473-1.153zm3.297.068c-1.752 2.755-1.578 7.007.467 11.373l.367.782-.317.803a3.175 3.175 0 0 0-.208 1.61c.33 2.412 3.6 3.51 6.498 3.51 2.907 0 6.196-1.103 6.545-3.524.09-.636-.02-1.278-.33-1.904l-.416-.84.378-.857c1.878-4.252 1.97-8.372.244-11.02-1.297-1.992-3.575-3.044-6.587-3.044-3.05 0-5.346 1.076-6.64 3.112zm20.093 1.777c-.503-1.183-3.36-1.846-3.36-1.846-.12.56-.15.68-.475 1.152.68.562 4.338 1.875 3.835.693zm-18.57-6.097s-3.595-2.477-3.735-5.015c-.404 2.175-.584 5.613.705 6.983.644-.323 1.66-1.405 3.03-1.968zm10.232-.094s3.595-2.476 3.736-5.015c.403 2.174.584 5.613-.705 6.982-.645-.323-1.66-1.405-3.03-1.968zM23.714-.012c13.09 0 23.702 10.61 23.702 23.7S36.803 47.393 23.714 47.393c-13.09 0-23.7-10.613-23.7-23.703S10.623-.013 23.713-.013zm0 45.403c-11.966 0-21.7-9.734-21.7-21.7 0-11.967 9.734-21.702 21.7-21.702s21.702 9.735 21.702 21.7c0 11.968-9.736 21.703-21.702 21.703z" class="ecls-1" />
     </symbol>
-    <symbol preserveAspectRatio="xMidYMid" viewBox="0 0 47.375 47.38" id="icon_promo-ice">
+    <symbol preserveAspectRatio="xMidYMid" viewBox="0 0 47.375 47.38" id="icon_info-ice">
       <defs>
         <style>
           .fcls-1 {
@@ -442,7 +442,7 @@
       </defs>
       <path d="M23.687 47.392c-13.09 0-23.7-10.613-23.7-23.703S10.596-.013 23.686-.013s23.702 10.61 23.702 23.7-10.614 23.704-23.703 23.704zm0-45.404c-11.966 0-21.7 9.735-21.7 21.7 0 11.968 9.734 21.703 21.7 21.703s21.702-9.734 21.702-21.7c0-11.967-9.737-21.702-21.703-21.702zm7.657 29.2H15.812a.81.81 0 0 1-.81-.808V15.7c0-2.29.892-4.444 2.512-6.063a8.52 8.52 0 0 1 6.064-2.512c2.29 0 4.444.892 6.063 2.512a8.517 8.517 0 0 1 2.513 6.064v14.68a.81.81 0 0 1-.81.81zm-.81-11.35c-.633-.213-1.03-.655-1.344-1.003-.37-.41-.55-.593-.946-.595-.023.013-.137.092-.31.427-.172.336-.332.788-.487 1.226-.204.575-.415 1.17-.697 1.648-.425.72-.97 1.083-1.62 1.083-.65 0-1.194-.364-1.618-1.082-.283-.478-.493-1.072-.697-1.647-.155-.438-.315-.89-.488-1.226-.173-.334-.285-.414-.31-.427-.394.002-.575.185-.944.595-.43.477-1.018 1.13-2.155 1.13-1.137 0-1.725-.653-2.155-1.13a9.523 9.523 0 0 0-.142-.156v10.89h13.915v-9.73zm-4.907 18.313a2.05 2.05 0 0 1-4.098 0v-6.163h4.097v6.164z" class="fcls-1" />
     </symbol>
-    <symbol preserveAspectRatio="xMidYMid" viewBox="0 0 47.375 47.38" id="icon_promo-leaf">
+    <symbol preserveAspectRatio="xMidYMid" viewBox="0 0 47.375 47.38" id="icon_info-leaf">
       <defs>
         <style>
           .gcls-1 {
@@ -453,7 +453,7 @@
       </defs>
       <path d="M23.687 47.39c-13.09 0-23.7-10.61-23.7-23.7S10.596-.013 23.686-.013s23.702 10.61 23.702 23.7-10.614 23.703-23.703 23.703zm0-45.402c-11.966 0-21.7 9.735-21.7 21.7 0 11.968 9.734 21.703 21.7 21.703s21.702-9.734 21.702-21.7c0-11.967-9.737-21.702-21.703-21.702zm-.062 37.827s-22.24-10.188 0-32.75c22.24 22.562 0 32.75 0 32.75zm-1.042-28.648c-1.305 1.507-2.426 2.98-3.356 4.42l3.356 2.627v-7.047zm0 9.5l-4.4-3.38a22.06 22.06 0 0 0-1.464 3.24l5.863 3.775v-3.636zm0 6.014l-6.452-4.153c-.254 1.123-.402 2.225-.38 3.29l6.833 4.485v-3.62zm0 6l-6.417-4.13c1.106 4.143 4.317 6.926 6.417 8.336V32.68zm2-21.61v7.416l3.63-2.598c-.988-1.564-2.198-3.17-3.63-4.818zm4.644 6.537l-4.623 3.183-.02 3.68 5.98-3.85a21.64 21.64 0 0 0-1.337-3.013zm1.913 5.02l-6.536 4.162-.02 3.68 6.893-4.408c.046-1.112-.078-2.26-.337-3.435zM24.604 32.79l-.02 4.164c2.07-1.367 5.304-4.117 6.463-8.266l-6.443 4.1z" class="gcls-1" />
     </symbol>
-    <symbol preserveAspectRatio="xMidYMid" viewBox="0 0 47.406 47.38" id="icon_promo-term">
+    <symbol preserveAspectRatio="xMidYMid" viewBox="0 0 47.406 47.38" id="icon_info-term">
       <defs>
         <style>
           .hcls-1 {
@@ -535,7 +535,7 @@
     </symbol>
   </svg>
   <script src="http://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
-  <script src="js/script.js"></script>
+  <script src="js/script.min.js"></script>
 </body>
 
 </html>

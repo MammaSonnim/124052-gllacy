@@ -19,7 +19,7 @@
       transform: translateY(-22px);
     }
     &:before {
-      content: attr(data);
+      content: attr(data-first);
       white-space: nowrap;
     }
   }

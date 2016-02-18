@@ -1,7 +1,8 @@
-.promo {
+.info {
   margin-bottom: 40px;
   padding: 20px 12px 10px 20px;
-  background: url(../img/bg_promo.jpg);
+  background-color: #f1e5cd;
+  background-image: url(../img/bg_promo.jpg);
   border-radius: $br_medium;
   &__title {
     @include clear-mp;

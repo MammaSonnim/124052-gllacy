@@ -1,8 +1,9 @@
 .btn {
-  @include btn;
   display: inline-block;
+  vertical-align: baseline;
   max-width: 200px;
   padding: 10px 25px;
+  @include btn;
   font-size: 15px;
   color: $c_text_alt;
   background-image: $gr_btn;
