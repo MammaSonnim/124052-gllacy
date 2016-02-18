@@ -5,6 +5,7 @@
   padding: 8px 26px;
   box-shadow: 0 0 0 2px #ffffff;
   border-radius: $br_base;
+  transition: background-color 0.3s ease-out;
   &:hover {
     background-color: #ffffff;
     color: $c_text_base;

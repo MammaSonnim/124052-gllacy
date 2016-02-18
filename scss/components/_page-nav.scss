@@ -8,6 +8,7 @@
     position: relative;
     padding: 6px 12px;
     border-radius: $br_base;
+    transition: all 0.3s ease-out;
     &:hover {
       color: $c_text_base;
       background-color: $bg_light;
@@ -49,7 +50,7 @@
     z-index: -1;
     opacity: 0;
     transform: translate(0, -10px);
-    transition: all 0.3s ease;
+    transition: all 0.3s ease-out;
   }
   &__item:hover &__sub-list {
     @include animate-hover;
@@ -69,6 +70,7 @@
     padding: 7px 20px;
     font-size: $fz_s;
     text-decoration: none;
+    transition: all 0.3s ease;
     &:hover {
       background-color: #fbded7;
     }

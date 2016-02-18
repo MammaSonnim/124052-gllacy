@@ -6,6 +6,7 @@
   @include btn;
   border-radius: $br_base;
   cursor: default;
+  transition: all 0.2s ease-out;
   &:hover {
     color: #333333;
     background-color: $bg_light;

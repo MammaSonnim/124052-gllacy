@@ -9,6 +9,7 @@
       background-color: $bg_block;
       border-radius: $br_base;
       cursor: pointer;
+      transition: all 0.2s ease-out;
       &:hover,
       &:focus {
         background-color: #ffffff;

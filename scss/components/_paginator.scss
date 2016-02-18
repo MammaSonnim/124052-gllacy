@@ -13,14 +13,14 @@
     color: $c_text_alt;
     text-align: center;
     @include clear-link;
+    border-radius: 50%;
+    transition: background-color 0.15s ease-out;
     &:hover {
       background-color: $bg_block;
-      border-radius: 50%;
     }
     &--current {
       color: $c_text_base;
       background-color: #ffffff;
-      border-radius: 50%;
       &:hover {
         background-color: #ffffff;
       }

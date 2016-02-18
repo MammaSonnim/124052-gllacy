@@ -7,6 +7,7 @@
   &__wrap {
     display: flex;
     width: 300%;
+    transition: all 0.3s ease-out;
   }
   &__slide {
     width: 100%;
@@ -29,6 +30,7 @@
     margin-right: 8px;
     border: 2px solid #ffffff;
     border-radius: 50%;
+    transition: all 0.2s ease-in;
     &:hover {
       background-color: rgba(248, 247, 244, 0.4);
     }

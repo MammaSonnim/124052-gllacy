@@ -2,6 +2,7 @@
   position: relative;
   color: $c_text_alt;
   margin-bottom: 40px;
+  transition: all 0.3s ease;
   &__img {
     position: relative;
     z-index: 1;
