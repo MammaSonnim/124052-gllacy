@@ -11,7 +11,7 @@
     color: $c_text_base;
   }
   &:active {
-    margin: 0;
+    margin: -2px 0 0 -2px;
     padding: 10px 28px;
     background-color: $bg_light;
     color: $c_text_base;

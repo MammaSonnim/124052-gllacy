@@ -1619,7 +1619,7 @@ img {
 }
 
 .plain-btn:active {
-  margin: 0;
+  margin: -2px 0 0 -2px;
   padding: 10px 28px;
   background-color: #f8f7f4;
   color: #333333;
