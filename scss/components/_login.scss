@@ -22,6 +22,6 @@
     line-height: 1.6;
   }
   &:hover &__wrap {
-    display: block;
+    @include animate-hover;
   }
 }

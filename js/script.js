@@ -27,6 +27,7 @@
   var openContact = document.querySelector('.open-modal');
   var modalContact = document.querySelector('.modal-contact');
   var closeContact = modalContact.querySelector('.modal-contact__close');
+  var overlay = document.querySelector('.overlay');
 
   if (modalContact) {
     var formContact = modalContact.querySelector('.modal-contact__form');
@@ -39,6 +40,7 @@
     openContact.addEventListener('click', function (event) {
       event.preventDefault();
       modalContact.classList.add('modal-contact--show');
+      overlay.classList.add('overlay--show');
 
       if (storageName && !storageEmail) {
         nameContact.value = storageName;
@@ -53,10 +55,7 @@
     });
 
     formContact.addEventListener('submit', function (event) {
-      if (!nameContact.value || !emailContact.value || !textContact.value) {
-        event.preventDefault();
-//        modalContact.classList.add('modal-contact--error');
-      } else {
+      if (nameContact.value || emailContact.value || textContact.value) {
         localStorage.setItem('nameContact', nameContact.value);
         localStorage.setItem('emailContact', emailContact.value);
       }
@@ -65,14 +64,19 @@
     closeContact.addEventListener('click', function (event) {
       event.preventDefault();
       modalContact.classList.remove('modal-contact--show');
-      modalContact.classList.remove('modal-contact--error');
+      overlay.classList.remove('overlay--show');
+    });
+    
+    overlay.addEventListener('click', function (event) {
+      modalContact.classList.remove('modal-contact--show');
+      overlay.classList.remove('overlay--show');
     });
 
     window.addEventListener('keydown', function (event) {
       if (event.keyCode === 27) {
         if (modalContact.classList.contains('modal-contact--show')) {
           modalContact.classList.remove('modal-contact--show');
-          modalContact.classList.remove('modal-contact--error');
+          overlay.classList.remove('overlay--show');
         }
       }
     });

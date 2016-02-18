@@ -12,7 +12,7 @@
     @include style-form;
   }
   &:hover &__wrap {
-    display: block;
+    @include animate-hover;
   }
 }
 

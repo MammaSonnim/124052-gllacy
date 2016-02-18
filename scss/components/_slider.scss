@@ -29,6 +29,9 @@
     margin-right: 8px;
     border: 2px solid #ffffff;
     border-radius: 50%;
+    &:hover {
+      background-color: rgba(248, 247, 244, 0.4);
+    }
   }
 }
 

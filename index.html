@@ -10,6 +10,7 @@
 </head>
 
 <body>
+  <div class="overlay"></div>
   <input class="input input--1" id="input-1" name="bg-input" type="radio" checked>
   <input class="input input--2" id="input-2" name="bg-input" type="radio">
   <input class="input input--3" id="input-3" name="bg-input" type="radio">
@@ -63,7 +64,7 @@
               <div class="login__wrap">
                 <form action="/echo" class="login__form">
                   <div class="field">
-                    <input class="login__input field__input field__input--small" type="email" id="login-email" required>
+                    <input class="login__input field__input field__input--small" type="text" id="login-email" required>
                     <label class="field__label field__label--small" data="Электронная почта" for="login-email"></label>
                   </div>
                   <div class="field">
@@ -335,7 +336,7 @@
           <label class="field__label" for="contact-name" data="Как вас зовут"></label>
         </div>
         <div class="field">
-          <input class="modal-contact__item field__input" type="email" name="email" id="contact-email" required>
+          <input class="modal-contact__item field__input" type="text" name="email" id="contact-email" required>
           <label class="field__label" for="contact-email" data="Ваша почта для ответа?"></label>
         </div>
         <div class="field">

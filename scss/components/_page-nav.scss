@@ -41,16 +41,18 @@
     position: absolute;
     left: -7px;
     top: 110%;
-    display: none;
     box-sizing: border-box;
     min-width: 144px;
     @include clear-list;
     background-color: $bg_light;
     border-radius: $br_small;
-    z-index: $zi_hover;
+    z-index: -1;
+    opacity: 0;
+    transform: translate(0, -10px);
+    transition: all 0.3s ease;
   }
   &__item:hover &__sub-list {
-    display: block;
+    @include animate-hover;
   }
   &__sub-title {
     position: relative;

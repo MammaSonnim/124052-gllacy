@@ -8,7 +8,7 @@
     @include style-form;
   }
   &:hover &__form {
-    display: block;
+    @include animate-hover;
   }
   &__table {
     margin-bottom: 12px;
