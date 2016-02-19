@@ -1,0 +1,46 @@
+.cart-list {
+  font-size: 13px;
+  & td {
+    vertical-align: top;
+  }
+  &__remove {
+    width: 6%;
+    padding: 0;
+  }
+  &__icon-remove {
+    @include icon-close(relative, 26px, 32px, 1px, 15px);
+  }
+  &__img {
+    width: 7%;
+    padding: 0;
+    & img {
+      border-radius: 50%;
+    }
+  }
+  &__descr {
+    width: 47%;
+    padding: 8px 10px 28px 10px;
+  }
+  &__price {
+    width: 25%;
+    padding: 8px 10px;
+    & span {
+      color: #7f7f7f;
+    }
+  }
+  &__count {
+    width: 15%;
+    padding: 8px 10px;
+  }
+  &__total {
+    position: relative;
+    padding: 0 10px;
+    text-align: right;
+    font-size: $fz_base;
+    &:before {
+      @include line;
+      top: -13px;
+    }
+  }
+}
+

@@ -1,0 +1,15 @@
+.bg {
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  transition: all 0.3s ease;
+  &--catalog {
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.2), transparent);
+  }
+  &__line {
+    height: 1px;
+    @include clear-mp;
+    outline: none;
+    border: none;
+    background-color: #cacac7;
+  }
+}

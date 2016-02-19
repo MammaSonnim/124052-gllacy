@@ -1,0 +1,18 @@
+.schedule {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  color: $c_text_alt;
+  text-align: right;
+  & p {
+    @include clear-mp;
+  }
+  &__time {
+    font-size: $fz_s;
+    font-weight: $fw_bold;
+  }
+  &__phone {
+    font-size: 22px;
+    font-weight: $fw_ultra;
+  }
+}

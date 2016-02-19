@@ -1,0 +1,72 @@
+.slider {
+  position: relative;
+  padding-top: 290px;
+  text-align: center;
+  overflow: hidden;
+  z-index: $zi_base;
+  &__wrap {
+    display: flex;
+    width: 300%;
+    transition: all 0.3s ease-out;
+  }
+  &__slide {
+    width: 100%;
+    margin-bottom: 35px;
+  }
+  &__title {
+    width: 700px;
+    margin: 0 auto 32px;
+    font: $font_xxl;
+    color: $c_text_alt;
+  }
+  &__controls {
+    position: absolute;
+    bottom: 65px;
+    display: flex;
+    width: 100px;
+  }
+  &__control {
+    width: 17px;
+    height: 17px;
+    margin-right: 8px;
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+    transition: all 0.2s ease-in;
+    &:hover {
+      background-color: rgba(248, 247, 244, 0.4);
+    }
+  }
+  &__btn {
+    }
+}
+
+//Логика слайдера
+.input {
+  display: none;
+  &--1:checked ~ .bg {
+    background-color: $bg_page_green;
+    background-image: url(../img/bg_slider-1.jpg);
+  }
+  &--2:checked ~ .bg {
+    background-color: $bg_page_grey;
+    background-image: url(../img/bg_slider-2.jpg);
+  }
+  &--3:checked ~ .bg {
+    background-color: $bg_page_brown;
+    background-image: url(../img/bg_slider-3.jpg);
+  }
+  &--1:checked ~ .bg .slider__wrap {
+    transform: translate(0);
+  }
+  &--2:checked ~ .bg .slider__wrap {
+    transform: translate(-33.33%);
+  }
+  &--3:checked ~ .bg .slider__wrap {
+    transform: translate(-66.66%);
+  }
+  &--1:checked ~ .bg .slider__control--1,
+  &--2:checked ~ .bg .slider__control--2,
+  &--3:checked ~ .bg .slider__control--3 {
+    background-color: #ffffff;
+  }
+}

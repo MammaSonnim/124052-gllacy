@@ -1,0 +1,21 @@
+.copyright {
+  text-align: right;
+  &__inner {
+    display: inline-block;
+    vertical-align: middle;
+    text-align: left;
+  }
+  &__img {
+    font-size: 0;
+    margin-bottom: 5px;
+    & svg {
+      width: 107.622px;
+      height: 36.69px;
+    }
+  }
+  &__text {
+    @include clear-mp;
+    font-size: $fz_xs;
+    color: $c_text_alt;
+  }
+}

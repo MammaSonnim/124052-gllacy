@@ -1,0 +1,25 @@
+.info {
+  margin-bottom: 40px;
+  padding: 20px 12px 10px 20px;
+  background-color: #f1e5cd;
+  background-image: url(../img/bg_promo.jpg);
+  border-radius: $br_medium;
+  &__title {
+    @include clear-mp;
+    margin-bottom: 10px;
+    font-size: 24px;
+    line-height: 1.25;
+  }
+  &__text {
+    position: relative;
+    margin: 0;
+    padding: 14px 0 10px 55px;
+    & svg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 47.375px;
+      height: 47.38px;
+    }
+  }
+}

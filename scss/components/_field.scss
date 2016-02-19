@@ -1,0 +1,81 @@
+.field {
+  position: relative;
+  width: 100%;
+  &__label {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    color: #bbb;
+    font-size: 14px;
+    font-weight: 300;
+    z-index: 2;
+    pointer-events: none;
+    transition: transform 200ms ease;
+    transform: translateY(-28px);
+    &--small {
+      top: 10px;
+      left: 12px;
+      font-size: 14px;
+      transform: translateY(-22px);
+    }
+    &:before {
+      content: attr(data-first);
+      white-space: nowrap;
+    }
+  }
+  
+  &__input {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 12px;
+    border: none;
+    box-shadow: 0 0 0 1px $bc_input inset;
+    border-radius: $br_small;
+    font-weight: 700;
+    &[type="search"] {
+      box-sizing: border-box;
+    }
+    &:hover {
+      box-shadow: 0 0 0 2px $bc_input-hov inset;
+    }
+    &:focus {
+      outline: none;
+      box-shadow: 0 0 0 2px $bc_input-foc inset;
+    }
+    &--small {
+      padding: 10px;
+      font-size: $fz_s;
+    }
+//    &::-webkit-input-placeholder {font-weight: 400;}
+//    &:-moz-placeholder {font-weight: 400;}
+//    &::-moz-placeholder {font-weight: 400;}
+//    &:-ms-input-placeholder {font-weight: 400;}
+  }
+  
+  &__input:invalid + &__label {
+    transform: translateY(0);
+  }
+  
+  &__input:focus + &__label {
+    transform: translateY(-28px);
+    font-size: 11px;
+    color: #5b9ddf;
+  }
+  
+  &__input:valid + &__label {
+    font-size: 11px;
+    color: #5b9ddf;
+  }
+  
+  &__input--small:focus + &__label--small {
+    transform: translateY(-22px);
+    font-size: 9px;
+    color: #5b9ddf;
+  }
+  
+  &__input--small:valid + &__label--small {
+    font-size: 9px;
+    color: #5b9ddf;
+  }
+}
+

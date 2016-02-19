@@ -1,0 +1,117 @@
+//COLORS (c - color, bg - background, gr - gradient, bc - border-color, sh - shadows)
+
+$c_text_base: #333333;
+$c_text_alt: #ffffff;
+
+$c_link: $c_text_base;
+$c_link-hov: #ec593c;
+$c_link-act: #ec593c;
+
+$bc_link: rgba($c_link, 0.3);
+$bc_link-hov: rgba($c_link-hov, 0.3);
+$bc_link-act: rgba($c_link-act, 0.3);
+
+$c_link_alt: $c_text_alt;
+$c_link-hov_alt: #ffbc9e;
+$c_link-act_alt: #ffbc9e;
+
+$bc_link_alt: rgba($c_link_alt, 0.3);
+$bc_link-hov_alt: rgba(249, 172, 159, 0.3);
+$bc_link-act_alt: rgba(249, 172, 159, 0.3);
+
+$bg_page_green: #849d8f;
+$bg_page_grey: #8996a6;
+$bg_page_brown: #9d8b84;
+
+$bg_light: #f8f7f4;
+
+$bg_nav-cur: #d07058;
+
+$bg_sub-nav-hov: #fbded7;
+$bg_sub-nav-act: #f6b5a5;
+
+$bg_sub-nav-title: #d1d0ce;
+
+$gr_btn: linear-gradient(to top, #e74a35, #f26843);
+
+$bg_block: rgba(255, 255, 255, 0.2);
+
+$bg_hover: rgba(255, 255, 255, 0.3);
+
+$bc_input: #d3d3d2;
+$bc_input-hov: #c7c6c5;
+$bc_input-foc: #8fbdec;
+
+$bg_social: rgba(255, 255, 255, 0.8);
+$bg_social-hov: rgba(255, 255, 255, 0.98);
+$bg_social-act: rgba(255, 255, 255, 0.9);
+
+$bc_social: rgba(255, 255, 255, 0.5);
+
+$sh_btn:;
+$sh_toggle: 0 2px 2px rgba(0, 0, 0, 0.1);
+
+//TYPE
+
+$ff_base: "Roboto", sans-serif;
+
+$fz_xs: 12px;
+$fz_s: 14px;
+$fz_base: 16px;
+$fz_l: 22px;
+$fz_xl: 35px;
+$fz_xxl: 60px;
+
+$lh_base: 22/16;
+
+$fw_base: 400;
+$fw_medium: 500;
+$fw_bold: 700;
+$fw_ultra: 900;
+
+$font_base: $fw_base #{$fz_base}/#{$lh_base} $ff_base;
+
+$font_xxl: $fw_ultra #{$fz_xxl}/60.35px $ff_base;
+
+//SIZE (w — width, h — height, p — padding)
+
+$w_max: 1200px;
+$w_min: 900px;
+
+$col_w_pct: 22.2;
+
+$p_base_pct: 2.3;
+$p_base: percentage($p_base_pct) / 100;
+
+$p_inner_pct: 2.2;
+
+// 1% общей максимальной ширины
+$w_1pct_max: $w_max / 100;
+// ширина одной колонки в пикселях при максимальной ширине
+$col_w_max: $col_w_pct * $w_1pct_max;
+// расчетное значение внешнего паддинга при максимальной ширине
+$p_base_count_max: $p_base_pct * $w_1pct_max;
+// ширина контейнера колоночной сетки без двух внешних паддингов при максимальной ширине
+$cols_w_max: $w_max - ($p_base_count_max * 2);
+// 1% максимальной ширины контейнера
+$cols_w_1pct_max: $cols_w_max / 100;
+// расчет процентной ширины колонки в 4-колоночной сетке относительно размера контейнера колоночной сетки
+$cols-4_col_w_pct: percentage($col_w_max / $cols_w_1pct_max) / 100;
+
+// расчет процентной ширины колонки в 2-колоночной сетке относительно максимальной ширины макета
+$cols-2_col_w_pct_max: $col_w_pct * 2 + $p_inner_pct;
+// ширина одной колонки в 2-колоночной сетке в пикселях при максимальной ширине макета
+$cols-2_col_w_max: $cols-2_col_w_pct_max * $w_1pct_max;
+// расчет процентной ширины колонки в 2-колоночной сетке относительно размера контейнера колоночной сетки
+$cols-2_col_w_pct: percentage($cols-2_col_w_max / $cols_w_1pct_max) / 100;
+
+//EXTRA (br — border-radius, zi - z-index, bs — box-shadow)
+$br_small: 5px;
+$br_medium: 15px;
+$br_base: 30px;
+
+$zi_base: 1;
+$zi_hover: 2;
+$zi_modal: 10;
+
+$bs_hover: 0 20px 20px 0 rgba(0, 0, 0, 0.3);

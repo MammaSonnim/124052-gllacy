@@ -1,0 +1,27 @@
+.login {
+  @include hover-helper;
+  position: relative;
+  &__wrap {
+    @include poz-hover;
+    width: 240px;
+    padding: 20px 15px 15px 15px;
+    @include style-form;
+  }
+  &__form {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  &__input {
+    margin-bottom: 12px;
+  }
+  &__col {
+    width: 50%;
+  }
+  &__links {
+    font-size: 13px;
+    line-height: 1.6;
+  }
+  &:hover &__wrap {
+    @include animate-hover;
+  }
+}
