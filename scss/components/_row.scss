@@ -1,0 +1,11 @@
+.row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  margin-bottom: 40px;
+  &__col {
+    box-sizing: border-box;
+    width: $cols-2_col_w_pct;
+  }
+}

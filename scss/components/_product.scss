@@ -1,0 +1,108 @@
+.product {
+  position: relative;
+  color: $c_text_alt;
+  margin-bottom: 38px;
+  transition: all 0.3s ease-out;
+  &__inner {
+    position: relative;
+  }
+  &__img {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    margin-bottom: 15px;
+    padding-top: 100%;
+    border-radius: 50%;
+    overflow: hidden;
+    & img {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      margin: auto;
+    }
+  }
+  &__price {
+    position: absolute;
+    z-index: 5;
+    bottom: 0;
+    max-width: 100%;
+    font-size: 45px;
+    font-weight: $fw_bold;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    & small {
+      font-size: 30px;
+      margin-left: -5px;
+    }
+  }
+  &__title {
+    position: relative;
+    @include clear-mp;
+    font-size: $fz_base;
+    text-align: center;
+  }
+  &__link {
+    color: $c_text_alt;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    text-decoration: none;
+  }
+  &__actions {
+    position: absolute;
+    z-index: 2;
+    bottom: 10px;
+    left: 0;
+    width: 100%;
+    display: none;
+    text-align: center;
+  }
+  &:hover {
+    z-index: 2;
+    margin-bottom: -30px;
+    padding-bottom: 68px;
+    cursor: pointer;
+    &:after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      display: block;
+      width: 104%;
+      height: 102%;
+      border-radius: 5px;
+      background-color: rgba(248, 247, 244, 0.3);
+      box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.15);
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  &:hover &__actions {
+    display: block;
+  }
+  &:hover &__img,
+  &:hover &__title,
+  &:hover &__actions {
+    z-index: 2;
+  }
+  &:hover &__link {
+    border-bottom: none;
+  }
+  &--top {
+    margin-bottom: 20px;
+    &:hover {
+      margin-bottom: -48px;
+    }
+    &:before {
+      content: "";
+      position: absolute;
+      z-index: 5;
+      top: 0;
+      left: 0;
+      width: 61px;
+      height: 61px;
+      background-image: url(../img/icon_product-top.png);
+      background-repeat: no-repeat;
+    }
+  }
+}

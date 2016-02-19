@@ -1,0 +1,29 @@
+@font-face {
+  font-family: 'gllacy';
+  src: url('../font/gllacy.eot?33611331');
+  src: url('../font/gllacy.eot?33611331#iefix') format('embedded-opentype'),
+       url('../font/gllacy.woff?33611331') format('woff'),
+       url('../font/gllacy.ttf?33611331') format('truetype'),
+       url('../font/gllacy.svg?33611331#gllacy') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  min-width: $w_min;
+  font: $font_base;
+  color: $c_text_base;
+  background-color: $bg_page_green;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+ .page-title {
+    @include clear-mp;
+    font-size: $fz_xl;
+    line-height: 1.3;
+    color: $c_text_alt;
+  }

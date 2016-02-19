@@ -1,0 +1,20 @@
+.cur {
+  &:before {
+    content: "\e800";
+    font-family: "gllacy";
+    font-size: 40px;
+    font-weight: normal;
+    font-style: normal;
+    speak: none;
+    font-variant: normal;
+    text-transform: none;
+  }
+
+  &__inner {
+    font-size: 0;
+    color: transparent;
+    text-shadow: none;
+    background-color: transparent;
+    border: 0;
+  }
+}

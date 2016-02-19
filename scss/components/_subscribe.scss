@@ -1,0 +1,28 @@
+.subscribe {
+  position: relative;
+  display: flex;
+  min-height: 220px;
+  padding: 35px 20px 80px 25px;
+  background-image: url(../img/bg_blog-subscribe.png);
+  background-color: #f8f7f4;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+  border-radius: $br_medium;
+  &__text {
+    @include clear-mp;
+    color: #5a5a5a;
+  }
+  &__form {
+    position: absolute;
+    left: 25px;
+    right: 25px;
+    bottom: 40px;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__field {
+    flex-grow: 1;
+    margin-right: 10px;
+  }
+}

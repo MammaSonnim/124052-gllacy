@@ -1,0 +1,11 @@
+.products {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  margin-bottom: 20px;
+  &__col {
+    box-sizing: border-box;
+    width: $cols-4_col_w_pct;
+  }
+}

@@ -1,0 +1,20 @@
+.contact {
+  padding: 30px 20px 20px 25px;
+  background-color: rgba(255, 255, 255, 0.98);
+  border-radius: $br_medium;
+  overflow: auto;
+  &__text {
+    @include clear-mp;
+    margin-bottom: 20px;
+    font-size: $fz_s;
+    line-height: 20px;
+    & span {
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 24px;
+    }
+    &:last-of-type {
+      margin-bottom: 30px;
+    }
+  }
+}

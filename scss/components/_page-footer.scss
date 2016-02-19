@@ -1,0 +1,12 @@
+.page-footer {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  &__col {
+    width: 200px;
+    &--wide {
+      width: 400px;
+    }
+  }
+}

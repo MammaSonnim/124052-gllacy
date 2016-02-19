@@ -1,0 +1,28 @@
+.map {
+  position: relative;
+  min-height: 430px;
+  &__inner {
+    position: relative;
+    min-height: 430px;
+    margin: 0 2.3%;
+    background: #ebe4c9 url(../img/bg_map.png) no-repeat center;
+    background-size: cover;
+  }
+  &__contact {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    box-sizing: border-box;
+    width: 300px;
+    max-height: 400px;
+    z-index: $zi_hover;
+  }
+  &__ya {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 430px;
+    z-index: $zi_base;
+  }
+}

@@ -1,0 +1,66 @@
+.actions-btn {
+  margin: 0 0 5px 12px;
+  font-size: $fz_s;
+  color: $c_text_alt;
+  background-color: $bg_block;
+  background-repeat: no-repeat;
+  @include btn;
+  border-radius: $br_base;
+  cursor: default;
+  transition: all 0.2s ease-out;
+  &:hover {
+    color: #333333;
+    background-color: $bg_light;
+  }
+  & svg {
+    fill: currentColor;
+    fill-rule: evenodd;
+  }
+  &--search {
+    width: 32px;
+    height: 32px;
+    @include clear-mp;
+    border-radius: 50%;
+    & svg {
+      width: 16.687px;
+      height: 16.688px;
+    }
+  }
+  &--login {
+    position: relative;
+    padding: 9px 15px 9px 42px;
+    & svg {
+      position: absolute;
+      left: 15px;
+      top: 6px;
+      width: 20.063px;
+      height: 19px;
+    }
+  }
+  &--cart {
+    position: relative;
+    min-width: 57px;
+    padding: 9px 15px 9px 42px;
+    text-align: left;
+    & svg {
+      position: absolute;
+      left: 15px;
+      top: 6px;
+      width: 20.63px;
+      height: 19.719px;
+    }
+  }
+  &--cart-full {
+    color: #333333;
+    background-color: $bg_light;
+    & .cart-full-border {
+      z-index: 2;
+    }
+    & .cart-full-inner {
+      left: 20px;
+      top: 9px;
+      width: 15.13px;
+      height: 10.25px;
+    }
+  }
+}

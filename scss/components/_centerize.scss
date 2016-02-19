@@ -1,0 +1,6 @@
+.centerize {
+  @include center;
+  &__inner {
+    @include add-p;
+  }
+}

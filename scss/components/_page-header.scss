@@ -1,0 +1,39 @@
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  min-height: 44px;
+  padding-top: 20px;
+  margin-bottom: 30px;
+  
+  &__col {
+    position: relative;
+    display: flex;
+  }
+  
+  &__logo-wrap {
+    position: relative;
+    display: block;
+    width: 154px;
+    margin-right: 10px;
+  }
+  &__logo-img {
+    position: absolute;
+    top: -12px;
+    left: -5px;
+    width: 153.094px;
+    height: 63.25px;
+  }
+  
+  &__nav-wrap {
+    width: 400px;
+  }
+  
+  &__actions-wrap {
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    width: 290px;
+    margin-bottom: 10px;
+  }
+}
