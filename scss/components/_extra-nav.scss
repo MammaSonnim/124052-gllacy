@@ -1,0 +1,30 @@
+.extra-nav {
+  column-count: 2;
+  margin-top: 13px;
+  margin-left: -50px;
+  font-size: 13px;
+  line-height: 22px;
+  &__cols {
+    @include clear-list;
+    padding-left: 10px;
+  }
+  &__item {
+    @include clear-mp;
+    &--suppliers {
+      position: relative;
+      font-weight: $fw_bold;
+      margin-left: 90px;
+      & svg {
+        position: absolute;
+        top: 5px;
+        left: -22px;
+        width: 14.562px;
+        height: 12.66px;
+      }
+    }
+    &--production {
+      margin-left: 90px;
+    }
+  }
+}
+

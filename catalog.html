@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Gllacy Shop</title>
+  <link rel="stylesheet" href="css/normalize.min.css">
+  <link rel="stylesheet" href="css/style.min.css">
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,700,900' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+  <div class="bg bg--catalog">
+    <div class="centerize">
+      <div class="centerize__inner">
+        <header class="page-header">
+          <div class="page-header__col">
+            <a href="index.html" class="page-header__logo-wrap">
+              <svg class="page-header__logo-img">
+                <use xlink:href='#logo' />
+              </svg>
+            </a>
+            <nav class="page-header__nav-wrap page-nav">
+              <ul class="page-nav__list">
+                <li class="page-nav__item page-nav__item--current">
+                  <a href="catalog.html" class="link link--alt">Каталог</a>
+                  <ul class="page-nav__sub-list">
+                    <li class="page-nav__sub-title">Новинки</li>
+                    <li class="page-nav__sub-item page-nav__sub-item--current"><a href="catalog.html" class="page-nav__sub-link">Сливочное</a></li>
+                    <li class="page-nav__sub-item"><a href="#" class="page-nav__sub-link">Щербеты</a></li>
+                    <li class="page-nav__sub-item"><a href="#" class="page-nav__sub-link">Фруктовый лёд</a></li>
+                    <li class="page-nav__sub-item"><a href="#" class="page-nav__sub-link">Мелорин</a></li>
+                  </ul>
+                </li>
+                <li class="page-nav__item">
+                  <a href="#" class="link link--alt">Доставка и оплата</a>
+                </li>
+                <li class="page-nav__item">
+                  <a href="#" class="link link--alt">О Компании</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="page-header__col">
+            <div class="page-header__actions-wrap">
+              <div class="page-header__action search">
+                <form action="/echo" class="search__form">
+                  <div class="search__wrap">
+                    <div class="field">
+                      <input class="field__input field__input--small" id="search" type="search" name="search" required>
+                      <label class="field__label field__label--small" for="search" data-first="Что ищем?"></label>
+                    </div>
+                  </div>
+                  <button class="search__btn actions-btn actions-btn--search" type="submit">
+                    <svg>
+                      <use xlink:href='#icon_search'/>
+                    </svg>
+                  </button>
+                </form>
+              </div>
+              <div class="page-header__action login">
+                <div class="actions-btn actions-btn--login">
+                  <svg>
+                    <use xlink:href='#icon_login' />
+                  </svg>Вход
+                </div>
+                <div class="login__wrap">
+                  <form action="/echo" class="login__form">
+                    <div class="field">
+                      <input class="login__input field__input field__input--small" type="text" id="login-email" required>
+                      <label class="field__label field__label--small" data-first="Электронная почта" for="login-email"></label>
+                    </div>
+                    <div class="field">
+                      <input class="login__input field__input field__input--small" type="password" id="login-pass" required>
+                      <label class="field__label field__label--small" data-first="Пароль" for="login-pass"></label>
+                    </div>
+                    <div class="login__col">
+                      <button type="submit" class="btn btn--wide">Войти</button>
+                    </div>
+                    <div class="login__col login__links">
+                      <a href="#" class="link">Забыли пароль?</a>
+                      <a href="#" class="link">Новая регистрация</a>
+                    </div>
+                  </form>
+                </div>
+              </div>
+              <div class="page-header__action cart">
+                <div class="actions-btn actions-btn--cart actions-btn--cart-full">
+                  <svg class="cart-full-border">
+                    <use xlink:href='#icon_cart' />
+                  </svg>
+                  <svg class="cart-full-inner">
+                    <use xlink:href='#icon_cart-full' />
+                  </svg>2 товара
+                </div>
+                <div class="cart__form">
+                  <table class="cart__table cart-list">
+                    <tr class="cart-list__item">
+                      <td class="cart-list__remove">
+                        <button type="button" class="cart-list__icon-remove">Закрыть</button>
+                      </td>
+                      <td class="cart-list__img"><img src="./img/img_product-1.jpg" alt="Фотография мороженого" width="33" height="33"></td>
+                      <td class="cart-list__descr">Пломбир с апельсиновым джемом</td>
+                      <td class="cart-list__price">1,5кг <span>x 200 руб.</span></td>
+                      <td class="cart-list__count">300 руб.</td>
+                    </tr>
+                    <tr class="cart-list__item">
+                      <td class="cart-list__remove">
+                        <button type="button" class="cart-list__icon-remove">Закрыть</button>
+                      </td>
+                      <td class="cart-list__img"><img src="./img/img_product-3.jpg" alt="Фотография мороженого" width="33" height="33"></td>
+                      <td class="cart-list__descr">Клубничный пломбир с присыпкой из белого шоколада</td>
+                      <td class="cart-list__price">1,5кг <span>x 300 руб.</span></td>
+                      <td class="cart-list__count">450 руб.</td>
+                    </tr>
+                    <tr class="cart-list__item">
+                      <td class="cart-list__total" colspan="5">Итого: 750 руб.</td>
+                    </tr>
+                  </table>
+                  <div class="cart__btn">
+                    <button type="submit" class="btn btn--narrow">Оформить заказ</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="schedule">
+              <p class="schedule__time">С 10 до 20, ежедневно</p>
+              <p class="schedule__phone">8 812 450-25-25</p>
+            </div>
+          </div>
+        </header>
+        <main>
+          <div class="breadcrumbs">
+            <a class="breadcrumbs__item link link--alt" href="index.html">Главная</a>
+            <a class="breadcrumbs__item link link--alt" href="catalog.html">Каталог</a>
+            <span class="breadcrumbs__item">Сливочное</span>
+          </div>
+          <h1 class="page-title">Сливочное мороженое</h1>
+          <form class="filters" action="/echo" method="get">
+            <fieldset class="filters__item filter-sort">
+              <legend class="filters__title">Сортировка</legend>
+              <div class="filter-sort__field">
+                <select class="select" name="sort" id="sort">
+                  <option value="top">по популярности</option>
+                  <option value="low-price">сначала недорогие</option>
+                  <option value="high-price">сначала дорогие</option>
+                  <option value="fat">по жирности</option>
+                </select>
+                <i class="select-icon"></i>
+              </div>
+            </fieldset>
+            <fieldset class="filters__item filter-price">
+              <legend class="filters__title">Цена: 100 руб. — 500 руб.</legend>
+              <div class="filter-price__field">
+                <div class="filter-price__scale">
+                  <div class="filter-price__range" style="margin-left: 30px; width: 51%">
+                    <div class="filter-price__toggle filter-price__toggle--min"></div>
+                    <div class="filter-price__toggle filter-price__toggle--max"></div>
+                  </div>
+                </div>
+              </div>
+            </fieldset>
+            <fieldset class="filters__item filter-radio">
+              <legend class="filters__title">Жирность</legend>
+              <div class="filter-radio__field">
+                <input class="filter-radio__input" id="radio-1" type="radio" name="fat" value="0%">
+                <label class="filter-radio__label" for="radio-1">
+                  <span class="filter-radio__indicator"></span>0%
+                </label>
+                <input class="filter-radio__input" id="radio-2" type="radio" name="fat" value="before10%" checked>
+                <label class="filter-radio__label" for="radio-2">
+                  <span class="filter-radio__indicator"></span>до 10%
+                </label>
+                <input class="filter-radio__input" id="radio-3" type="radio" name="fat" value="before30%">
+                <label class="filter-radio__label" for="radio-3">
+                  <span class="filter-radio__indicator"></span>до 30%
+                </label>
+                <input class="filter-radio__input" id="radio-4" type="radio" name="fat" value="after30%">
+                <label class="filter-radio__label" for="radio-4">
+                  <span class="filter-radio__indicator"></span>выше 30%
+                </label>
+              </div>
+            </fieldset>
+            <fieldset class="filters__item filter-check">
+              <legend class="filters__title">Наполнители</legend>
+              <div class="filter-check__field">
+                <input class="filter-check__input" id="check-1" type="checkbox" name="topping" value="choco">
+                <label class="filter-check__label" for="check-1">
+                  <span class="filter-check__indicator"></span>шоколадные
+                </label>
+                <input class="filter-check__input" id="check-2" type="checkbox" name="topping" value="sugar" checked>
+                <label class="filter-check__label" for="check-2">
+                  <span class="filter-check__indicator"></span>сахарные присыпки
+                </label>
+                <input class="filter-check__input" id="check-3" type="checkbox" name="topping" value="fruit">
+                <label class="filter-check__label" for="check-3">
+                  <span class="filter-check__indicator"></span>фрукты
+                </label>
+                <input class="filter-check__input" id="check-4" type="checkbox" name="topping" value="syrup">
+                <label class="filter-check__label" for="check-4">
+                  <span class="filter-check__indicator"></span>сиропы
+                </label>
+                <input class="filter-check__input" id="check-5" type="checkbox" name="topping" value="jam">
+                <label class="filter-check__label" for="check-5">
+                  <span class="filter-check__indicator"></span>джемы
+                </label>
+              </div>
+            </fieldset>
+            <div class="filters__btn">
+              <button class="plain-btn" type="submit">Применить</button>
+            </div>
+          </form>
+          <section class="products">
+            <article class="products__col product">
+              <div class="product__inner">
+                <div class="product__img">
+                  <img src="./img/img_product-1.jpg" alt="Фотография мороженого" width="267" height="267">
+                </div>
+                <div class="product__price">
+                  310<span class="cur"><span class="cur__inner">руб.</span></span>
+                  <small>/кг</small>
+                </div>
+              </div>
+              <h2 class="product__title"><a href="#" class="product__link">Сливочное с апельсиновым джемом и цитрусовой стружкой </a></h2>
+              <div class="product__actions">
+                <a href="#" class="product__btn btn">Быстрый просмотр</a>
+              </div>
+            </article>
+            <article class="products__col product">
+              <div class="product__inner">
+                <div class="product__img">
+                  <img src="./img/img_product-2.jpg" alt="Фотография мороженого" width="267" height="267">
+                </div>
+                <div class="product__price">
+                  380<span class="cur"><span class="cur__inner">руб.</span></span>
+                  <small>/кг</small>
+                </div>
+              </div>
+              <h2 class="product__title"><a href="#" class="product__link">Сливочно-кофейное с кусочками шоколада</a></h2>
+              <div class="product__actions">
+                <a href="#" class="product__btn btn">Быстрый просмотр</a>
+              </div>
+            </article>
+            <article class="products__col product">
+              <div class="product__inner">
+                <div class="product__img">
+                  <img src="./img/img_product-3.jpg" alt="Фотография мороженого" width="267" height="267">
+                </div>
+                <div class="product__price">
+                  355<span class="cur"><span class="cur__inner">руб.</span></span>
+                  <small>/кг</small>
+                </div>
+              </div>
+              <h2 class="product__title"><a href="#" class="product__link">Сливочно-клубничное с присыпкой из белого шоколада</a></h2>
+              <div class="product__actions">
+                <a href="#" class="product__btn btn">Быстрый просмотр</a>
+              </div>
+            </article>
+            <article class="products__col product">
+              <div class="product__inner">
+                <div class="product__img">
+                  <img src="./img/img_product-4.jpg" alt="Фотография мороженого" width="267" height="267">
+                </div>
+                <div class="product__price">
+                  415<span class="cur"><span class="cur__inner">руб.</span></span>
+                  <small>/кг</small>
+                </div>
+              </div>
+              <h2 class="product__title"><a href="#" class="product__link">Сливочное крем-брюле с карамельной подливкой</a></h2>
+              <div class="product__actions">
+                <a href="#" class="product__btn btn">Быстрый просмотр</a>
+              </div>
+            </article>
+            <article class="products__col product">
+              <div class="product__inner">
+                <div class="product__img">
+                  <img src="./img/img_product-5.jpg" alt="Фотография мороженого" width="267" height="267">
+                </div>
+                <div class="product__price">
+                  325<span class="cur"><span class="cur__inner">руб.</span></span>
+                  <small>/кг</small>
+                </div>
+              </div>
+              <h2 class="product__title"><a href="#" class="product__link">Сливочное с брусничным джемом</a></h2>
+              <div class="product__actions">
+                <a href="#" class="product__btn btn">Быстрый просмотр</a>
+              </div>
+            </article>
+            <article class="products__col product">
+              <div class="product__inner">
+                <div class="product__img">
+                  <img src="./img/img_product-6.jpg" alt="Фотография мороженого" width="267" height="267">
+                </div>
+                <div class="product__price">
+                  410<span class="cur"><span class="cur__inner">руб.</span></span>
+                  <small>/кг</small>
+                </div>
+              </div>
+              <h2 class="product__title"><a href="#" class="product__link">Сливочно-черничное с цельными ягодами черники </a></h2>
+              <div class="product__actions">
+                <a href="#" class="product__btn btn">Быстрый просмотр</a>
+              </div>
+            </article>
+            <article class="products__col product">
+              <div class="product__inner">
+                <div class="product__img">
+                  <img src="./img/img_product-7.jpg" alt="Фотография мороженого" width="267" height="267">
+                </div>
+                <div class="product__price">
+                  375<span class="cur"><span class="cur__inner">руб.</span></span>
+                  <small>/кг</small>
+                </div>
+              </div>
+              <h2 class="product__title"><a href="#" class="product__link">Сливочно-лимонное с карамельной присыпкой</a></h2>
+              <div class="product__actions">
+                <a href="#" class="product__btn btn">Быстрый просмотр</a>
+              </div>
+            </article>
+            <article class="products__col product">
+              <div class="product__inner">
+                <div class="product__img">
+                  <img src="./img/img_product-8.jpg" alt="Фотография мороженого" width="267" height="267">
+                </div>
+                <div class="product__price">
+                  320<span class="cur"><span class="cur__inner">руб.</span></span>
+                  <small>/кг</small>
+                </div>
+              </div>
+              <h2 class="product__title"><a href="#" class="product__link">Сливочное с шоколадной стружкой</a></h2>
+              <div class="product__actions">
+                <a href="#" class="product__btn btn">Быстрый просмотр</a>
+              </div>
+            </article>
+            <article class="products__col product">
+              <div class="product__inner">
+                <div class="product__img">
+                  <img src="./img/img_product-9.jpg" alt="Фотография мороженого" width="267" height="267">
+                </div>
+                <div class="product__price">
+                  440<span class="cur"><span class="cur__inner">руб.</span></span>
+                  <small>/кг</small>
+                </div>
+              </div>
+              <h2 class="product__title"><a href="#" class="product__link">Сливочно-ванильное с кусочками шоколада</a></h2>
+              <div class="product__actions">
+                <a href="#" class="product__btn btn">Быстрый просмотр</a>
+              </div>
+            </article>
+            <article class="products__col product">
+              <div class="product__inner">
+                <div class="product__img">
+                  <img src="./img/img_product-10.jpg" alt="Фотография мороженого" width="267" height="267">
+                </div>
+                <div class="product__price">
+                  435<span class="cur"><span class="cur__inner">руб.</span></span>
+                  <small>/кг</small>
+                </div>
+              </div>
+              <h2 class="product__title"><a href="#" class="product__link">Сливочноe с ментоловым сиропом</a></h2>
+              <div class="product__actions">
+                <a href="#" class="product__btn btn">Быстрый просмотр</a>
+              </div>
+            </article>
+            <article class="products__col product">
+              <div class="product__inner">
+                <div class="product__img">
+                  <img src="./img/img_product-11.jpg" alt="Фотография мороженого" width="267" height="267">
+                </div>
+                <div class="product__price">
+                  355<span class="cur"><span class="cur__inner">руб.</span></span>
+                  <small>/кг</small>
+                </div>
+              </div>
+              <h2 class="product__title"><a href="#" class="product__link">Сливочное с кусочками черного шоколада</a></h2>
+              <div class="product__actions">
+                <a href="#" class="product__btn btn">Быстрый просмотр</a>
+              </div>
+            </article>
+            <article class="products__col product">
+              <div class="product__inner">
+                <div class="product__img">
+                  <img src="./img/img_product-12.jpg" alt="Фотография мороженого" width="267" height="267">
+                </div>
+                <div class="product__price">
+                  420<span class="cur"><span class="cur__inner">руб.</span></span>
+                  <small>/кг</small>
+                </div>
+              </div>
+              <h2 class="product__title"><a href="#" class="product__link">Сливочное с мятным сиропом</a></h2>
+              <div class="product__actions"> <a href="#" class="product__btn btn">Быстрый просмотр</a>
+              </div>
+            </article>
+          </section>
+          <div class="paginator">
+            <a class="paginator__dir paginator__dir--disabled" href="#">Предыдущая</a>
+            <span class="paginator__item paginator__item--current">1</span>
+            <a class="paginator__item" href="#">2</a>
+            <a class="paginator__item" href="#">3</a>
+            <a class="paginator__item" href="#">4</a>
+            <a class="paginator__item" href="#">5</a>
+            <a class="paginator__dir paginator__dir--next" href="#">Следующая</a>
+          </div>
+          <hr class="bg__line">
+        </main>
+        <footer class="page-footer">
+          <div class="page-footer__col socials">
+            <a href="#" class="social social--tw">
+              <svg>
+                <use xlink:href='#icon_social-tw' />
+              </svg>Twitter
+            </a>
+            <a href="#" class="social social--fb">
+              <svg>
+                <use xlink:href='#icon_social-fb' />
+              </svg>Facebook
+            </a>
+            <a href="#" class="social social--inst">
+              <svg>
+                <use xlink:href='#icon_social-inst' />
+              </svg>Instagram
+            </a>
+            <a href="#" class="social social--vk">
+              <svg>
+                <use xlink:href='#icon_social-vk' />
+              </svg>Вконтакте
+            </a>
+          </div>
+          <div class="page-footer__col page-footer__col--wide">
+            <nav class="extra-nav">
+              <ul class="extra-nav__cols">
+                <li class="extra-nav__item extra-nav__item--suppliers">
+                  <svg>
+                    <use xlink:href='#icon_nav-heart' />
+                  </svg>
+                  <a href="#" class="link link--alt">Для поставщиков</a>
+                </li>
+                <li class="extra-nav__item extra-nav__item--production">
+                  <a href="#" class="link link--alt">О производстве</a>
+                </li>
+                <li class="extra-nav__item extra-nav__item--docs">
+                  <a href="#" class="link link--alt">Наши документы</a>
+                </li>
+                <li class="extra-nav__item extra-nav__item--eco">
+                  <a href="#" class="link link--alt">Экологические стандарты</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="page-footer__col copyright">
+            <div class="copyright__inner">
+              <div class="copyright__img">
+                <svg>
+                  <use xlink:href='#logo_copyright' />
+                </svg>HTML Academy
+              </div>
+              <p class="copyright__text">
+                Сделано&#160;в&#160;<a class="link link--alt" href="#">HTML&#160;Academy</a>&#160;©2016
+              </p>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
+  </div>
+  <svg style="display:none;" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <symbol preserveAspectRatio="xMidYMid" viewBox="0 0 20.63 19.719" id="icon_cart">
+      <path d="M20.576 4.43l-1.204 8.91c-.184.923-1.024 1.636-1.882 1.636H6.61c-.86 0-1.697-.713-1.88-1.635L3.263 3.055c-.146-.732-.157-.977-.137-1.055H1a1 1 0 0 1 0-2h4a.99.99 0 0 1 .102 1.98h13.965c1.105 0 1.773 1.13 1.51 2.45zM5.418 3.945l1.313 9h10.673c-.005 0-.004-.002.004-.013l1.186-8.788s.028-.2.03-.2H5.42zm1.827 12.01a1.874 1.874 0 1 1 .002 3.748 1.874 1.874 0 0 1-.002-3.748zm9 0a1.874 1.874 0 1 1 0 3.748 1.874 1.874 0 0 1 0-3.748z" class="acls-1" />
+    </symbol>
+    <symbol preserveAspectRatio="xMidYMid" viewBox="0 0 15.13 10.25" id="icon_cart-full">
+      <defs>
+        <style>
+          .bcls-1 {
+            fill: #ec573b;
+            fill-rule: evenodd
+          }
+        </style>
+      </defs>
+      <path d="M0 0h15.125L13.75 10.25l-12.625-.125L0 0z" class="bcls-1" />
+    </symbol>
+    <symbol preserveAspectRatio="xMidYMid" viewBox="0 0 20.063 19" id="icon_login">
+      <path d="M17.06 18.986H6a3 3 0 0 1-3-3V15h2v2h13V2H5v1.968H3v-.96a3 3 0 0 1 3-3h11.06a3 3 0 0 1 3 3v12.978a3 3 0 0 1-3 3zM6.023 4.158l7.027 5.3-7.026 5.3v-2.743h-6.03V6.9h6.03V4.16z" />
+    </symbol>
+    <symbol preserveAspectRatio="xMidYMid" viewBox="0 0 15.562 13.66" id="icon_nav-heart">
+      <defs>
+        <style>
+          .dcls-1 {
+            fill: #f7f8f8;
+            fill-rule: evenodd
+          }
+        </style>
+      </defs>
+      <path d="M7.3 12.653v.02s-.016-.01-.02-.01l-.018.01v-.02C6.862 12.45.015 8.937.015 4.448c0-5.1 5.437-5.923 7.266-1.764 1.83-4.16 7.267-3.337 7.267 1.764 0 4.49-6.847 8.003-7.247 8.205z" class="dcls-1" />
+    </symbol>
+    <symbol preserveAspectRatio="xMidYMid" viewBox="-1 -1 17.687 17.688" id="icon_search">
+      <path d="M11.936 10.497h-.758l-.264-.26a6.166 6.166 0 0 0 1.497-4.03c0-3.425-2.778-6.2-6.205-6.2A6.202 6.202 0 0 0 0 6.207a6.202 6.202 0 0 0 10.24 4.703l.262.262v.755l4.773 4.76 1.423-1.422-4.762-4.768zm-5.73 0a4.294 4.294 0 0 1-4.298-4.29 4.294 4.294 0 0 1 4.297-4.293A4.293 4.293 0 0 1 10.5 6.206c0 2.37-1.922 4.29-4.295 4.29z" />
+    </symbol>
+    <symbol preserveAspectRatio="xMidYMid" viewBox="0 0 31.375 31.41" id="icon_social-fb">
+      <defs>
+        <style>
+          .jcls-1 {
+            fill: currentColor;
+            fill-rule: evenodd
+          }
+        </style>
+      </defs>
+      <path d="M15.677 31.39C7.01 31.39-.015 24.367-.015 15.7-.015 7.032 7.01.007 15.677.007c8.666 0 15.69 7.025 15.69 15.69 0 8.668-7.024 15.693-15.69 15.693zm3.91-25.314h-2.793c-3.294 0-4.082 1.546-4.082 4.342v2.2h-1.89v3.088h1.89v9.29h3.738v-9.29h2.743l.285-3.09H16.45l.005-1.855c0-.893.085-1.255 1.367-1.255h1.764v-3.43z" class="jcls-1" />
+    </symbol>
+    <symbol preserveAspectRatio="xMidYMid" viewBox="0 0 31.376 31.41" id="icon_social-inst">
+      <defs>
+        <style>
+          .kcls-1 {
+            fill: currentColor;
+            fill-rule: evenodd
+          }
+        </style>
+      </defs>
+      <path d="M15.677 31.39c-8.666 0-15.69-7.024-15.69-15.69C-.014 7.032 7.01.007 15.676.007S31.37 7.033 31.37 15.698c0 8.668-7.027 15.693-15.693 15.693zm8.017-21.828c0-.963-.782-1.745-1.745-1.745H9.62c-.962 0-1.744.782-1.744 1.745v12.31c0 .965.78 1.746 1.745 1.746h12.33c.962 0 1.744-.78 1.744-1.745V9.563zm-2.322 3.12h-1.864a.612.612 0 0 1-.612-.61v-1.865a.61.61 0 0 1 .612-.61h1.864a.61.61 0 0 1 .612.61v1.864a.612.612 0 0 1-.612.613zM15.81 18.59a2.838 2.838 0 0 1 0-5.678c1.568 0 3.066 1.144 3.066 2.838 0 1.694-1.498 2.84-3.066 2.84zm0 2.086a4.922 4.922 0 0 0 4.764-6.16c.883.003 1.38 0 1.38 0v6.786a.612.612 0 0 1-.612.612H10.277a.612.612 0 0 1-.612-.612v-6.785h1.38a4.92 4.92 0 0 0 4.764 6.16z" class="kcls-1" />
+    </symbol>
+    <symbol preserveAspectRatio="xMidYMid" viewBox="0 0 31.375 31.4" id="icon_social-tw">
+      <defs>
+        <style>
+          .lcls-1 {
+            fill: currentColor;
+            fill-rule: evenodd
+          }
+        </style>
+      </defs>
+      <path d="M15.677 31.39C7.01 31.39-.015 24.362-.015 15.696S7.01.005 15.677.005 31.37 7.03 31.37 15.697 24.342 31.39 15.676 31.39zm8.647-22.016a7.294 7.294 0 0 1-2.313.884 3.643 3.643 0 0 0-6.206 3.322 10.343 10.343 0 0 1-7.507-3.806 3.632 3.632 0 0 0-.493 1.832 3.64 3.64 0 0 0 1.62 3.03 3.636 3.636 0 0 1-1.65-.454v.045a3.646 3.646 0 0 0 2.922 3.572 3.65 3.65 0 0 1-1.645.06 3.646 3.646 0 0 0 3.404 2.53A7.303 7.303 0 0 1 7.06 21.9a10.315 10.315 0 0 0 5.585 1.635c6.7 0 10.363-5.55 10.363-10.363 0-.158-.004-.315-.01-.47a7.422 7.422 0 0 0 1.817-1.886 7.308 7.308 0 0 1-2.092.573 3.655 3.655 0 0 0 1.6-2.016z" class="lcls-1" />
+    </symbol>
+    <symbol preserveAspectRatio="xMidYMid" viewBox="0 0 31.375 31.41" id="icon_social-vk">
+      <defs>
+        <style>
+          .mcls-1 {
+            fill: currentColor;
+            fill-rule: evenodd
+          }
+        </style>
+      </defs>
+      <path d="M15.677 31.39C7.01 31.39-.015 24.367-.015 15.7-.015 7.032 7.01.007 15.677.007c8.666 0 15.69 7.025 15.69 15.69 0 8.668-7.024 15.693-15.69 15.693zm5.21-15.333c-.504-.546-1.178-.905-2.016-1.082v-.072a2.935 2.935 0 0 0 1.372-1.144c.333-.518.5-1.107.5-1.77 0-.575-.123-1.08-.363-1.52-.24-.435-.606-.788-1.092-1.05a4.305 4.305 0 0 0-1.446-.476c-.514-.08-1.272-.116-2.27-.116H10.77v13.597h5.44c.946 0 1.722-.085 2.333-.256a4.792 4.792 0 0 0 1.686-.858 3.64 3.64 0 0 0 1.03-1.268c.257-.513.384-1.107.384-1.784 0-.923-.252-1.657-.757-2.203zm-3.653 3.61a2.88 2.88 0 0 1-1.04.245c-.34.013-.955.02-1.843.02h-.183v-3.405h.63c.607 0 1.094.003 1.456.013.36.008.647.052.853.134.34.12.596.3.767.54.172.235.255.563.255.983 0 .328-.07.622-.214.88-.144.26-.368.454-.68.59zm-.682-5.677c-.25.115-.493.178-.727.19-.234.013-.645.02-1.228.02h-.43V11.32h.237c.608 0 1.066.003 1.374.012.31.01.574.063.798.162.24.103.415.272.527.502.112.23.17.456.17.677 0 .295-.055.558-.158.786-.102.224-.292.402-.563.53z" class="mcls-1" />
+    </symbol>
+    <symbol preserveAspectRatio="xMidYMid" viewBox="0 0 153.094 63.25" id="logo">
+      <defs>
+        <style>
+          .ncls-1 {
+            fill: #fff;
+            fill-rule: evenodd
+          }
+        </style>
+      </defs>
+      <path d="M153.077 52.162c-.45 6.77-5.747 11.1-12.885 11.1-6.872 0-10.002-3.162-10.002-6.1 0-1.62 1.247-2.834 2.48-3.194.18-.04.29-.055.385-.055.284 0 .445.13.53.238.21.264.142.568.053.952-.025.108-.054.233-.083.378-.18 1.02-.18 2.514.873 3.77 1.16 1.388 3.36 2.12 6.357 2.12 4.543 0 9.617-3.596 9.894-9.406.202-4.772-2.148-8.118-6.056-8.758.333.84.536 1.767.605 2.767.17 2.586-.487 4.848-1.85 6.372-1.104 1.234-2.61 1.93-4.354 2.008-1.47.073-2.66-.424-3.51-1.395-.944-1.078-1.354-2.692-1.123-4.43.436-3.403 2.66-6.05 5.887-7.092-1.645-1.313-4.024-2.08-6.81-2.184-3.242-.13-6.064.543-8.433 1.97-1.206 7.44-3.688 16.015-6.777 16.015-.638 0-1.234-.395-1.677-1.114-1.042-1.693-1.26-5.305.722-9.24 1.48-2.913 3.18-5.055 5.19-6.54.258-2.357.45-4.803.568-7.296-.987 1.26-2.156 1.97-3.352 2.005-1.003 1.397-2.294 2.164-3.655 2.164-1.18 0-2.27-.485-3.153-1.404-1.317-1.372-1.987-3.498-1.886-5.987.168-4.01 1.81-7.016 4.39-8.04.528-.216 1.05-.062 1.25.342.565-.654 1.266-1.106 2.11-1.26.733-.13 1.42.167 1.987.82 1.185 1.358 1.643 3.973 1.227 6.996-.24 1.643-.612 3.067-1.113 4.254.934-.687 1.84-2.452 2.34-4.698.015-1.497.01-2.898-.017-4.282-.03-1.054.313-1.636.606-1.94.297-.304.69-.48 1.08-.48 1.085 0 1.138.627 1.138 1.733 0 .442.007.836.015 1.314l.01.77c1.205-2.613 2.747-4.056 4.394-4.056.735 0 1.407.31 1.943.867 1.105 1.153 1.618 3.44 1.485 6.564-.28 5.663-3.5 8.247-6.567 8.247-.577 0-1.117-.003-1.635-.21-.057.678-.126 1.555-.21 2.223 2.473-1.056 5.34-1.057 8.836-.83 4.064.246 7.084 2.4 8.977 4.4h.236c2.774 0 5.26.224 7.002 2.08 1.858 1.978 2.772 4.392 2.575 7.522zm-33.224-5.17c-1.78 3.562-1.704 6.022-1.22 6.807.09.142.184.22.28.23.585-.283 2.044-3.615 3.082-10.25a15.384 15.384 0 0 0-2.142 3.213zm-4.89-17.48c-.192-1.843-.007-3.812.58-5.41-.738 1.07-1.226 2.96-1.32 5.254-.1 2.02.382 3.792 1.286 4.74.256.27.67.593 1.182.593.28 0 .57-.09.858-.256-1.382-.896-2.366-2.73-2.586-4.92zm4.22-5.27c-.054-.056-.132-.125-.203-.125-.85.245-1.915 2.415-1.79 4.94.062 1.41.556 3.194 1.727 3.914.432-.788.888-2.085 1.008-4.13.157-2.448-.274-4.1-.742-4.597zm8.07 10.7c1.83 0 3.07-2.076 3.32-5.556.21-3.24-.2-4.914-.658-5.4-.123-.132-.21-.132-.244-.132-.64 0-2.694 2.878-3.747 9.672l-.064 1.027c.345.266.794.39 1.393.39zm15.62 11.602c-.074-1.258-.414-2.38-1.012-3.342-2.665.507-4.55 2.4-4.95 5-.217 1.305-.01 2.413.584 3.127.45.54 1.088.82 1.9.836l.107.002c.77 0 1.473-.316 2.038-.916.965-1.024 1.453-2.74 1.335-4.708zm-31.248-8.428c-.046.22-.27.773-1.482.623-2.446-.264-3.577-3.233-3.452-9.076.03-1.42.153-2.6.25-3.55.092-.88.194-1.88.06-2.078-.726.038-3.545 3.81-4.575 10.633-.05 1.73-1.027 2.207-1.597 2.207-1.037 0-1.22-.442-1.22-1.688 0-1.458.015-1.995.045-3.077.02-.715.047-1.67.08-3.297.075-2.74.25-5.39.522-7.89-1.378.233-2.875.248-4.374.04-4.263-.57-5.69-3.31-5.605-5.69.104-1.51 1.426-2.372 2.288-2.587.175-.04.29-.054.39-.054.308 0 .47.16.54.254.205.284.107.582-.04 1.033l-.082.25c-.183.69-.163 1.47.065 2.18.123.274.387.66.833.66.31 0 .668-.184.984-.504.67-.68 1.062-1.828 1.047-3.075-.042-2.73-1.607-4.333-4.41-4.513a8.127 8.127 0 0 0-.54-.017c-2.527 0-5.25 1.275-5.636 4.125-.488 3.726 2.647 5.625 5.965 7.634l.374.227c3.42 2.112 7.043 4.756 6.772 9.45-.306 5.01-4.763 8.788-10.37 8.788-.694 0-1.398-.06-2.09-.18-6.885-1.187-9.05-6.53-8.814-10.744.106-1.516.587-3.64 2.284-5.177.597-.545 2.43-1.143 3.02-1.228.724-.106.91.206.987.38.187.43-.133.86-.507 1.26-1.965 1.923-2.827 3.435-3.093 5.41-.24 1.89.27 3.718 1.432 5.144 1.21 1.486 3.055 2.396 5.196 2.564 4.21.326 8.16-2.198 8.543-5.332.472-3.82-2.457-6.13-5.763-8.348l-.695-.457c-3.46-2.272-7.037-4.623-6.652-8.657.377-4.587 5.078-6.99 9.528-6.99.123 0 .244 0 .363.005 2.28.085 4.1.81 5.263 2.1 1.042 1.157 1.532 2.713 1.413 4.498-.12 2.368-1.27 4.465-2.915 5.476.28.1.578.18.89.235 1.21.227 2.46.2 3.616-.077 1.205-8.835 3.718-14.523 6.434-14.523.62 0 1.21.408 1.662 1.147 1.173 1.913 1.408 5.72-.41 9.294-1.2 2.397-2.92 4.134-5.12 5.162a62.813 62.813 0 0 0-.46 6.927c1.437-3.125 3.5-5.732 5.643-5.732.51 0 .928.172 1.242.51.892.965.773 3.11.485 6.816-.534 6.513.196 8.186.902 8.443.86.382.818.91.785 1.063zm-5.814-23.384c1.458-2.914 1.274-5.64.817-6.674-.134-.304-.258-.4-.292-.408-.545.246-2.014 3.81-2.99 10.085 1.01-.738 1.836-1.745 2.466-3.003zM76.766 29.025c-2.93 21.904-5.728 24.438-7.58 24.438-.623 0-1.175-.315-1.595-.91-1.087-1.545-1.112-4.672-.062-7.607a29.284 29.284 0 0 1 5.63-9.628l.03-.278c-.87 1.337-1.832 2.05-2.814 2.05-.987 0-2.657-.495-3.58-3.54-1.5 2.618-3.475 4.09-5.54 4.09-2.077 0-3.905-1.293-4.914-3.39-.8 1.928-1.91 3.773-3.23 3.773-1.08 0-1.912-1.273-2.296-3.415-.95 1.59-2.08 2.503-3.258 2.606a2.066 2.066 0 0 1-.17.007c-1.236 0-2.666-1.067-3.394-3.126-1.215 2.203-2.594 3.44-3.876 3.44-1.685 0-3.32-2.003-4.28-5.128-1.075 2.608-2.734 5.108-4.575 5.108-.702 0-1.423-.37-2.084-1.07-1.52-1.612-3.174-5.625-2.826-11.634.517-8.31 3.554-19.898 7.328-19.898.286 0 .7.093 1.057.54 1.293 1.628.768 7.125-.018 10.508-1.055 4.308-3.35 9.392-5.112 12.273.283 4.745 1.406 6.88 2.122 6.88.767 0 2.432-2.666 3.316-6.852a27.293 27.293 0 0 1-.058-4.036c.542-8.715 3.722-20.868 7.67-20.868.295 0 .723.096 1.09.56 1.352 1.7.8 7.46-.024 11.008-1.106 4.522-3.518 9.862-5.367 12.886.297 5.003 1.49 7.255 2.253 7.255.576 0 1.923-1.64 2.982-5.16.655-6.057 4.193-8.196 7.02-8.196 1.535 0 2.402.576 2.86 1.06.583.62.874 1.47.82 2.396-.13 1.005-1.65 1.89-2.4 2.03-.54.117-.805-.1-.896-.232-.222-.32-.095-.662.116-1.23l.05-.134c.278-.9.306-1.526.076-1.838-.162-.22-.5-.332-1.007-.332-1.654 0-3.04 2.295-3.45 5.71-.313 2.544.262 4.513.93 5.268.158.178.32.28.44.28.814 0 1.926-1.62 2.478-4.72l.025-.316c.02-.275.04-.53.102-.873.188-.976 1.313-1.418 2.28-1.418.42 0 .702.092.864.277l.15.172-.015.278c-.984 5.17-.67 7.093-.432 7.49.287-.26 1.015-1.47 1.9-4.94a13.357 13.357 0 0 1-.004-.94c.253-5.043 2.892-8.84 6.142-8.84.91 0 1.66.31 2.228.92 1.12 1.21 1.07 3.13 1.028 3.69-.132.998-1.654 1.8-2.4 1.938-.612.135-.815-.086-.904-.214-.204-.296-.088-.605.088-1.072l.085-.226c.38-1.07.557-2.458.154-3.03-.086-.122-.25-.285-.66-.285-1.27 0-2.39 2.903-2.553 6.607-.073 2.18.482 4.1 1.486 5.14.498.514 1.088.786 1.705.786 2.397 0 3.726-3.08 4.318-4.984-.144-1.94-.08-4.237.19-6.828.13-1.133 1.578-1.553 2.46-1.553.378 0 .624.08.775.254l.15.173-.017.27c-.842 6.683-.728 10.69.34 11.9.206.233.44.342.734.342.822 0 2.37-2.897 3.025-8.13.092-1.388.22-2.69.34-3.453.128-1.096 1.558-1.512 2.43-1.512.406 0 .668.092.822.288l.15.192-.045.296c.005 0-.337 3.473-.797 6.655zm-6.982 16.05c-.983 2.646-.834 4.304-.37 4.974.123.174.242.242.312.25.563-.228 1.79-3.455 2.905-11.134a35.676 35.676 0 0 0-2.847 5.91zM32.43 16.066c.98-3.774.93-6.968.64-7.847-1.034 1.39-3.09 9.68-3.45 15.846 1.15-2.63 2.255-5.748 2.81-7.998zm8.938-1.017c1.052-4.048.977-7.435.656-8.3-1.088 1.36-3.303 10.257-3.662 16.827 1.226-2.79 2.415-6.13 3.006-8.527zm-31.23 2.625a25.24 25.24 0 0 0-1.078 4.794c-.58 4.72.25 8.865 2.215 11.088 1.08 1.222 2.454 1.84 4.082 1.842.092 0 .184-.002.277-.007 4.15-.203 5.55-4.45 6.016-6.964l.132-2.548c.078-2.123 1.386-2.288 1.785-2.288.317 0 1.22.134 1.22.727C24.33 30.905 23.67 36.034 22.763 40c4.964.347 11.007 1.306 16.306 2.208 4.402.743 9.413 1.5 13.18 1.5 3.222 0 5.158-.546 5.754-1.622.12-.204.192-.358.244-.473.104-.223.26-.562.663-.562.247 0 .434.14.67.32.848.584 1.428 1.598 1.466 2.57.023.595-.137 1.458-1.03 2.182-.893.747-2.355 1.113-4.465 1.113-3.668 0-8.713-1.074-14.054-2.21-.98-.21-1.964-.42-2.94-.62-6.47-1.323-11.96-2.098-16.324-2.307-1.58 5.356-3.827 8.125-7.048 8.7-.32.054-.644.08-.968.08-2.1 0-4.15-1.085-5.22-2.765-.86-1.355-.96-2.905-.28-4.364 1.184-2.63 4.5-3.857 10.43-3.857.347 0 .7.004 1.063.012.326-1.413.597-2.994.822-4.79-1.558 1.618-3.54 2.52-5.82 2.626l-.3.006c-2.537 0-4.752-.975-6.41-2.82-2.417-2.696-3.494-7.092-2.955-12.06.217-1.998.628-3.846 1.224-5.507-2.487-.592-4.53-1.868-5.664-3.55C.102 12.32-.207 10.565.188 8.59 1.5 2.025 9.924-.013 12.844-.013c.518 0 .895.056 1.15.17.38.18 1.36.647 1.196 1.368-.093.413-.528.66-1.163.66-.312 0-.642-.062-.93-.17-.043-.018-.213-.07-.625-.07-2.142 0-8.658 1.6-9.576 6.506-.635 3.35 1.87 5.823 4.78 6.646 2.574-5.46 7.165-9.343 11.79-9.94 2.232-.3 4.05.296 4.95 1.636.715 1.068.786 2.507.194 3.95-1.536 3.77-7.85 6.777-14.472 6.93zm2.164 26.41c-.634 1.046-.72 2.145-.23 3.01.456.813 1.327 1.297 2.33 1.297.36 0 .727-.064 1.09-.19 1.72-.617 3.122-2.672 4.163-6.114-5.088.084-6.812 1.12-7.353 1.998zM21.157 8.13c-.33-.512-.997-.618-1.497-.618a4.74 4.74 0 0 0-.836.08c-2.767.528-5.836 3.617-7.79 7.786 3.953-.313 8.694-2.295 10.003-5.04.4-.896.446-1.706.12-2.21z" class="ncls-1" />
+    </symbol>
+    <symbol preserveAspectRatio="xMidYMid" viewBox="0 0 107.622 36.69" id="logo_copyright">
+      <defs>
+        <style>
+          .ocls-1 {
+            fill: #fff;
+            fill-rule: evenodd
+          }
+        </style>
+      </defs>
+      <path d="M103.727 29.19c-.9 2.16-2.074 2.885-3.336 2.885a4.67 4.67 0 0 1-1.088-.138v-1.572c.277.086.57.12.847.12.898 0 1.572-.64 2.056-1.935l.173-.415-3.942-8.365h1.97l2.8 6.256 2.472-6.256h1.935l-3.888 9.42zm-8.054-6.257c0-1.072-.64-1.745-1.642-1.745-.915 0-1.624.604-2.056 1.123.018.19.035.38.035.57v5.186h-1.85v-5.133c0-1.072-.64-1.745-1.642-1.745-1.002 0-1.763.725-2.195 1.278v5.6h-1.85V19.77h1.643v1.037c.45-.5 1.417-1.26 2.765-1.26 1.245 0 2.11.517 2.593 1.33.726-.726 1.694-1.33 2.904-1.33 2.194 0 3.145 1.623 3.145 3.334v5.186h-1.85v-5.133zM76.35 24.61c.21 1.486 1.66 2.108 3.18 2.108a6.07 6.07 0 0 0 2.628-.588v1.59c-.76.364-1.815.57-2.973.57-2.54 0-4.7-1.45-4.7-4.372 0-3.007 2.28-4.372 4.2-4.372 3.3 0 4.44 2.66 3.905 5.063h-6.24zm2.42-3.526c-1.244 0-2.367.743-2.436 2.143h4.597c.105-.726-.345-2.143-2.16-2.143zm-7.742 5.67c-.64.81-1.625 1.537-3.18 1.537-2.506 0-4.113-1.987-4.113-4.372s1.607-4.372 4.113-4.372c1.452 0 2.42.64 2.99 1.296v-4.874h1.85v12.098h-1.66v-1.313zm-.208-3.856c-.397-.898-1.347-1.728-2.644-1.728-1.486 0-2.575 1.124-2.575 2.748s1.09 2.748 2.576 2.748c1.297 0 2.247-.83 2.644-1.746v-2.022zm.018-21.455h1.85V13.54h-1.85V1.444zm-4.555 6.965c0-1.07-.64-1.745-1.642-1.745-.914 0-1.623.605-2.055 1.123.017.19.034.38.034.57v5.185h-1.85V8.41c0-1.07-.64-1.745-1.642-1.745-1.002 0-1.763.725-2.195 1.28v5.598h-1.85V5.247h1.643v1.036c.45-.5 1.417-1.26 2.765-1.26 1.246 0 2.11.517 2.593 1.33.726-.726 1.694-1.33 2.904-1.33 2.195 0 3.146 1.623 3.146 3.334v5.185h-1.85V8.41zM57.79 21.153c-1.228 0-2.247.31-2.99.64v-1.694c.656-.226 1.85-.554 3.18-.554 2.35 0 3.836 1.123 3.836 3.63v2.972c0 .466.277.605.605.605.19 0 .38-.053.554-.104v1.33c-.346.138-.76.207-1.175.207-.762 0-1.366-.294-1.66-.968-.813.656-1.832 1.07-3.128 1.07-1.504 0-2.904-.83-2.904-2.54 0-2.125 1.97-2.782 3.7-2.782.707 0 1.502.103 2.16.242v-.294c0-1.037-.76-1.763-2.18-1.763zm.38 3.11c-1.055 0-2.16.33-2.16 1.366 0 .81.725 1.226 1.555 1.226.88 0 1.745-.33 2.402-.985v-1.4c-.5-.102-1.21-.206-1.797-.206zM47.878 11.02V6.87h-1.486V5.246h1.486V2.74l1.832-.45v2.956h3.007V6.87H49.71v3.802c0 1.09.5 1.452 1.573 1.452a4.46 4.46 0 0 0 1.676-.328v1.59c-.623.224-1.418.362-2.23.362-1.608 0-2.852-.794-2.852-2.73zm2.428 8.528c.933 0 1.832.207 2.558.64v1.693c-.605-.433-1.452-.692-2.3-.692-1.468 0-2.954.777-2.954 2.73 0 1.884 1.434 2.73 2.92 2.73.882 0 1.764-.258 2.42-.638v1.71c-.795.38-1.693.57-2.748.57-2.212 0-4.476-1.347-4.476-4.302 0-3.094 2.368-4.442 4.58-4.442zM42.13 27.22c-.81.656-1.83 1.07-3.127 1.07-1.503 0-2.903-.83-2.903-2.54 0-2.125 1.97-2.782 3.698-2.782.71 0 1.504.103 2.16.242v-.294c0-1.037-.76-1.763-2.177-1.763-1.226 0-2.246.31-2.99.64v-1.694c.658-.226 1.85-.554 3.18-.554 2.352 0 3.838 1.123 3.838 3.63v2.972c0 .466.276.605.605.605.19 0 .38-.053.553-.104v1.33c-.346.138-.76.207-1.175.207-.76 0-1.365-.294-1.66-.968zm-.17-2.75c-.503-.102-1.21-.206-1.8-.206-1.053 0-2.16.328-2.16 1.365 0 .81.727 1.226 1.556 1.226.882 0 1.746-.33 2.403-.985v-1.4zm.837-15.82c0-1.348-.83-1.987-1.936-1.987-1.053 0-1.848.708-2.315 1.382v5.496h-1.85V1.444h1.85V6.16a3.778 3.778 0 0 1 2.68-1.14c2.09 0 3.42 1.418 3.42 3.388v5.133h-1.848V8.65zM0 28.067V1.52L14.482 0l.152.017L28.967 1.52v26.547l-14.484 8.618L0 28.067zM27.07 3.227l-12.59-1.322-12.588 1.32v9.96L14.412 5.73h.002l12.658 7.463V3.226zm-12.626 15.01l3.19 1.88.024-.015.997-.667-4.224-2.51.013-1.314 5.35 3.184.92-.542.14-.083.058-.035-6.48-3.854.012-1.31 7.582 4.51 1.59-.937 3.444-2.03-12.65-7.372-12.49 7.508 12.472 7.414 2.133-1.28-2.094-1.233.013-1.313zm12.626-2.312l-3.883 2.32v4.288l.01-.006v1.32l-8.717 5.214-8.633-5.19.012-1.31 8.63 5.133-.02-1.388-8.634-5.19.013-1.312 8.6 5.118-.02-1.35-12.536-7.462v10.88l12.59 7.492 12.588-7.49V15.924z" class="ocls-1" />
+    </symbol>
+  </svg>
+</body>
+
+</html>

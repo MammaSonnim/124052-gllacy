@@ -1,0 +1,39 @@
+.modal-contact {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  display: none;
+  transform: translate(-50%, -50%);
+  z-index: $zi_modal;
+  width: 425px;
+  padding: 13px 25px 25px 25px;
+  background-color: $bg_light;
+  border-radius: $br_medium;
+  animation: fade 0.3s both;
+  &__close {
+    @include icon-close(absolute, 26px, 26px, 2px, 22px);
+    right: 10px;
+    top: 10px;
+
+  }
+  &__text {
+    @include clear-mp;
+    margin-bottom: 18px;
+    font-size: 24px;
+    font-weight: $fw_medium;
+  }
+  &__item {
+    width: 63%;
+    margin-bottom: 20px;
+  }
+  &__text-field {
+    margin-bottom: 15px;
+  }
+  &__btn {
+    text-align: right;
+  }
+  &--show {
+    display: block;
+  }
+}
+

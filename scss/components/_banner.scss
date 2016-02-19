@@ -1,0 +1,33 @@
+.banner {
+  position: relative;
+  display: flex;
+  min-height: 230px;
+  padding: 12px 20px 80px 20px;
+  color: $c_text_alt;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 15px;
+  &--berry {
+    background-color: #a63856;
+    background-image: url(../img/bg_banner-1.jpg);
+  }
+  &--choco {
+    background-color: #835542;
+    background-image: url(../img/bg_banner-2.jpg);
+  }
+  &__title {
+    @include clear-mp;
+    font-size: $fz_xl;
+    margin-bottom: 10px;
+  }
+  &__text {
+    @include clear-mp;
+    font-size: 18px;
+  }
+  &__btn {
+    position: absolute;
+    right: 20px;
+    bottom: 17px;
+  }
+}

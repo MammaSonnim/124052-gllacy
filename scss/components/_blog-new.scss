@@ -1,0 +1,19 @@
+.blog-new {
+  min-height: 220px;
+  padding: 25px 20px 25px 20px;
+  background-image: url(../img/bg_blog-new.jpg);
+  background-color: #ffffff;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: $br_medium;
+  &__title {
+    @include clear-mp;
+    color: #5a5a5a;
+    margin-bottom: 3px;
+  }
+  &__link {
+    display: block;
+    width: 350px;
+  }
+}

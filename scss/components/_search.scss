@@ -1,0 +1,19 @@
+.search {
+  @include hover-helper;
+  position: relative;
+  &__form {
+    height: 30px;
+    @include clear-mp;
+  }
+  &__wrap {
+    @include poz-hover;
+    width: 310px;
+    padding: 15px;
+    @include style-form;
+  }
+  &:hover &__wrap {
+    @include animate-hover;
+  }
+}
+
+

@@ -1,0 +1,19 @@
+.cart {
+  @include hover-helper;
+  position: relative;
+  &__form {
+    @include poz-hover;
+    width: 515px;
+    padding: 26px 15px 23px 10px;
+    @include style-form;
+  }
+  &:hover &__form {
+    @include animate-hover;
+  }
+  &__table {
+    margin-bottom: 12px;
+  }
+  &__btn {
+    text-align: right;
+  }
+}
