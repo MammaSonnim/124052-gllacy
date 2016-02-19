@@ -24,7 +24,7 @@
     box-sizing: border-box;
     width: 20px;
     height: 20px;
-    border: 1px solid $bg_light;
+    border: 1px solid #ffffff;
     border-radius: 4px;
     &:hover {
       border-width: 2px;
@@ -39,9 +39,16 @@
       transform: translate(-50%, -75%) rotate(-45deg);
       width: 8px;
       height: 4px;
-      border: 2px solid $bg_light;
+      border: 2px solid #ffffff;
       border-top-color: transparent;
       border-right-color: transparent;
+    }
+  }
+    &__input:disabled + &__label &__indicator {
+    border: 1px solid rgba(#ffffff, 0.4);
+    &:before {
+      border-bottom-color: rgba(#ffffff, 0.4);
+      border-left-color: rgba(#ffffff, 0.4);
     }
   }
 }

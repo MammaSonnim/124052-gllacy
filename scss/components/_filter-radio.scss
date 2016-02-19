@@ -43,4 +43,10 @@
       border-radius: 50px;
     }
   }
+  &__input:disabled + &__label &__indicator {
+    border: 1px solid rgba($bg_light, 0.4);
+    &:before {
+      background-color: rgba($bg_light, 0.4);
+    }
+  }
 }

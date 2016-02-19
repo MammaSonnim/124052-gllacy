@@ -1,5 +1,5 @@
 @font-face {
-  font-family: 'gllacy';
+  font-family: "gllacy";
   src: url("../font/gllacy.eot?33611331");
   src: url("../font/gllacy.eot?33611331#iefix") format("embedded-opentype"), url("../font/gllacy.woff?33611331") format("woff"), url("../font/gllacy.ttf?33611331") format("truetype"), url("../font/gllacy.svg?33611331#gllacy") format("svg");
   font-weight: normal;
@@ -8,7 +8,7 @@
 
 body {
   min-width: 900px;
-  font: 400 16px/1.375 "Roboto", sans-serif;
+  font: 400 16px/1.375 "Roboto", "Arial", sans-serif;
   color: #333333;
   background-color: #849d8f;
 }
@@ -740,7 +740,7 @@ img {
 }
 
 .cart-list__icon-remove:before, .cart-list__icon-remove:after {
-  content: '';
+  content: "";
   position: absolute;
   top: 50%;
   width: 1px;
@@ -854,7 +854,7 @@ img {
 .slider__title {
   width: 700px;
   margin: 0 auto 32px;
-  font: 900 60px/60.35px "Roboto", sans-serif;
+  font: 900 60px/60.35px "Roboto", "Arial", sans-serif;
   color: #ffffff;
 }
 
@@ -1415,7 +1415,7 @@ img {
 @-moz-document url-prefix() {
   .filter-sort .select {
     text-indent: 0.01px;
-    text-overflow: '';
+    text-overflow: "";
     padding-right: 1rem;
   }
   .filter-sort option {
@@ -1454,6 +1454,8 @@ img {
 
 .filter-price__range {
   position: relative;
+  margin-left: 20%;
+  width: 51%;
   height: inherit;
   background-color: #f8f7f4;
 }
@@ -1542,6 +1544,14 @@ img {
   border-radius: 50px;
 }
 
+.filter-radio__input:disabled + .filter-radio__label .filter-radio__indicator {
+  border: 1px solid rgba(248, 247, 244, 0.4);
+}
+
+.filter-radio__input:disabled + .filter-radio__label .filter-radio__indicator:before {
+  background-color: rgba(248, 247, 244, 0.4);
+}
+
 .filter-check__input {
   display: none;
 }
@@ -1575,7 +1585,7 @@ img {
   box-sizing: border-box;
   width: 20px;
   height: 20px;
-  border: 1px solid #f8f7f4;
+  border: 1px solid #ffffff;
   border-radius: 4px;
 }
 
@@ -1593,9 +1603,18 @@ img {
           transform: translate(-50%, -75%) rotate(-45deg);
   width: 8px;
   height: 4px;
-  border: 2px solid #f8f7f4;
+  border: 2px solid #ffffff;
   border-top-color: transparent;
   border-right-color: transparent;
+}
+
+.filter-check__input:disabled + .filter-check__label .filter-check__indicator {
+  border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.filter-check__input:disabled + .filter-check__label .filter-check__indicator:before {
+  border-bottom-color: rgba(255, 255, 255, 0.4);
+  border-left-color: rgba(255, 255, 255, 0.4);
 }
 
 .plain-btn {
@@ -1856,7 +1875,7 @@ img {
 }
 
 .modal-contact__close:before, .modal-contact__close:after {
-  content: '';
+  content: "";
   position: absolute;
   top: 50%;
   width: 2px;
